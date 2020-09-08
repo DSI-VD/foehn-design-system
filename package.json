@@ -1,0 +1,11 @@
+{
+  "name": "foehn-design-system",
+  "version": "0.0.1",
+  "description": "One place for service teams to find styles, components and patterns for designing government services.",
+  "repository": {
+    "type": "git",
+    "url": "https://git.vd.ch/cybsdk/foehn-design-system.git"
+  },
+  "author": " Direction générale du numérique et des systèmes d'information",
+  "license": "ISC"
+}
