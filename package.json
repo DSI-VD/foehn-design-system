@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "@frctl/fractal": "^1.4.1"
+  },
+  "devDependencies": {
+    "@dsivd/foehn": "file:../foehn"
   }
 }
