@@ -19,6 +19,7 @@
     "@dsivd/foehn": "file:../foehn",
     "@frctl/fractal": "^1.4.1",
     "@frctl/nunjucks": "^2.0.4",
-    "copyfiles": "^2.4.0"
+    "copyfiles": "^2.4.0",
+    "faker": "^5.1.0"
   }
 }
