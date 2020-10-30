@@ -1,0 +1,18 @@
+{
+    "status": "ready",
+    "collated": true,
+    "variants": [
+      {
+        "name": "green-pattern-wide",
+        "context": {
+          "class": "vd-separator vd-separator-green-pattern"
+        }
+      },
+      {
+        "name": "gray-bars-wide",
+        "context": {
+          "class": "vd-separator vd-separator-gray-bars"
+        }
+      }
+    ]
+}

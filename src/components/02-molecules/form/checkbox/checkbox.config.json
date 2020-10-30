@@ -1,0 +1,18 @@
+{
+  "status": "ready",
+  "collated": true,
+  "context": {
+    "label": "Consectetur adipisicing elit",
+    "id": "exampleOption1"
+  },
+  "variants": [
+    {
+      "name": "disabled",
+      "context": {
+        "label": "Option is disabled",
+        "id": "exampleOption2",
+        "disabled": true
+      }
+    }
+  ]
+}
