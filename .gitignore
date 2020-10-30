@@ -1,5 +1,12 @@
+# ignore build files
+build
+public
+
 # ignore node modules
 node_modules
 
 # ignore OSX files
 .DS_Store
+
+# ignore IDE files
+.nova

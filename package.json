@@ -6,12 +6,19 @@
     "type": "git",
     "url": "https://git.vd.ch/cybsdk/foehn-design-system.git"
   },
-  "author": " Direction générale du numérique et des systèmes d'information",
+  "author": "Direction générale du numérique et des systèmes d'information",
   "license": "ISC",
-  "dependencies": {
-    "@frctl/fractal": "^1.4.1"
+  "scripts": {
+    "prestart": "echo \"[ Cleaning build directories ]\" && rm -rf public && echo \"[ Copying Foehn assets ]\" && copyfiles node_modules/@dsivd/foehn/dist/assets/**/*.* public/ --error --up 5",
+    "start": "fractal start --sync",
+    "prebuild": "echo \"[ Cleaning build directories ]\" && rm -rf build public",
+    "build": "fractal build",
+    "postbuild": "echo \"[ Copying Foehn assets ]\" && copyfiles node_modules/@dsivd/foehn/dist/assets/**/*.* public/ --error --verbose --up 5"
   },
   "devDependencies": {
-    "@dsivd/foehn": "file:../foehn"
+    "@dsivd/foehn": "file:../foehn",
+    "@frctl/fractal": "^1.4.1",
+    "@frctl/nunjucks": "^2.0.4",
+    "copyfiles": "^2.4.0"
   }
 }
