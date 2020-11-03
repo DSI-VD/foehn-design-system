@@ -14,47 +14,54 @@
     <title>{{ _target.label }} | Foehn</title>
 
     <!-- Stylesheets -->
-    <link media="all" rel="stylesheet" href="{{ '/styles/main.css' | path }}" />
+    <link
+      media="all"
+      rel="stylesheet"
+      href="{{ '/foehn/styles/main.css' | path }}"
+    />
 
     <!-- Scripts -->
-    <script defer src="{{ '/scripts/fontawesome-all.js' | path  }}"></script>
+    <script
+      defer
+      src="{{ '/foehn/scripts/fontawesome-all.js' | path  }}"
+    ></script>
 
     <!-- Favicon -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="{{ '/img/favicon-apple-touch-icon.png' | path }}?v={{ _config.project.version }}"
+      href="{{ '/foehn/img/favicon-apple-touch-icon.png' | path }}?v={{ _config.project.version }}"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="{{ '/img/favicon-32x32.png' | path }}?v={{ _config.project.version }}"
+      href="{{ '/foehn/img/favicon-32x32.png' | path }}?v={{ _config.project.version }}"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="{{ '/img/favicon-16x16.png' | path }}?v={{ _config.project.version }}"
+      href="{{ '/foehn/img/favicon-16x16.png' | path }}?v={{ _config.project.version }}"
     />
     <link
       rel="manifest"
-      href="{{ '/manifest/site.webmanifest' | path }}?v={{ _config.project.version }}"
+      href="{{ '/foehn/manifest/site.webmanifest' | path }}?v={{ _config.project.version }}"
     />
     <link
       rel="mask-icon"
-      href="{{ '/svg/safari-pinned-tab.svg' | path }}?v={{ _config.project.version }}"
+      href="{{ '/foehn/svg/safari-pinned-tab.svg' | path }}?v={{ _config.project.version }}"
       color="#4d8b43"
     />
-    <link rel="shortcut icon" href="{{ '/img/favicon.ico' | path }}" />
+    <link rel="shortcut icon" href="{{ '/foehn/img/favicon.ico' | path }}" />
     <meta name="msapplication-TileColor" content="#4d8b43" />
     <meta
       name="msapplication-TileImage"
-      content="/img/favicon-mstile-144x144.png"
+      content="/foehn/img/favicon-mstile-144x144.png"
     />
     <meta
       name="msapplication-config"
-      content="{{ '/xml/browserconfig.xml' | path }}?v={{ _config.project.version }}"
+      content="{{ '/foehn/xml/browserconfig.xml' | path }}?v={{ _config.project.version }}"
     />
     <meta name="theme-color" content="#ffffff" />
   </head>
@@ -62,9 +69,9 @@
     {{ yield | safe }}
 
     <!-- Scripts footer -->
-    <script src="{{ '/scripts/jquery.slim.min.js' | path }}"></script>
-    <script src="{{ '/scripts/popper.min.js' | path }}"></script>
-    <script src="{{ '/scripts/bootstrap.min.js' | path }}"></script>
-    <script src="{{ '/scripts/foehn-scripts--footer.js' | path }}"></script>
+    <script src="{{ '/foehn/scripts/jquery.slim.min.js' | path }}"></script>
+    <script src="{{ '/foehn/scripts/popper.min.js' | path }}"></script>
+    <script src="{{ '/foehn/scripts/bootstrap.min.js' | path }}"></script>
+    <script src="{{ '/foehn/scripts/foehn-scripts--footer.js' | path }}"></script>
   </body>
 </html>

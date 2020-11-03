@@ -9,14 +9,14 @@
   "author": "Direction générale du numérique et des systèmes d'information",
   "license": "ISC",
   "scripts": {
-    "prestart": "echo \"[ Cleaning build directories ]\" && rm -rf public && echo \"[ Copying Foehn assets ]\" && copyfiles node_modules/@dsivd/foehn/dist/assets/**/*.* public/ --error --up 5",
+    "prestart": "echo \"[ Cleaning build directories ]\" && del public/foehn && echo \"[ Copying Foehn assets ]\" && copyfiles node_modules/@dsivd/foehn/dist/assets/**/*.* public/foehn/ --error --up 5",
     "start": "fractal start --sync",
-    "prebuild": "echo \"[ Cleaning build directories ]\" && rm -rf build public",
-    "build": "fractal build",
-    "postbuild": "echo \"[ Copying Foehn assets ]\" && copyfiles node_modules/@dsivd/foehn/dist/assets/**/*.* public/ --error --verbose --up 5"
+    "prebuild": "npm run prestart",
+    "build": "fractal build"
   },
   "devDependencies": {
     "@dsivd/foehn": "file:../foehn",
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "@frctl/fractal": "^1.4.1",
     "@frctl/nunjucks": "^2.0.4",
     "copyfiles": "^2.4.0",
