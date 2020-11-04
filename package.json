@@ -10,8 +10,8 @@
   "license": "ISC",
   "scripts": {
     "clean:build": "del build",
-    "import:fontawesome": "echo \"[ Cleaning Fontawesome assets ]\" && del public/foehn && echo \"[ Copying fresh Fontawesome ]\" && copyfiles node_modules/@fortawesome/fontawesome-free/js/*.* public/fontawesome/js/ --error --up 4",
-    "import:foehn": "echo \"[ Cleaning Foehn assets ]\" && del public/foehn && echo \"[ Copying fresh Foehn assets]\" && copyfiles node_modules/@dsivd/foehn/dist/assets/**/*.* public/foehn/ --error --up 5",
+    "import:fontawesome": "echo \"[ Cleaning Fontawesome assets ]\" && del public/foehn && echo \"[ Copying fresh Fontawesome ]\" && cp -R node_modules/@fortawesome/fontawesome-free/ public/fontawesome/",
+    "import:foehn": "echo \"[ Cleaning Foehn assets ]\" && del public/foehn && echo \"[ Copying fresh Foehn assets]\" && cp -R node_modules/@dsivd/foehn/dist/assets/ public/foehn/",
     "prestart": "npm-run-all import:*",
     "start": "fractal start --sync",
     "prebuild": "npm-run-all clean:* && npm run prestart",
@@ -22,7 +22,6 @@
     "@fortawesome/fontawesome-free": "^5.15.1",
     "@frctl/fractal": "^1.4.1",
     "@frctl/nunjucks": "^2.0.4",
-    "copyfiles": "^2.4.0",
     "del-cli": "^3.0.1",
     "faker": "^5.1.0"
   }
