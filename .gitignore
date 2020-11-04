@@ -1,8 +1,9 @@
 # ignore build files
 build
 
-# ignore imported libraries
+# ignore imported libraries excepts assets for the doc
 !public/assets
+public
 
 # ignore node modules
 node_modules
