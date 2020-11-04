@@ -9,9 +9,12 @@
   "author": "Direction générale du numérique et des systèmes d'information",
   "license": "ISC",
   "scripts": {
-    "prestart": "echo \"[ Cleaning build directories ]\" && del public/foehn && echo \"[ Copying Foehn assets ]\" && copyfiles node_modules/@dsivd/foehn/dist/assets/**/*.* public/foehn/ --error --up 5",
+    "clean:build": "del build",
+    "import:fontawesome": "echo \"[ Cleaning Fontawesome assets ]\" && del public/foehn && echo \"[ Copying fresh Fontawesome ]\" && copyfiles node_modules/@fortawesome/fontawesome-free/js/*.* public/fontawesome/js/ --error --up 4",
+    "import:foehn": "echo \"[ Cleaning Foehn assets ]\" && del public/foehn && echo \"[ Copying fresh Foehn assets]\" && copyfiles node_modules/@dsivd/foehn/dist/assets/**/*.* public/foehn/ --error --up 5",
+    "prestart": "npm-run-all import:*",
     "start": "fractal start --sync",
-    "prebuild": "npm run prestart",
+    "prebuild": "npm-run-all clean:* && npm run prestart",
     "build": "fractal build"
   },
   "devDependencies": {
