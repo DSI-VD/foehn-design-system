@@ -8,7 +8,7 @@ Les pages de liste de tâches aident les utilisateurs à comprendre:
 
 - les tâches nécessaires à la réalisation d'une transaction
 - l'ordre dans lequel ils doivent accomplir des tâches
-- quand ils ont terminé les tâches ou leur status 
+- quand ils ont terminé les tâches ou leur status
 
 {{ '@task-list-page' | renderComponent | safe }}
 
@@ -33,15 +33,15 @@ Lorsque vous utilisez une page de liste de tâches dans votre service, vous
 devez:
 
 - regrouper les actions liées en tâches
-- montrer le statut de chaque tâche 
+- montrer le statut de chaque tâche
 
 S'il y a beaucoup de tâches à accomplir, vous devrez peut-être aussi les
-regrouper en sous-sections. 
+regrouper en sous-sections.
 
 ### Afficher le statut de la tâche
 
 Chaque fois que vous affichez une page de liste de tâches, indiquez clairement
-aux utilisateurs quelles tâches ils ont accomplies en les étiquetant "Terminé". 
+aux utilisateurs quelles tâches ils ont accomplies en les étiquetant "Terminé".
 
 ### Regrouper les actions liées en tâches
 
@@ -52,7 +52,7 @@ utilisateurs à comprendre et à planifier ce qu’ils doivent faire.
 Dans la mesure du possible, les noms de tâches doivent:
 
 - décrire ce que la tâche ou l'activité impliquera
-- commencez par les verbes, par exemple, 'vérifier', 'déclarer', 'signaler' 
+- commencez par les verbes, par exemple, 'vérifier', 'déclarer', 'signaler'
 
 ### Regrouper les tâches en sections
 

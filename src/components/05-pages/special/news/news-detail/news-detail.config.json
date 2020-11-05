@@ -22,13 +22,16 @@
         null
       ]
     },
-    "listLinks": [{
-      "item": "Communiqué du 1er novembre 2016",
-      "url": "http://nicolas.eu"
-    },{
-    "item": "Lorem ipsum dolor sit amet, consectetur",
-    "url": "http://nicolas.eu"
-    }],
+    "listLinks": [
+      {
+        "item": "Communiqué du 1er novembre 2016",
+        "url": "http://nicolas.eu"
+      },
+      {
+        "item": "Lorem ipsum dolor sit amet, consectetur",
+        "url": "http://nicolas.eu"
+      }
+    ],
     "medias": {
       "image": {
         "styleModifier": "vd-teaser-img"

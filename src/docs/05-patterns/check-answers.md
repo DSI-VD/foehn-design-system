@@ -12,7 +12,7 @@ Permet à l'utilisateur de vérifier et de modifier ses réponses avant de soume
 
 Pour les transactions de petite à moyenne taille, affichez une page de
 vérification de réponses immédiatement avant l'écran de
-confirmation 
+confirmation
 
 Lors de la conception d'une transaction très volumineuse comportant plusieurs
 sections, il peut être utile d'inclure une page de vérification à la fin de
@@ -69,4 +69,3 @@ la transaction.
 Si un utilisateur modifie sa réponse de manière à ce que vous deviez lui poser
 plus de questions, faites-le avant de le renvoyer à la page de vérification des
 réponses.
-

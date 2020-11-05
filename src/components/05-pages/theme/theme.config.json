@@ -26,29 +26,29 @@
     "prestations": {
       "list": [
         {
-          "item" : "Commander les publications du Bureau cantonal pour l'intégration des étrangers et la prévention du racisme (BCI)",
+          "item": "Commander les publications du Bureau cantonal pour l'intégration des étrangers et la prévention du racisme (BCI)",
           "url": "#",
           "secure": true
         },
         {
-          "item" : "Consulter état de traitement des dossiers de personnes étrangères (cette prestation demande un identification)",
+          "item": "Consulter état de traitement des dossiers de personnes étrangères (cette prestation demande un identification)",
           "url": "#"
         },
         {
-          "item" : "Demander un appui (information et accompagnement) sur une question d'actes à caractère raciste",
+          "item": "Demander un appui (information et accompagnement) sur une question d'actes à caractère raciste",
           "url": "#"
         },
         {
-          "item" : "Demander un appui (information et orientation) sur une question de mariage forcé",
+          "item": "Demander un appui (information et orientation) sur une question de mariage forcé",
           "url": "#"
         },
         {
-          "item" : "Demander une subvention pour un projet d'intégration et/ou de prévention du racisme (cette prestation demande un identification)",
+          "item": "Demander une subvention pour un projet d'intégration et/ou de prévention du racisme (cette prestation demande un identification)",
           "url": "#",
           "secure": true
         },
         {
-          "item" : "Demander, en tant que personne non européenne, une autorisation de séjour pour vivre auprès d'un conjoint ou parent titulaire d'un permis B, C ou L",
+          "item": "Demander, en tant que personne non européenne, une autorisation de séjour pour vivre auprès d'un conjoint ou parent titulaire d'un permis B, C ou L",
           "url": "#"
         }
       ]

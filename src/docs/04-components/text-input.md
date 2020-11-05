@@ -34,7 +34,7 @@ utilisateurs cliquent sur le champs texte.
 
 Les label doivent être alignés au-dessus du champs texte auxquel elles se
 réfèrent. Ils devraient être courts, directs et commencer par une majuscule.
-N'utilisez pas de deux-points à la fin des étiquettes.  
+N'utilisez pas de deux-points à la fin des étiquettes.
 
 ### la taille des champs texte doit être adapté
 
@@ -73,4 +73,3 @@ par exemple, comment leurs informations seront utilisées ou où les trouver.
 
 Les utilisateurs doivent souvent copier et coller des informations dans une
 champs de saisie texte, vous ne devriez donc pas les empêcher de le faire.
-

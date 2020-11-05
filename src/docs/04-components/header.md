@@ -13,7 +13,7 @@ L'en-tête vd.ch montre aux utilisateurs qu'ils se trouvent sur vd.ch et quel se
 Vous devez utiliser cet en-tête en haut de toutes vos pages si votre service est hébergé sur l'un de ces domaines:
 
 - vd.ch
-- *.etat-de-vaud.ch
+- \*.etat-de-vaud.ch
 
 ## Quand ne pas utiliser ce composant
 
@@ -51,4 +51,3 @@ Si la mise en page le requiert, un en-tête avec largeur variable est disponible
 vd.ch utilise un en-tête particulier qui lui est réservé.
 
 {{ '@header' | renderComponent | safe }}
-

@@ -1,4 +1,4 @@
---- 
+---
 status: review
 label: Bouton
 ---
@@ -13,26 +13,26 @@ comme démarrer une application ou enregistrer leurs informations.
 ## Fonctionnement
 
 Écrivez le texte du bouton avec une majuscule au début. Il sera reformaté en
-majuscule.  Le texte doit décrire l'action qu'il effectue.
+majuscule. Le texte doit décrire l'action qu'il effectue.
 
 Par exemple:
 
-- "*Commencez*" au début d'une prestation
-- "*Se connecter*" à un compte qu'un utilisateur a déjà créé 
-- "*Continuer*" lorsque le service ou la prestation n'enregistre pas les
-  informations d'un utilisateur 
-- "*Enregistrer et continuer*" lorsque le service ou la prestation enregistre
-  les informations d'un utilisateur 
-- "*Enregistrer et revenir plus tard*" lorsqu'un utilisateur peut enregistrer
+- "_Commencez_" au début d'une prestation
+- "_Se connecter_" à un compte qu'un utilisateur a déjà créé
+- "_Continuer_" lorsque le service ou la prestation n'enregistre pas les
+  informations d'un utilisateur
+- "_Enregistrer et continuer_" lorsque le service ou la prestation enregistre
+  les informations d'un utilisateur
+- "_Enregistrer et revenir plus tard_" lorsqu'un utilisateur peut enregistrer
   ses informations et revenir plus tard
-- "*Ajouter un élément*" pour ajouter un autre élément à une liste ou à un
+- "_Ajouter un élément_" pour ajouter un autre élément à une liste ou à un
   groupe
-- "*Payer*" pour effectuer un paiement 
-- "*Confirmer et envoyer*" sur une page de réponses aux chèques qui n'a pas de
+- "_Payer_" pour effectuer un paiement
+- "_Confirmer et envoyer_" sur une page de réponses aux chèques qui n'a pas de
   contenu légal qu'un utilisateur doit accepter
-- "*Accepter et envoyer*" sur une page de vérification de réponses aux qui a un
+- "_Accepter et envoyer_" sur une page de vérification de réponses aux qui a un
   contenu légal qu'un utilisateur doit accepter
-- "*Se déconnecter*" lorsqu'un utilisateur est connecté à un compte
+- "_Se déconnecter_" lorsqu'un utilisateur est connecté à un compte
 
 Vous devrez peut-être inclure plus ou différents mots pour mieux décrire
 l'action. Par exemple, "Ajouter une autre adresse" et "Accepter et demander un
@@ -65,7 +65,6 @@ Les pages contenant trop de boutons d'action empêchent les utilisateurs de
 savoir quoi faire ensuite. Avant d'ajouter de nombreux boutons secondaires,
 essayez de simplifier la page ou de répartir le contenu sur plusieurs pages.
 
-
 {{ '@button--secondary' | renderComponent | safe }}
 
 Vous pouvez utiliser des boutons secondaires en combinaison avec des boutons par
@@ -91,5 +90,3 @@ communiquer la nature sérieuse de l'action. En effet, tous les utilisateurs ne
 seront pas en mesure de voir la couleur ou de comprendre ce qu'elle signifie.
 Assurez-vous que le contexte et le texte du bouton indiquent clairement ce qui
 se passera si l'utilisateur le sélectionne.
-
-

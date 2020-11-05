@@ -1,0 +1,8 @@
+.nova
+
+build
+
+public
+!public/assets
+
+src/**/*.html

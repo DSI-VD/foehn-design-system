@@ -1,6 +1,7 @@
 ---
 status: draft
 ---
+
 ## Fonts used
 
 - [Roboto slab](https://fonts.google.com/specimen/Roboto+Slab)
@@ -13,8 +14,12 @@ status: draft
   - Bold Italic
 
 You have to include the following code to load the fonts.
+
 ```html
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Roboto+Slab:300,700" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Roboto+Slab:300,700"
+  rel="stylesheet"
+/>
 ```
 
 ## [Webfont Loader](https://github.com/typekit/webfontloader) code

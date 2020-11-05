@@ -9,7 +9,7 @@ The `required` attribute is [not implemented uniformly across browsers](http://c
 The only way to trigger the numerical keyboard on mobile is to use the following `input`:
 
 ```html
-<input type="number" pattern="[0-9]*">
+<input type="number" pattern="[0-9]*" />
 ```
 
 ![Numerical Keyboard](../raw/input/numerical-keyboard.png)

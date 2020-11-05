@@ -32,6 +32,7 @@ plus large si votre contenu l'exige.
   </div>
 </main>
 ```
+
 <div class="foehn-example">
 <main class="container">
   <h1>Page title</h1>
@@ -53,4 +54,3 @@ plus large si votre contenu l'exige.
 Si vous desirez construire votre propre mise en page, le système de grille se
 base sur Bootstrap 4. Vous pouvez vous [y
 référer](https://getbootstrap.com/docs/4.1/layout/overview/).
-

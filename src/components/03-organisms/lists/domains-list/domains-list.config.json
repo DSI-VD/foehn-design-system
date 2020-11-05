@@ -2,9 +2,11 @@
   "status": "ready",
   "context": {
     "activeDomain": "Economie",
-    "domains": [{
+    "domains": [
+      {
         "name": "Culture",
-        "themes": [{
+        "themes": [
+          {
             "name": "Aides et soutiens"
           },
           {
@@ -36,7 +38,8 @@
       },
       {
         "name": "Economie",
-        "themes": [{
+        "themes": [
+          {
             "name": "Entreprises"
           },
           {
@@ -71,7 +74,8 @@
       },
       {
         "name": "Environnement",
-        "themes": [{
+        "themes": [
+          {
             "name": "Développement durable"
           },
           {
@@ -112,7 +116,8 @@
       },
       {
         "name": "Etat, Droit, Finance",
-        "themes": [{
+        "themes": [
+          {
             "name": "Lois / Constitution"
           },
           {
@@ -153,7 +158,8 @@
       },
       {
         "name": "Formation",
-        "themes": [{
+        "themes": [
+          {
             "name": "Avant l'Ecole"
           },
           {
@@ -194,7 +200,8 @@
       },
       {
         "name": "Mobilité",
-        "themes": [{
+        "themes": [
+          {
             "name": "Mobilité et planification"
           },
           {
@@ -220,7 +227,8 @@
       },
       {
         "name": "Santé",
-        "themes": [{
+        "themes": [
+          {
             "name": "Actualités"
           },
           {
@@ -246,7 +254,8 @@
       },
       {
         "name": "Social",
-        "themes": [{
+        "themes": [
+          {
             "name": "Informations sociales"
           },
           {
@@ -275,7 +284,8 @@
       },
       {
         "name": "Vie privée",
-        "themes": [{
+        "themes": [
+          {
             "name": "Familles"
           },
           {
@@ -313,7 +323,8 @@
       },
       {
         "name": "Sécurité",
-        "themes": [{
+        "themes": [
+          {
             "name": "Prévention"
           },
           {
@@ -345,7 +356,8 @@
       },
       {
         "name": "Territoire",
-        "themes": [{
+        "themes": [
+          {
             "name": "Aménagement"
           },
           {
@@ -380,5 +392,4 @@
       }
     ]
   }
-
 }

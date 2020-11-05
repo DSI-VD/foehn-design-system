@@ -3,6 +3,7 @@ title: Protection des données
 label: Protection des données
 status: ready
 ---
+
 L'administration cantonale vaudoise est soumise à la [Loi sur la protection des
 données
 personnelles](https://prestations.vd.ch/pub/blv-publication/actes/consolide/172.65?key=1548146253812&id=cf9df545-13f7-4106-a95b-9b3ab8fa8b01).
@@ -34,10 +35,11 @@ de ses données.
 #### Quelles sont les données sensibles ?
 
 > Donnée sensible, toute donnée personnelle se rapportant :
+>
 > - aux opinions ou activités religieuses, philosophiques, politiques ou syndicales, ainsi qu'à une origine ethnique ;
 > - à la sphère intime de la personne, en particulier à son état psychique, mental ou physique ;
-> aux mesures et aides individuelles découlant des législations sociales ;
-> aux poursuites ou sanctions pénales et administratives.  
+>   aux mesures et aides individuelles découlant des législations sociales ;
+>   aux poursuites ou sanctions pénales et administratives.
 >
 > &mdash; Art. 4 al. 1 ch. 2 Définition, [Loi sur la protection des données personnelles](https://prestations.vd.ch/pub/blv-publication/actes/consolide/172.65?key=1548146253812&id=cf9df545-13f7-4106-a95b-9b3ab8fa8b01)
 
@@ -59,8 +61,8 @@ collectées.
 
 ### Exemples
 
--  Dans le cadre d'une inscription à une newsletter, les données ne peuvent être
-   utilisées qu'à cette fin.
+- Dans le cadre d'une inscription à une newsletter, les données ne peuvent être
+  utilisées qu'à cette fin.
 
 ### Article de loi
 
@@ -72,7 +74,7 @@ collectées.
 ## Principe de la proportionnalité
 
 Le traitement envisagé doit être objectivment nécéssaire pour l'accomplissement
-de la tâche dévolue.  
+de la tâche dévolue.
 
 Seules les données objectivement nécessaires à l'accomplissement de la tâche
 doivent être collectées.
@@ -101,7 +103,7 @@ Lorsque des données sont collectées, il faut informer sur :
 - L'identité du responsable de traitement (le service et non la DSI)
 - A quoi vont servir ces données
 - A qui les données vont être transmises lorsqu’il est possible de l’anticiper (y compris les prestataires)
-- Le fait que l’usager puisse accéder à ses propres données 
+- Le fait que l’usager puisse accéder à ses propres données
 - Les conséquences en cas de refus de fournir des données
 
 ### Articles de loi

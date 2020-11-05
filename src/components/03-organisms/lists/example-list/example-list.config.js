@@ -1,12 +1,12 @@
-'use strict';
+"use strict";
 
-const faker = require('faker'); // Require the faker module
+const faker = require("faker"); // Require the faker module
 
 const peopleCount = 10; // How many peoples we should generate data for
 const peopleData = [];
 
 // Sets locale to fr
-faker.locale = 'fr';
+faker.locale = "fr";
 
 for (let i = 0; i < peopleCount; i += 1) {
     peopleData.push({
@@ -16,13 +16,13 @@ for (let i = 0; i < peopleCount; i += 1) {
         jobType: faker.name.jobTitle(), // Generate a random email address
         streetPrefix: faker.address.streetPrefix(), // Generate a random email address
         street: faker.address.streetName(), // Generate a random email address
-        city: faker.address.city() // Generate a random email address
+        city: faker.address.city(), // Generate a random email address
     });
 }
 
 module.exports = {
-    status: 'ready',
+    status: "ready",
     context: {
-        peoples: peopleData // Use our generated list of peoples as context data for our template.
-    }
+        peoples: peopleData, // Use our generated list of peoples as context data for our template.
+    },
 };

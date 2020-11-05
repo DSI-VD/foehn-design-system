@@ -103,7 +103,7 @@ Ajoutez uniquement le nom de votre service ou département au titre si le conten
 
 "Rapport annuel du Service de l'Emploi" informe quel service ce la concerne. A
 contrario, "Rapport annuel" pourrait s’appliquer à n’importe quel service ou
-département.  Dans ce cas, il est préférable d’ajouter le nom du service pour le
+département. Dans ce cas, il est préférable d’ajouter le nom du service pour le
 différencier.
 
 ## Titre du document
@@ -116,7 +116,7 @@ contenir que du texte, les balises qu'il contiendrait seraient ignorées.
 
 Le titre du document doit être composé comme suit:
 
-*Titre de la page - VD.CH*
+_Titre de la page - VD.CH_
 
 ### Référencement
 

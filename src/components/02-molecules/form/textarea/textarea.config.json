@@ -1,21 +1,21 @@
 {
-    "status": "ready",
-    "collated": true,
-    "context": {
-      "label": "Example textarea",
-      "id": "testTextarea",
-      "name": "testTextarea"
-    },
-    "variants": [
-      {
-        "name": "danger",
-        "context": {
-          "helpText": "Le message doit contenir au minimum trois caractères.",
-          "validation": {
-            "class": "danger",
-            "text": "Veuillez saisir votre message"
-          }
+  "status": "ready",
+  "collated": true,
+  "context": {
+    "label": "Example textarea",
+    "id": "testTextarea",
+    "name": "testTextarea"
+  },
+  "variants": [
+    {
+      "name": "danger",
+      "context": {
+        "helpText": "Le message doit contenir au minimum trois caractères.",
+        "validation": {
+          "class": "danger",
+          "text": "Veuillez saisir votre message"
         }
       }
-    ]
+    }
+  ]
 }

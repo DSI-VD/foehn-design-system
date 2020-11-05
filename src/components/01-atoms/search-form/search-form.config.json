@@ -1,12 +1,12 @@
 {
-    "status": "ready",
-    "context": {
-      "heading": {
-        "text": "Rechercher dans les actualités",
-        "level": "h4"
-      },
-      "placeholder": "Rechercher",
-      "options": "@fieldset--checkbox",
-      "label": "Champ de recherche"
-    }
+  "status": "ready",
+  "context": {
+    "heading": {
+      "text": "Rechercher dans les actualités",
+      "level": "h4"
+    },
+    "placeholder": "Rechercher",
+    "options": "@fieldset--checkbox",
+    "label": "Champ de recherche"
+  }
 }

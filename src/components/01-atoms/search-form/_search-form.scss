@@ -11,9 +11,7 @@
     padding-bottom: 0;
     padding-left: 0;
     border-color: transparent;
-    transition:
-      padding 0.11s ease-in,
-      border 0.11s;
+    transition: padding 0.11s ease-in, border 0.11s;
 
     &:focus {
       padding-left: $input-btn-padding-y;

@@ -64,6 +64,7 @@ Pour cela, vous pouvez utiliser les classes de surcharge dans votre code HTML.
 
 Vous pouvez ajouter les classes ci-dessous afin de surcherger les styles de
 texte.
+
 - `h1`
 - `h2`
 - `h3`
@@ -137,6 +138,6 @@ car ils doivent constituer une phrase complète.
 ## Saut de section
 
 Vous pouvez utiliser un séparateur `<hr>` pour
-créer une rupture thématique entre des sections de contenu. 
+créer une rupture thématique entre des sections de contenu.
 
 {{ '@separator--default' | renderComponent | safe }}

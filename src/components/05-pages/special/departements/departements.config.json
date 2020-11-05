@@ -304,8 +304,8 @@
     "downloadList": {
       "styleModifier": "h5",
       "text": "",
-      "listIcon":{
-        "items":[
+      "listIcon": {
+        "items": [
           {
             "item": "Télécharger l'organigramme détaillé (PDF, 230Ko)",
             "icon": "fa-download",

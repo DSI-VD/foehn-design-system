@@ -1,7 +1,6 @@
 {
   "status": "ready",
-  "context": {
-  },
+  "context": {},
   "variants": [
     {
       "name": "default",
@@ -50,10 +49,8 @@
                 "text": "Guides TYPO3",
                 "url": "#"
               }
-
             ]
           },
-
 
           {
             "title": "Sites partenaires",

@@ -6,7 +6,7 @@ Documentation sur [la page de recherche]({{ '/components/detail/search' | path }
 
 ## Champs de recherche
 
-Il ne doit pas y avoir de champ de recherche dans le *header*. Il est affiché
+Il ne doit pas y avoir de champ de recherche dans le _header_. Il est affiché
 dans le contenu de la page.
 
 ## Résultats
@@ -32,6 +32,7 @@ en-dessous du titre.
 ```
 {% render '@search-item--news' %}
 ```
+
 ```
 {% render '@search-item--prestation' %}
 ```

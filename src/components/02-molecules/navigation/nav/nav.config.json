@@ -1,16 +1,16 @@
 {
-    "status": "ready",
-    "context": {
-      "items": [
-        {
-          "name": "Autorités",
-          "url": "#",
-          "active": true
-        },
-        {
-          "name": "Annuaire",
-          "url": "#"
-        }
-      ]
-    }
+  "status": "ready",
+  "context": {
+    "items": [
+      {
+        "name": "Autorités",
+        "url": "#",
+        "active": true
+      },
+      {
+        "name": "Annuaire",
+        "url": "#"
+      }
+    ]
+  }
 }

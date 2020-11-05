@@ -19,7 +19,7 @@
         null
       ]
     },
-    "search" : {
+    "search": {
       "id": "search",
       "label": "Rechercher<span class=\"sr-only\"> les communiqués de presse</span>",
       "labelHidden": false,
@@ -79,11 +79,13 @@
       "button": "@autority-address.button"
     }
   },
-  "variants": [{
-    "name": "Results",
-    "context": {
-      "results": true,
-      "total": 97
+  "variants": [
+    {
+      "name": "Results",
+      "context": {
+        "results": true,
+        "total": 97
+      }
     }
-  }]
+  ]
 }

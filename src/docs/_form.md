@@ -84,8 +84,8 @@ S'assurez qu'il y ai assez d'espace entre les éléments.
 </div>
 
 ```html
-{% render '@input--default', {label: "Nom"}, true  %}
-{% render '@input--default', {label: "Prénom"}, true  %}
+{% render '@input--default', {label: "Nom"}, true %} {% render
+'@input--default', {label: "Prénom"}, true %}
 ```
 
 ## Téléversement de fichiers

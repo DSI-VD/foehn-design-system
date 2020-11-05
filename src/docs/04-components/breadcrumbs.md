@@ -37,8 +37,7 @@ Le dernier niveau affiché dans le fil d'Ariane est la page parente de la page c
 ### Prestations accédées depuis l'espace sécurisé
 
 Dans le cas où un utilisateur est connecté à son espace sécurisé, le fil
-d'Ariane doit se composer comme suit: `Mon espace > Accéder aux prestations > Nom
-de la prestation > Page en cours`.
+d'Ariane doit se composer comme suit: `Mon espace > Accéder aux prestations > Nom de la prestation > Page en cours`.
 
 1. "Mon espace" redirige vers l'espace personnel de la personne connectée
 1. "Accéder aux prestations" redirige vers la liste des prestations disponible
@@ -55,6 +54,4 @@ de la prestation > Page en cours`.
 
 Le fil d'Ariane suit les règles en vigueur pour vd.ch.
 
-Exemple: `vd.ch > Mobilité > Automobile > Demander un extrait du registre des
-poursuites pour soi-même `
-
+Exemple: `vd.ch > Mobilité > Automobile > Demander un extrait du registre des poursuites pour soi-même `

@@ -68,4 +68,3 @@ system)](https://design-system.service.gov.uk/components/error-summary/linking-c
 
 Placez le récapitulatif des erreurs au début du conteneur `<main>` juste après
 le `<h1>`.
-

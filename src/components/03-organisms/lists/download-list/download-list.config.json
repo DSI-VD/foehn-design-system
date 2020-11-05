@@ -2,8 +2,8 @@
   "status": "ready",
   "context": {
     "text": "Téléchargements",
-    "listIcon":{
-      "items":[
+    "listIcon": {
+      "items": [
         {
           "item": "Lorem ipsum dolor sit.",
           "icon": "fa-download",

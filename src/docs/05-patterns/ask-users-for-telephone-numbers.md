@@ -12,7 +12,7 @@ données](/docs/get-started/protection-des-donnees)). Tout le monde n’a pas ou
 peut pas utiliser un téléphone, alors assurez-vous de laisser aux utilisateurs
 le choix de la manière avec laquelle l'administration peut les contacter.
 
-## Comment ça marche 
+## Comment ça marche
 
 ### Autoriser différents formats
 
@@ -87,12 +87,13 @@ est plus difficile pour les utilisateurs de:
 Indiquez aux utilisateurs pourquoi et quand vous allez les contacter.
 
 ## Ne pas afficher les numéros de téléphone comme des liens sur les appareils ne
+
 pouvant pas effectuer d'appel
 
 Il est possible de baliser les numéros de téléphone comme ci-dessous:
 
 ```
-<a href="tel:+41211234567>021 123 45 67</a> 
+<a href="tel:+41211234567>021 123 45 67</a>
 ```
 
 Cependant, cela affichera le numéro de téléphone sous forme de lien. Cela porte
@@ -112,7 +113,8 @@ pouvant pas faire d'appel.
 
 Le format international est à privilégier: +41 21 123 45 67
 
-Utilser des espaces pour séparer les groupes de chiffre: 
+Utilser des espaces pour séparer les groupes de chiffre:
+
 - +41 21 123 45 67
 - 021 123 45 67
 - 079 13 45 67

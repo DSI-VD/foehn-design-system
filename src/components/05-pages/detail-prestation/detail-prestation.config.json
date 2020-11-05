@@ -23,14 +23,14 @@
         {
           "page": "Poursuites et faillites",
           "url": "#"
-        } ,
+        },
         {
           "page": "Extrait du registre des poursuites pour soi-même",
           "url": "#"
         }
       ]
     },
-    "footer":{
+    "footer": {
       "updateTime": true
     },
     "indexMenu": {

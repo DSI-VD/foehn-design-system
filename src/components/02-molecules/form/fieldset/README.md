@@ -2,32 +2,17 @@
 
 Bearing in mind that `<fieldset>`s are pointless without `<legend>`s, you can use the following three rules of thumb to decide if a `<fieldset>` is appropriate.
 
-1. Is there more than one distinct set of fields in total, in the same form or context? *Yes?* Use `<fieldset>`s. *No?* Don’t use `<fieldset>`s.
-2. Does a set actually only have one field in it? Yes? You don’t need a `<fieldset>.` *No?* Use a `<fieldset>` if (1) applies.
-3. Can you think of a `<legend>` that would make sense or aid comprehension if used with each of the `<fieldset>`’s field labels? *Yes?* Use a `<fieldset>`. *No?* Don’t use a `<fieldset>`.
+1. Is there more than one distinct set of fields in total, in the same form or context? _Yes?_ Use `<fieldset>`s. _No?_ Don’t use `<fieldset>`s.
+2. Does a set actually only have one field in it? Yes? You don’t need a `<fieldset>.` _No?_ Use a `<fieldset>` if (1) applies.
+3. Can you think of a `<legend>` that would make sense or aid comprehension if used with each of the `<fieldset>`’s field labels? _Yes?_ Use a `<fieldset>`. _No?_ Don’t use a `<fieldset>`.
 
 # How screen readers read `<legend>`
 
 ```html
 <form role="form" class="sorter" method="get">
-  {%
-    render '@fieldset', {
-      legend: "Sort by",
-      "items": [
-        {
-          "label": "most recent",
-          "name": "sort-method",
-          "value": "most-recent",
-          "checked": true
-        },
-        {
-          "label": "popularity",
-          "name": "sort-method",
-          "value": "popularity"
-        }
-      ]
-    }
-  %}
+  {% render '@fieldset', { legend: "Sort by", "items": [ { "label": "most
+  recent", "name": "sort-method", "value": "most-recent", "checked": true }, {
+  "label": "popularity", "name": "sort-method", "value": "popularity" } ] } %}
   {% render '@button--submit' %}
 </form>
 ```

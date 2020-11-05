@@ -64,30 +64,32 @@
     },
     "autorityAddress": "@template-communiques-presse-list.autorityAddress"
   },
-  "variants": [{
-    "name": "alternate",
-    "label": "Logo partenaires en-haut",
-    "context": {
-      "icons": "top",
-      "pressRelease": {
-        "partners": [
-          {
-            "name": "Partenaire",
-            "src": "http://placehold.it/75x75",
-            "alt": "logo du partenaire"
-          },
-          {
-            "name": "Partenaire",
-            "src": "http://placehold.it/75x75",
-            "alt": "logo du partenaire"
-          },
-          {
-            "name": "Partenaire",
-            "src": "http://placehold.it/75x75",
-            "alt": "logo du partenaire"
-          }
-        ]
+  "variants": [
+    {
+      "name": "alternate",
+      "label": "Logo partenaires en-haut",
+      "context": {
+        "icons": "top",
+        "pressRelease": {
+          "partners": [
+            {
+              "name": "Partenaire",
+              "src": "http://placehold.it/75x75",
+              "alt": "logo du partenaire"
+            },
+            {
+              "name": "Partenaire",
+              "src": "http://placehold.it/75x75",
+              "alt": "logo du partenaire"
+            },
+            {
+              "name": "Partenaire",
+              "src": "http://placehold.it/75x75",
+              "alt": "logo du partenaire"
+            }
+          ]
+        }
       }
     }
-  }]
+  ]
 }

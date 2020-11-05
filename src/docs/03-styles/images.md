@@ -18,7 +18,7 @@ Le ratio pour les photographies doit être de 3/2.
 ### Illustrations ou images représentatives
 
 Si votre image représente un objet physique, comme une lettre, un document ou
-une carte de crédit, vous devez utiliser les proportions de cet élément.  
+une carte de crédit, vous devez utiliser les proportions de cet élément.
 
 ### Text alternatif
 
@@ -45,6 +45,5 @@ bateau à vapeur Vevey sur le lac Léman"} %}
 ```
 
 Si votre image est purement décorative et qu'une description pourrait prêter à
-confusion, vous devez toujours inclure l'attribut `alt`, mais laissez-la vide 
+confusion, vous devez toujours inclure l'attribut `alt`, mais laissez-la vide
 pour qu'elle soit ignorée par les lecteurs d'écran.
-

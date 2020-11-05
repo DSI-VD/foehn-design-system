@@ -1,7 +1,7 @@
---- 
-title: Pagination 
-label: Pagination 
-status: wip 
+---
+title: Pagination
+label: Pagination
+status: wip
 ---
 
 {{ '@pagination--default' | renderComponent | safe }}
@@ -44,4 +44,3 @@ Les labels permettent aux utilisateurs de se situer dans la séquence.
 
 L'étude des statistiques sur les environnements vd.ch a montré que moins de 1%
 des utilisateurs se rendent au-delà de la page 2.
-

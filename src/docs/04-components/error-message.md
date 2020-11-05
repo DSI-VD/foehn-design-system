@@ -80,7 +80,7 @@ Ne pas utiliser:
 - 's'il vous plaît' car cela implique un choix
 - 'désolé' car cela n'aide pas à résoudre le problème
 - 'valide' et 'invalide' car ils n'ajoutent rien au message
-- humour, langage informel comme 'oups' 
+- humour, langage informel comme 'oups'
 - le tutoyement
 
 Ne donnez pas d'exemple dans le message d'erreur s'il y a un exemple à l'écran.
@@ -139,12 +139,12 @@ en instructions et d’autres en descriptions. Par exemple:
   naturel que 'Le prénom doit comporter 35 caractères ou moins'
 - 'Entrez une date après le 31 août 2017 pour le début du cours' est plus
   précis, moins direct et naturel que 'La date à laquelle vous avez commencé le
-  cours doit être après le 31 août 2017' 
+  cours doit être après le 31 août 2017'
 
 Utilisez des instructions et des descriptions, mais utilisez-les de manière
 cohérente. Par exemple, utilisez une instruction pour les champs vides telle que
 "Entrez votre nom", mais une description telle que "Le nom doit comporter 35
-caractères ou moins" pour les entrées trop longues. 
+caractères ou moins" pour les entrées trop longues.
 
 ### Utiliser des modèles de message d'erreur
 

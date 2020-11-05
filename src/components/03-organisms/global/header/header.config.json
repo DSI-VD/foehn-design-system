@@ -5,9 +5,9 @@
     "nav": {
       "styleModifier": "small",
       "items": [
-          {
+        {
           "active": false
-          }
+        }
       ]
     },
     "searchForm": true,

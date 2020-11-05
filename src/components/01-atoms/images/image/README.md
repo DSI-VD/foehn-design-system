@@ -1,6 +1,7 @@
 # Sizes
 
 Here are the recommended image width for the `srcset` attribute:
+
 - 320px
 - 540px
 - 720px

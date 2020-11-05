@@ -1,14 +1,12 @@
 {
   "status": "wip",
-  "context": { "entities":
-    [
+  "context": {
+    "entities": [
       {
         "id": "E14430",
         "type": "ENTITE",
         "parentId": null,
-        "path": [
-
-        ],
+        "path": [],
         "nbEntites": 5,
         "nbFonctions": 4,
         "nbPersonnes": 0,
@@ -23,22 +21,18 @@
         "telephone": "+41213160500",
         "fax": null,
         "email": "info.grandconseil@vd.ch",
-        "siteWeb": "http:\/\/www.vd.ch\/autorites\/grand-conseil\/",
+        "siteWeb": "http://www.vd.ch/autorites/grand-conseil/",
         "functions": null,
         "intranet": true,
         "internet": true,
-        "enfants": [
-
-        ],
+        "enfants": [],
         "text": "Secr\u00e9tariat g\u00e9n\u00e9ral du Grand Conseil"
       },
       {
         "id": "E13536",
         "type": "ENTITE",
         "parentId": null,
-        "path": [
-
-        ],
+        "path": [],
         "nbEntites": 0,
         "nbFonctions": 3,
         "nbPersonnes": 0,
@@ -57,18 +51,14 @@
         "functions": null,
         "intranet": true,
         "internet": true,
-        "enfants": [
-
-        ],
+        "enfants": [],
         "text": "Bureau cantonal de m\u00e9diation administrative"
       },
       {
         "id": "E14315",
         "type": "ENTITE",
         "parentId": null,
-        "path": [
-
-        ],
+        "path": [],
         "nbEntites": 0,
         "nbFonctions": 6,
         "nbPersonnes": 0,
@@ -87,18 +77,14 @@
         "functions": null,
         "intranet": true,
         "internet": true,
-        "enfants": [
-
-        ],
+        "enfants": [],
         "text": "Groupe Impact"
       },
       {
         "id": "E12709",
         "type": "ENTITE",
         "parentId": null,
-        "path": [
-
-        ],
+        "path": [],
         "nbEntites": 0,
         "nbFonctions": 5,
         "nbPersonnes": 0,
@@ -117,18 +103,14 @@
         "functions": null,
         "intranet": true,
         "internet": true,
-        "enfants": [
-
-        ],
+        "enfants": [],
         "text": "Cour des comptes"
       },
       {
         "id": "E13357",
         "type": "ENTITE",
         "parentId": null,
-        "path": [
-
-        ],
+        "path": [],
         "nbEntites": 1,
         "nbFonctions": 4,
         "nbPersonnes": 0,
@@ -143,22 +125,18 @@
         "telephone": "+41213164064",
         "fax": null,
         "email": "info.ppdi@vd.ch",
-        "siteWeb": "www.vd.ch\/ppdi",
+        "siteWeb": "www.vd.ch/ppdi",
         "functions": null,
         "intranet": true,
         "internet": true,
-        "enfants": [
-
-        ],
+        "enfants": [],
         "text": "Pr\u00e9pos\u00e9e \u00e0 la protection des donn\u00e9es et \u00e0 l'information"
       },
       {
         "id": "E12666",
         "type": "ENTITE",
         "parentId": null,
-        "path": [
-
-        ],
+        "path": [],
         "nbEntites": 9,
         "nbFonctions": 0,
         "nbPersonnes": 0,
@@ -177,18 +155,14 @@
         "functions": null,
         "intranet": true,
         "internet": true,
-        "enfants": [
-
-        ],
+        "enfants": [],
         "text": "D\u00e9partement du territoire et de l'environnement"
       },
       {
         "id": "E13224",
         "type": "ENTITE",
         "parentId": null,
-        "path": [
-
-        ],
+        "path": [],
         "nbEntites": 8,
         "nbFonctions": 0,
         "nbPersonnes": 0,
@@ -208,16 +182,11 @@
         "intranet": true,
         "internet": true,
         "enfants": [
-
-
-
           {
             "id": "E12737",
             "type": "ENTITE",
             "parentId": "E13224",
-            "path": [
-
-            ],
+            "path": [],
             "nbEntites": 1,
             "nbFonctions": 4,
             "nbPersonnes": 0,
@@ -236,18 +205,14 @@
             "functions": null,
             "intranet": true,
             "internet": true,
-            "enfants": [
-
-            ],
+            "enfants": [],
             "text": "Cheffe du D\u00e9partement"
           },
           {
             "id": "E14253",
             "type": "ENTITE",
             "parentId": "E13224",
-            "path": [
-
-            ],
+            "path": [],
             "nbEntites": 8,
             "nbFonctions": 0,
             "nbPersonnes": 0,
@@ -266,18 +231,14 @@
             "functions": null,
             "intranet": true,
             "internet": true,
-            "enfants": [
-
-            ],
+            "enfants": [],
             "text": "Secr\u00e9tariat g\u00e9n\u00e9ral du DFJC"
           },
           {
             "id": "E12518",
             "type": "ENTITE",
             "parentId": "E13224",
-            "path": [
-
-            ],
+            "path": [],
             "nbEntites": 6,
             "nbFonctions": 0,
             "nbPersonnes": 0,
@@ -296,18 +257,12 @@
             "functions": null,
             "intranet": true,
             "internet": true,
-            "enfants":
-
-
-
-            [
+            "enfants": [
               {
                 "id": "E13621",
                 "type": "ENTITE",
                 "parentId": "E12518",
-                "path": [
-
-                ],
+                "path": [],
                 "nbEntites": 0,
                 "nbFonctions": 6,
                 "nbPersonnes": 0,
@@ -326,18 +281,14 @@
                 "functions": null,
                 "intranet": true,
                 "internet": true,
-                "enfants": [
-
-                ],
+                "enfants": [],
                 "text": "\u00c9tat-major de la Direction g\u00e9n\u00e9rale"
               },
               {
                 "id": "E14096",
                 "type": "ENTITE",
                 "parentId": "E12518",
-                "path": [
-
-                ],
+                "path": [],
                 "nbEntites": 6,
                 "nbFonctions": 0,
                 "nbPersonnes": 0,
@@ -356,18 +307,12 @@
                 "functions": null,
                 "intranet": true,
                 "internet": true,
-                "enfants":
-
-
-
-                [
+                "enfants": [
                   {
                     "id": "E13868",
                     "type": "ENTITE",
                     "parentId": "E14096",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 6,
                     "nbPersonnes": 0,
@@ -386,18 +331,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "Administration et finance"
                   },
                   {
                     "id": "E12900",
                     "type": "ENTITE",
                     "parentId": "E14096",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -416,18 +357,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "Gestion des sinistres"
                   },
                   {
                     "id": "E13484",
                     "type": "ENTITE",
                     "parentId": "E14096",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 2,
                     "nbPersonnes": 0,
@@ -446,18 +383,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "Biblioth\u00e8ques scolaires"
                   },
                   {
                     "id": "E13398",
                     "type": "ENTITE",
                     "parentId": "E14096",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 8,
                     "nbPersonnes": 0,
@@ -476,18 +409,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "Comptabilit\u00e9"
                   },
                   {
                     "id": "E14002",
                     "type": "ENTITE",
                     "parentId": "E14096",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 1,
                     "nbPersonnes": 0,
@@ -506,18 +435,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "Economat des \u00e9tablissements scolaires"
                   },
                   {
                     "id": "E13623",
                     "type": "ENTITE",
                     "parentId": "E14096",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 5,
                     "nbPersonnes": 0,
@@ -536,23 +461,18 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "Conventions communales et intercantonales"
                   }
-                ]
+                ],
 
-                ,
                 "text": "Direction administration et finances"
               },
               {
                 "id": "E14406",
                 "type": "ENTITE",
                 "parentId": "E12518",
-                "path": [
-
-                ],
+                "path": [],
                 "nbEntites": 2,
                 "nbFonctions": 10,
                 "nbPersonnes": 0,
@@ -571,18 +491,14 @@
                 "functions": null,
                 "intranet": true,
                 "internet": true,
-                "enfants": [
-
-                ],
+                "enfants": [],
                 "text": "Direction organisation et planification"
               },
               {
                 "id": "E13466",
                 "type": "ENTITE",
                 "parentId": "E12518",
-                "path": [
-
-                ],
+                "path": [],
                 "nbEntites": 1,
                 "nbFonctions": 6,
                 "nbPersonnes": 0,
@@ -601,18 +517,14 @@
                 "functions": null,
                 "intranet": true,
                 "internet": true,
-                "enfants": [
-
-                ],
+                "enfants": [],
                 "text": "Direction p\u00e9dagogique"
               },
               {
                 "id": "E13595",
                 "type": "ENTITE",
                 "parentId": "E12518",
-                "path": [
-
-                ],
+                "path": [],
                 "nbEntites": 3,
                 "nbFonctions": 4,
                 "nbPersonnes": 0,
@@ -631,18 +543,14 @@
                 "functions": null,
                 "intranet": true,
                 "internet": true,
-                "enfants": [
-
-                ],
+                "enfants": [],
                 "text": "Direction ressources humaines"
               },
               {
                 "id": "E14127",
                 "type": "ENTITE",
                 "parentId": "E12518",
-                "path": [
-
-                ],
+                "path": [],
                 "nbEntites": 92,
                 "nbFonctions": 0,
                 "nbPersonnes": 0,
@@ -661,18 +569,12 @@
                 "functions": null,
                 "intranet": true,
                 "internet": true,
-                "enfants":
-
-
-
-                [
+                "enfants": [
                   {
                     "id": "E13027",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -691,18 +593,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire   Aigle"
                   },
                   {
                     "id": "E13957",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -721,18 +619,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire   Avenches et environs"
                   },
                   {
                     "id": "E13154",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 3,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -751,179 +645,148 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants":
+                    "enfants": [
+                      {
+                        "id": "E13259",
+                        "type": "ENTITE",
+                        "parentId": "E13154",
+                        "path": [],
+                        "nbEntites": 0,
+                        "nbFonctions": 0,
+                        "nbPersonnes": 0,
+                        "sprite": "ENTITE GROUPE",
+                        "ordreAffichage": 1,
+                        "libelle": "Coll\u00e8ge L\u00e9man",
+                        "libelle_court": null,
+                        "entiteType": "GROUPE",
+                        "rue": "En Crochet",
+                        "codePostal": 1143,
+                        "ville": "Apples",
+                        "telephone": "+41218000096",
+                        "fax": null,
+                        "email": null,
+                        "siteWeb": null,
+                        "functions": null,
+                        "intranet": true,
+                        "internet": true,
+                        "enfants": [],
+                        "text": "Coll\u00e8ge L\u00e9man"
+                      },
+                      {
+                        "id": "E14348",
+                        "type": "ENTITE",
+                        "parentId": "E13154",
+                        "path": [],
+                        "nbEntites": 0,
+                        "nbFonctions": 0,
+                        "nbPersonnes": 0,
+                        "sprite": "ENTITE GROUPE",
+                        "ordreAffichage": 2,
+                        "libelle": "Coll\u00e8ge Plateau",
+                        "libelle_court": null,
+                        "entiteType": "GROUPE",
+                        "rue": null,
+                        "codePostal": null,
+                        "ville": null,
+                        "telephone": null,
+                        "fax": null,
+                        "email": null,
+                        "siteWeb": null,
+                        "functions": null,
+                        "intranet": true,
+                        "internet": true,
+                        "enfants": [],
+                        "text": "Coll\u00e8ge Plateau"
+                      },
+                      {
+                        "id": "E13302",
+                        "type": "ENTITE",
+                        "parentId": "E13154",
+                        "path": [],
+                        "nbEntites": 0,
+                        "nbFonctions": 0,
+                        "nbPersonnes": 0,
+                        "sprite": "ENTITE GROUPE",
+                        "ordreAffichage": 3,
+                        "libelle": "Coll\u00e8ge Jura",
+                        "libelle_court": null,
+                        "entiteType": "GROUPE",
+                        "rue": null,
+                        "codePostal": null,
+                        "ville": null,
+                        "telephone": null,
+                        "fax": null,
+                        "email": null,
+                        "siteWeb": null,
+                        "functions": null,
+                        "intranet": true,
+                        "internet": true,
+                        "enfants": [],
+                        "text": "Coll\u00e8ge Jura"
+                      },
+                      {
+                        "id": "F30143E13154",
+                        "type": "FONCTION",
+                        "parentId": "E13154",
+                        "path": [],
+                        "nbEntites": 0,
+                        "nbFonctions": 0,
+                        "nbPersonnes": 1,
+                        "sprite": "FONCTION",
+                        "ordreAffichage": 1,
+                        "libelle": "Directeur",
+                        "telephone": "021 800 90 50",
+                        "persons": null,
+                        "functions": null,
+                        "entiteId": "E13154",
+                        "enfants": [],
+                        "text": "Directeur"
+                      },
+                      {
+                        "id": "F17810E13154",
+                        "type": "FONCTION",
+                        "parentId": "E13154",
+                        "path": [],
+                        "nbEntites": 0,
+                        "nbFonctions": 0,
+                        "nbPersonnes": 1,
+                        "sprite": "FONCTION",
+                        "ordreAffichage": 5,
+                        "libelle": "Service de sant\u00e9 scolaire",
+                        "telephone": null,
+                        "persons": null,
+                        "functions": null,
+                        "entiteId": "E13154",
+                        "enfants": [],
+                        "text": "Service de sant\u00e9 scolaire"
+                      },
+                      {
+                        "id": "F29959E13154",
+                        "type": "FONCTION",
+                        "parentId": "E13154",
+                        "path": [],
+                        "nbEntites": 0,
+                        "nbFonctions": 0,
+                        "nbPersonnes": 1,
+                        "sprite": "FONCTION",
+                        "ordreAffichage": 6,
+                        "libelle": "Services parascolaires",
+                        "telephone": null,
+                        "persons": null,
+                        "functions": null,
+                        "entiteId": "E13154",
+                        "enfants": [],
+                        "text": "Services parascolaires"
+                      }
+                    ],
 
-
-
-[
-  {
-    "id": "E13259",
-    "type": "ENTITE",
-    "parentId": "E13154",
-    "path": [
-
-    ],
-    "nbEntites": 0,
-    "nbFonctions": 0,
-    "nbPersonnes": 0,
-    "sprite": "ENTITE GROUPE",
-    "ordreAffichage": 1,
-    "libelle": "Coll\u00e8ge L\u00e9man",
-    "libelle_court": null,
-    "entiteType": "GROUPE",
-    "rue": "En Crochet",
-    "codePostal": 1143,
-    "ville": "Apples",
-    "telephone": "+41218000096",
-    "fax": null,
-    "email": null,
-    "siteWeb": null,
-    "functions": null,
-    "intranet": true,
-    "internet": true,
-    "enfants": [
-
-    ],
-    "text": "Coll\u00e8ge L\u00e9man"
-  },
-  {
-    "id": "E14348",
-    "type": "ENTITE",
-    "parentId": "E13154",
-    "path": [
-
-    ],
-    "nbEntites": 0,
-    "nbFonctions": 0,
-    "nbPersonnes": 0,
-    "sprite": "ENTITE GROUPE",
-    "ordreAffichage": 2,
-    "libelle": "Coll\u00e8ge Plateau",
-    "libelle_court": null,
-    "entiteType": "GROUPE",
-    "rue": null,
-    "codePostal": null,
-    "ville": null,
-    "telephone": null,
-    "fax": null,
-    "email": null,
-    "siteWeb": null,
-    "functions": null,
-    "intranet": true,
-    "internet": true,
-    "enfants": [
-
-    ],
-    "text": "Coll\u00e8ge Plateau"
-  },
-  {
-    "id": "E13302",
-    "type": "ENTITE",
-    "parentId": "E13154",
-    "path": [
-
-    ],
-    "nbEntites": 0,
-    "nbFonctions": 0,
-    "nbPersonnes": 0,
-    "sprite": "ENTITE GROUPE",
-    "ordreAffichage": 3,
-    "libelle": "Coll\u00e8ge Jura",
-    "libelle_court": null,
-    "entiteType": "GROUPE",
-    "rue": null,
-    "codePostal": null,
-    "ville": null,
-    "telephone": null,
-    "fax": null,
-    "email": null,
-    "siteWeb": null,
-    "functions": null,
-    "intranet": true,
-    "internet": true,
-    "enfants": [
-
-    ],
-    "text": "Coll\u00e8ge Jura"
-  },
-  {
-    "id": "F30143E13154",
-    "type": "FONCTION",
-    "parentId": "E13154",
-    "path": [
-
-    ],
-    "nbEntites": 0,
-    "nbFonctions": 0,
-    "nbPersonnes": 1,
-    "sprite": "FONCTION",
-    "ordreAffichage": 1,
-    "libelle": "Directeur",
-    "telephone": "021 800 90 50",
-    "persons": null,
-    "functions": null,
-    "entiteId": "E13154",
-    "enfants": [
-
-    ],
-    "text": "Directeur"
-  },
-  {
-    "id": "F17810E13154",
-    "type": "FONCTION",
-    "parentId": "E13154",
-    "path": [
-
-    ],
-    "nbEntites": 0,
-    "nbFonctions": 0,
-    "nbPersonnes": 1,
-    "sprite": "FONCTION",
-    "ordreAffichage": 5,
-    "libelle": "Service de sant\u00e9 scolaire",
-    "telephone": null,
-    "persons": null,
-    "functions": null,
-    "entiteId": "E13154",
-    "enfants": [
-
-    ],
-    "text": "Service de sant\u00e9 scolaire"
-  },
-  {
-    "id": "F29959E13154",
-    "type": "FONCTION",
-    "parentId": "E13154",
-    "path": [
-
-    ],
-    "nbEntites": 0,
-    "nbFonctions": 0,
-    "nbPersonnes": 1,
-    "sprite": "FONCTION",
-    "ordreAffichage": 6,
-    "libelle": "Services parascolaires",
-    "telephone": null,
-    "persons": null,
-    "functions": null,
-    "entiteId": "E13154",
-    "enfants": [
-
-    ],
-    "text": "Services parascolaires"
-  }
-]
-
-                    ,
                     "text": "\u00c9tablissement primaire et secondaire  Apples - Bi\u00e8re et environs"
                   },
                   {
                     "id": "E13913",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -942,18 +805,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire  Aubonne, coll\u00e8ge du Ch\u00eane"
                   },
                   {
                     "id": "E13839",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -972,18 +831,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire Bercher - Plateau du Jorat"
                   },
                   {
                     "id": "E13326",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 2,
                     "nbPersonnes": 0,
@@ -1002,18 +857,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire   Begnins -  l'Esplanade"
                   },
                   {
                     "id": "E13631",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1032,18 +883,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire   Bex"
                   },
                   {
                     "id": "E13010",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 1,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1062,18 +909,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire   Blonay  -  Saint-L\u00e9gier"
                   },
                   {
                     "id": "E13845",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1092,18 +935,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire  Bussigny et Villars-Sainte-Croix"
                   },
                   {
                     "id": "E13089",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 2,
                     "nbPersonnes": 0,
@@ -1122,18 +961,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire Ch\u00e2teau-d'Oex  -  Pays d'Enhaut"
                   },
                   {
                     "id": "E14057",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 2,
                     "nbPersonnes": 0,
@@ -1152,18 +987,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire Centre Lavaux, Coll\u00e8ge du Verney"
                   },
                   {
                     "id": "E13926",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1182,18 +1013,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire Chavannes-pr\u00e8s-Renens et de Saint-Sulpice, Coll\u00e8ge de La Planta"
                   },
                   {
                     "id": "E13897",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 1,
                     "nbPersonnes": 0,
@@ -1212,18 +1039,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire Chavornay et environs"
                   },
                   {
                     "id": "E14032",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1242,18 +1065,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire    Cheseaux-sur-Lausanne  -  La Chamberonne"
                   },
                   {
                     "id": "E12629",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1272,18 +1091,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire Coppet - Terre Sainte, Coll\u00e8ge de la Doye"
                   },
                   {
                     "id": "E14317",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1302,18 +1117,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement secondaire Coppet - Terre Sainte, Coll\u00e8ge des Rojalets"
                   },
                   {
                     "id": "E12828",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1332,18 +1143,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire   Corsier-sur-Vevey  et environs"
                   },
                   {
                     "id": "E13472",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1362,18 +1169,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire Cossonay - Penthalaz"
                   },
                   {
                     "id": "E13447",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 4,
                     "nbPersonnes": 0,
@@ -1392,18 +1195,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire Cossonay - Penthalaz"
                   },
                   {
                     "id": "E14488",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1422,18 +1221,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire Crassier, Coll\u00e8ge Elisabeth de Portes"
                   },
                   {
                     "id": "E14550",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 2,
                     "nbPersonnes": 0,
@@ -1452,18 +1247,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire Crissier, Coll\u00e8ge de Marcolet"
                   },
                   {
                     "id": "E14191",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1482,18 +1273,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire Cugy et environs"
                   },
                   {
                     "id": "E13305",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1512,18 +1299,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire Echallens - Emile Gardaz"
                   },
                   {
                     "id": "E13875",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1542,18 +1325,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement secondaire  Echallens  - Trois Sapins"
                   },
                   {
                     "id": "E12467",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1572,18 +1351,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire   Ecublens"
                   },
                   {
                     "id": "E13678",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1602,18 +1377,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire   Epalinges"
                   },
                   {
                     "id": "E13378",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1632,18 +1403,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire   Genolier et environs"
                   },
                   {
                     "id": "E12540",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1662,18 +1429,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire Gimel - Etoy"
                   },
                   {
                     "id": "E14229",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1692,18 +1455,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire Gland, Coll\u00e8ge des Perrerets"
                   },
                   {
                     "id": "E13948",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1722,18 +1481,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement secondaire Gland, Coll\u00e8ge de Grand Champ"
                   },
                   {
                     "id": "E13980",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 1,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1752,18 +1507,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire   Grandson"
                   },
                   {
                     "id": "E12505",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1782,18 +1533,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire   La Sarraz  -  Veyron-Venoge"
                   },
                   {
                     "id": "E12557",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 2,
                     "nbPersonnes": 0,
@@ -1812,18 +1559,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire Granges et environs"
                   },
                   {
                     "id": "E12795",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1842,18 +1585,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire du Jorat, Coll\u00e8ge du Raffort"
                   },
                   {
                     "id": "E13865",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1872,18 +1611,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire La Vall\u00e9e de Joux          (Le Sentier)"
                   },
                   {
                     "id": "E13353",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -1902,18 +1637,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire La Tour de Peilz"
                   },
                   {
                     "id": "E14437",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 0,
                     "nbPersonnes": 0,
@@ -1932,18 +1663,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire Lausanne - Beaulieu"
                   },
                   {
                     "id": "E12606",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 1,
                     "nbPersonnes": 0,
@@ -1962,18 +1689,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire Lausanne - C\u00f4teau-Fleuri"
                   },
                   {
                     "id": "E13592",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 0,
                     "nbPersonnes": 0,
@@ -1992,18 +1715,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire   Lausanne - Entre-Bois"
                   },
                   {
                     "id": "E13207",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 0,
                     "nbPersonnes": 0,
@@ -2022,18 +1741,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire   Lausanne - Flor\u00e9al"
                   },
                   {
                     "id": "E13078",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 0,
                     "nbPersonnes": 0,
@@ -2052,18 +1767,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire   Lausanne - La Sallaz"
                   },
                   {
                     "id": "E13727",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 0,
                     "nbPersonnes": 0,
@@ -2082,18 +1793,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire   Lausanne - Mon-Repos"
                   },
                   {
                     "id": "E14318",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 0,
                     "nbPersonnes": 0,
@@ -2112,18 +1819,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire Lauanne- Pierrefleur"
                   },
                   {
                     "id": "E13694",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 0,
                     "nbPersonnes": 0,
@@ -2142,18 +1845,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire   Lausanne - Belv\u00e9d\u00e8re"
                   },
                   {
                     "id": "E12792",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 0,
                     "nbPersonnes": 0,
@@ -2172,18 +1871,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire Lausanne - Bergi\u00e8res"
                   },
                   {
                     "id": "E13256",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 0,
                     "nbPersonnes": 0,
@@ -2202,18 +1897,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire Lausanne - Pr\u00e9laz"
                   },
                   {
                     "id": "E14233",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 0,
                     "nbPersonnes": 0,
@@ -2232,18 +1923,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire Lausanne - B\u00e9thusy"
                   },
                   {
                     "id": "E13021",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 0,
                     "nbPersonnes": 0,
@@ -2262,18 +1949,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire Lausanne - CF Ramuz"
                   },
                   {
                     "id": "E12835",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 0,
                     "nbPersonnes": 0,
@@ -2292,18 +1975,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire Lausanne - Isabelle-de-Montolieu"
                   },
                   {
                     "id": "E13708",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 0,
                     "nbPersonnes": 0,
@@ -2322,18 +2001,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire Lausanne - L'Elys\u00e9e"
                   },
                   {
                     "id": "E12474",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 0,
                     "nbPersonnes": 0,
@@ -2352,18 +2027,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire Lausanne - Villamont"
                   },
                   {
                     "id": "E12961",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -2382,18 +2053,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire  Le Mont-sur-Lausanne"
                   },
                   {
                     "id": "E13070",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -2412,18 +2079,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire Les Ormonts -  Leysin"
                   },
                   {
                     "id": "E13324",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -2442,18 +2105,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire   Lutry"
                   },
                   {
                     "id": "E13594",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -2472,18 +2131,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement  primaire et secondaire  Montreux - Est"
                   },
                   {
                     "id": "E13891",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -2502,18 +2157,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire  Montreux-Ouest(Clarens)"
                   },
                   {
                     "id": "E12962",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -2532,18 +2183,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire  Morges Est, Coll\u00e8ge de Chanel"
                   },
                   {
                     "id": "E13521",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 4,
                     "nbPersonnes": 0,
@@ -2562,18 +2209,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire Morges Ouest"
                   },
                   {
                     "id": "E13004",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -2592,18 +2235,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement secondaire  Morges - Beausobre"
                   },
                   {
                     "id": "E12464",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 1,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -2622,18 +2261,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire de Moudon-Lucens et environs"
                   },
                   {
                     "id": "E12556",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -2652,18 +2287,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement secondaire de Moudon-Lucens et environs"
                   },
                   {
                     "id": "E12803",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 1,
                     "nbPersonnes": 0,
@@ -2682,18 +2313,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire Nyon"
                   },
                   {
                     "id": "E13060",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 2,
                     "nbPersonnes": 0,
@@ -2712,18 +2339,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire de Nyon Roche-Combe"
                   },
                   {
                     "id": "E13837",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -2742,18 +2365,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement  secondaire de Nyon  -  Marens"
                   },
                   {
                     "id": "E13339",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -2772,18 +2391,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire   Ollon"
                   },
                   {
                     "id": "E14056",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 4,
                     "nbPersonnes": 0,
@@ -2802,18 +2417,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement secondaire d'Orbe et environs"
                   },
                   {
                     "id": "E14558",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -2832,18 +2443,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire d'Orbe et environs, Coll\u00e8ge du Grand-Pont"
                   },
                   {
                     "id": "E12586",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -2862,18 +2469,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire   Oron - Pal\u00e9zieux, Coll\u00e8ge d'Oron-la-Ville"
                   },
                   {
                     "id": "E13184",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 2,
                     "nbPersonnes": 0,
@@ -2892,18 +2495,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire Payerne et environs"
                   },
                   {
                     "id": "E13794",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -2922,18 +2521,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement secondaire  Payerne et environs"
                   },
                   {
                     "id": "E13583",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 2,
                     "nbPersonnes": 0,
@@ -2952,18 +2547,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire Prangins"
                   },
                   {
                     "id": "E12924",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 2,
                     "nbPersonnes": 0,
@@ -2982,18 +2573,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire   Pr\u00e9verenges et environs"
                   },
                   {
                     "id": "E14005",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 1,
                     "nbPersonnes": 0,
@@ -3012,18 +2599,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire Prilly - Romanel-sur-Lausanne et Jouxtens-M\u00e9zery"
                   },
                   {
                     "id": "E13749",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 4,
                     "nbPersonnes": 0,
@@ -3042,18 +2625,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire  Prilly"
                   },
                   {
                     "id": "E12708",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -3072,18 +2651,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire Pully - Paudex - Belmont"
                   },
                   {
                     "id": "E14487",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -3102,18 +2677,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement secondaire  Pully"
                   },
                   {
                     "id": "E14491",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 4,
                     "nbPersonnes": 0,
@@ -3132,18 +2703,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire Renens-Est, Coll\u00e8ge du 24-Janvier"
                   },
                   {
                     "id": "E13243",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -3162,18 +2729,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire Renens-Ouest, Coll\u00e8ge de Verdeaux"
                   },
                   {
                     "id": "E12677",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 4,
                     "nbPersonnes": 0,
@@ -3192,18 +2755,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement secondaire  Renens, Coll\u00e8ge du L\u00e9man"
                   },
                   {
                     "id": "E12741",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 4,
                     "nbPersonnes": 0,
@@ -3222,18 +2781,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire   Rolle"
                   },
                   {
                     "id": "E14411",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -3252,18 +2807,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire Sainte-Croix"
                   },
                   {
                     "id": "E13775",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -3282,18 +2833,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire Saint-Prex  et environs, Coll\u00e8ge du Cherrat"
                   },
                   {
                     "id": "E12539",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 1,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -3312,18 +2859,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire  Vallorbe - Ballaigues  et du Vallon du  Nozon"
                   },
                   {
                     "id": "E14370",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -3342,18 +2885,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire  Vevey, Ancien Coll\u00e8ge"
                   },
                   {
                     "id": "E13557",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 0,
                     "nbPersonnes": 0,
@@ -3372,18 +2911,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire  Veyron-Venoge"
                   },
                   {
                     "id": "E14457",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -3402,18 +2937,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire Vevey"
                   },
                   {
                     "id": "E12859",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -3432,18 +2963,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire Villeneuve Haut-Lac, Coll\u00e8ge de la Tour Rouge"
                   },
                   {
                     "id": "E13788",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -3462,18 +2989,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire  Yverdon-les-Bains - Pestalozzi"
                   },
                   {
                     "id": "E12852",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -3492,18 +3015,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire Yverdon-les-Bains  - Edmond-Gilliard"
                   },
                   {
                     "id": "E14069",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -3522,18 +3041,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement secondaire  Yverdon-les-Bains - de Felice"
                   },
                   {
                     "id": "E14018",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 2,
                     "nbPersonnes": 0,
@@ -3552,18 +3067,14 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement secondaire  Yverdon-les-Bains - L\u00e9on-Michaud"
                   },
                   {
                     "id": "E13278",
                     "type": "ENTITE",
                     "parentId": "E14127",
-                    "path": [
-
-                    ],
+                    "path": [],
                     "nbEntites": 0,
                     "nbFonctions": 3,
                     "nbPersonnes": 0,
@@ -3582,28 +3093,22 @@
                     "functions": null,
                     "intranet": true,
                     "internet": true,
-                    "enfants": [
-
-                    ],
+                    "enfants": [],
                     "text": "\u00c9tablissement primaire et secondaire   Yvonand et environs"
                   }
-                ]
+                ],
 
-                ,
                 "text": "\u00c9tablissements primaires et secondaires"
               }
-            ]
+            ],
 
-            ,
             "text": "Direction g\u00e9n\u00e9rale de l'enseignement obligatoire"
           },
           {
             "id": "E13097",
             "type": "ENTITE",
             "parentId": "E13224",
-            "path": [
-
-            ],
+            "path": [],
             "nbEntites": 13,
             "nbFonctions": 0,
             "nbPersonnes": 0,
@@ -3622,18 +3127,14 @@
             "functions": null,
             "intranet": true,
             "internet": true,
-            "enfants": [
-
-            ],
+            "enfants": [],
             "text": "Direction g\u00e9n\u00e9rale de l'enseignement postobligatoire"
           },
           {
             "id": "E12802",
             "type": "ENTITE",
             "parentId": "E13224",
-            "path": [
-
-            ],
+            "path": [],
             "nbEntites": 5,
             "nbFonctions": 8,
             "nbPersonnes": 0,
@@ -3652,18 +3153,14 @@
             "functions": null,
             "intranet": true,
             "internet": true,
-            "enfants": [
-
-            ],
+            "enfants": [],
             "text": "Direction g\u00e9n\u00e9rale de l'enseignement sup\u00e9rieur"
           },
           {
             "id": "E12434",
             "type": "ENTITE",
             "parentId": "E13224",
-            "path": [
-
-            ],
+            "path": [],
             "nbEntites": 9,
             "nbFonctions": 0,
             "nbPersonnes": 0,
@@ -3678,22 +3175,18 @@
             "telephone": "+41213160740",
             "fax": null,
             "email": "info.serac@vd.ch",
-            "siteWeb": "www.vd.ch\/serac",
+            "siteWeb": "www.vd.ch/serac",
             "functions": null,
             "intranet": true,
             "internet": true,
-            "enfants": [
-
-            ],
+            "enfants": [],
             "text": "Service des affaires culturelles"
           },
           {
             "id": "E12495",
             "type": "ENTITE",
             "parentId": "E13224",
-            "path": [
-
-            ],
+            "path": [],
             "nbEntites": 6,
             "nbFonctions": 0,
             "nbPersonnes": 0,
@@ -3712,18 +3205,14 @@
             "functions": null,
             "intranet": true,
             "internet": true,
-            "enfants": [
-
-            ],
+            "enfants": [],
             "text": "Service de l'enseignement sp\u00e9cialis\u00e9 et de l'appui \u00e0 la formation"
           },
           {
             "id": "E13351",
             "type": "ENTITE",
             "parentId": "E13224",
-            "path": [
-
-            ],
+            "path": [],
             "nbEntites": 12,
             "nbFonctions": 0,
             "nbPersonnes": 0,
@@ -3742,12 +3231,9 @@
             "functions": null,
             "intranet": true,
             "internet": true,
-            "enfants": [
-
-            ],
+            "enfants": [],
             "text": "Service de protection de la jeunesse"
           }
-
         ],
         "text": "D\u00e9partement de la formation, de la jeunesse et de la culture"
       },
@@ -3755,9 +3241,7 @@
         "id": "E12844",
         "type": "ENTITE",
         "parentId": null,
-        "path": [
-
-        ],
+        "path": [],
         "nbEntites": 13,
         "nbFonctions": 0,
         "nbPersonnes": 0,
@@ -3776,18 +3260,14 @@
         "functions": null,
         "intranet": true,
         "internet": true,
-        "enfants": [
-
-        ],
+        "enfants": [],
         "text": "D\u00e9partement des institutions et de la s\u00e9curit\u00e9"
       },
       {
         "id": "E13815",
         "type": "ENTITE",
         "parentId": null,
-        "path": [
-
-        ],
+        "path": [],
         "nbEntites": 11,
         "nbFonctions": 0,
         "nbPersonnes": 0,
@@ -3806,18 +3286,14 @@
         "functions": null,
         "intranet": true,
         "internet": true,
-        "enfants": [
-
-        ],
+        "enfants": [],
         "text": "D\u00e9partement de la sant\u00e9 et de l'action sociale"
       },
       {
         "id": "E13061",
         "type": "ENTITE",
         "parentId": null,
-        "path": [
-
-        ],
+        "path": [],
         "nbEntites": 9,
         "nbFonctions": 0,
         "nbPersonnes": 0,
@@ -3836,18 +3312,14 @@
         "functions": null,
         "intranet": true,
         "internet": true,
-        "enfants": [
-
-        ],
+        "enfants": [],
         "text": "D\u00e9partement de l'\u00e9conomie, de l'innovation et du sport"
       },
       {
         "id": "E14008",
         "type": "ENTITE",
         "parentId": null,
-        "path": [
-
-        ],
+        "path": [],
         "nbEntites": 8,
         "nbFonctions": 0,
         "nbPersonnes": 0,
@@ -3866,18 +3338,14 @@
         "functions": null,
         "intranet": true,
         "internet": true,
-        "enfants": [
-
-        ],
+        "enfants": [],
         "text": "D\u00e9partement des infrastructures et des ressources humaines"
       },
       {
         "id": "E14380",
         "type": "ENTITE",
         "parentId": null,
-        "path": [
-
-        ],
+        "path": [],
         "nbEntites": 6,
         "nbFonctions": 0,
         "nbPersonnes": 0,
@@ -3896,18 +3364,14 @@
         "functions": null,
         "intranet": true,
         "internet": true,
-        "enfants": [
-
-        ],
+        "enfants": [],
         "text": "D\u00e9partement des finances et des relations ext\u00e9rieures"
       },
       {
         "id": "E13020",
         "type": "ENTITE",
         "parentId": null,
-        "path": [
-
-        ],
+        "path": [],
         "nbEntites": 9,
         "nbFonctions": 0,
         "nbPersonnes": 0,
@@ -3926,18 +3390,14 @@
         "functions": null,
         "intranet": true,
         "internet": true,
-        "enfants": [
-
-        ],
+        "enfants": [],
         "text": "Ordre Judiciaire"
       },
       {
         "id": "E34211",
         "type": "ENTITE",
         "parentId": null,
-        "path": [
-
-        ],
+        "path": [],
         "nbEntites": 1,
         "nbFonctions": 0,
         "nbPersonnes": 0,
@@ -3956,18 +3416,14 @@
         "functions": null,
         "intranet": true,
         "internet": true,
-        "enfants": [
-
-        ],
+        "enfants": [],
         "text": "test"
       },
       {
         "id": "E34215",
         "type": "ENTITE",
         "parentId": null,
-        "path": [
-
-        ],
+        "path": [],
         "nbEntites": 1,
         "nbFonctions": 0,
         "nbPersonnes": 0,
@@ -3986,18 +3442,14 @@
         "functions": null,
         "intranet": true,
         "internet": true,
-        "enfants": [
-
-        ],
+        "enfants": [],
         "text": "Entit\u00e9 Test"
       },
       {
         "id": "E34320",
         "type": "ENTITE",
         "parentId": null,
-        "path": [
-
-        ],
+        "path": [],
         "nbEntites": 3,
         "nbFonctions": 1,
         "nbPersonnes": 0,
@@ -4016,18 +3468,14 @@
         "functions": null,
         "intranet": true,
         "internet": true,
-        "enfants": [
-
-        ],
+        "enfants": [],
         "text": "test"
       },
       {
         "id": "E34322",
         "type": "ENTITE",
         "parentId": null,
-        "path": [
-
-        ],
+        "path": [],
         "nbEntites": 1,
         "nbFonctions": 0,
         "nbPersonnes": 0,
@@ -4046,9 +3494,7 @@
         "functions": null,
         "intranet": true,
         "internet": true,
-        "enfants": [
-
-        ],
+        "enfants": [],
         "text": "Internet"
       }
     ]
