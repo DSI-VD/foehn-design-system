@@ -3,6 +3,6 @@
 build
 
 public
-!public/assets
 
+# HTML files are not linted because Prettier doesn't support nunjucks
 src/**/*.html
