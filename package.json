@@ -17,7 +17,7 @@
     "prebuild": "npm-run-all clean:* && npm run prestart",
     "build": "fractal build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build -r https://github.com/DSI-VD/foehn-design-system.git"
   },
   "devDependencies": {
     "@dsivd/foehn": "file:../foehn",
