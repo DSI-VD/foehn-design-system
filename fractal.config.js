@@ -38,10 +38,34 @@ fractal.set(
 fractal.components.set("path", __dirname + "/src/components");
 fractal.components.engine(njk);
 fractal.components.set("ext", ".html");
+fractal.components.set('default.status', 'wip');
 
 /* Configuring documentation pages */
 fractal.docs.set("path", __dirname + "/src/docs");
 fractal.docs.set("ext", ".md");
+fractal.docs.set('statuses', {
+    draft: {
+        label: 'Draft',
+        description: 'Do not implement.',
+        color: '#FF3333'
+    },
+    wip: {
+        label: 'WIP',
+        description: 'Work in progress. Implement with caution.',
+        color: '#FF9233'
+    },
+    review: {
+        label: 'Need review',
+        description: 'Ready for a review.',
+        color: '#32edff'
+    },
+    ready: {
+        label: 'Ready',
+        description: 'Ready to implement.',
+        color: '#29CC29'
+    }
+});
+fractal.docs.set('default.status', 'draft');
 
 /* Configuring the web UI */
 fractal.web.set("static.path", __dirname + "/public");
