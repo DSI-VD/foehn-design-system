@@ -16,9 +16,9 @@
     "import:foehn": "echo \"[ Copying Foehn in public/ folder]\" && cp -R node_modules/@dsivd/foehn/dist/assets/ public/foehn/",
     "import:assets": "echo \"[ Copying documentation assets in public/ folder ]\" && cp -R src/assets public/assets",
     "lint": "echo \"[ Linting and reformating files ]\" && npx prettier --write .",
-    "prestart": "npm run mkdir:public && npm-run-all import:*",
+    "prestart": "npm-run-all clean:* && npm run mkdir:public && npm-run-all import:* && npm run lint",
     "start": "fractal start --sync",
-    "prebuild": "npm-run-all clean:* && npm run lint && npm run prestart",
+    "prebuild": "npm run prestart",
     "build": "fractal build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build -r https://github.com/DSI-VD/foehn-design-system.git"
