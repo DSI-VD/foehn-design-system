@@ -1,5 +1,6 @@
 ---
 status: review
+label: "Champs texte multiligne"
 ---
 
 <div class="foehn-example">

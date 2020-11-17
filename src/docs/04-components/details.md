@@ -1,3 +1,4 @@
 ---
 status: draft
+label: "Détails"
 ---
