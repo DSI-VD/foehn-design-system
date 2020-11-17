@@ -8,7 +8,7 @@ blockquote,
   color: $gray-500;
 
   &:before {
-    content: '“';
+    content: "“";
     position: absolute;
     top: 0;
     left: 0;
@@ -61,7 +61,7 @@ blockquote cite {
   }
 
   &:after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 100%;
@@ -69,9 +69,16 @@ blockquote cite {
     width: 41px;
     height: 18px;
 
-    @include media-breakpoint-up(sm) { right: 80px; }
+    @include media-breakpoint-up(sm) {
+      right: 80px;
+    }
 
-    @include vd-background-image-icon($vd-blockquote-pointer, theme-color("dark"), 41, 18);
+    @include vd-background-image-icon(
+      $vd-blockquote-pointer,
+      theme-color("dark"),
+      41,
+      18
+    );
   }
 
   p {

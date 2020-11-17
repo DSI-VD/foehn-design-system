@@ -18,9 +18,9 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.5.1" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/olive.css?cachebust=1.6.0" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.5.1" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.6.0" type="text/css">
 
 
 <title>Champs texte | Foehn Design System</title>
@@ -88,18 +88,69 @@
 
     
     
-    
-<div class="Error Error--render">
-    <h4 class="Error-title">Error rendering page</h4>
-    <div class="Error-message Prose">
-        <p>Parse error on line 2:
-...{ &#39;@input--default&#39; | renderComponent | 
------------------------^
-Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;, &#39;OPEN_SEXPR&#39;, &#39;CLOSE_SEXPR&#39;, &#39;ID&#39;, &#39;OPEN_BLOCK_PARAMS&#39;, &#39;STRING&#39;, &#39;NUMBER&#39;, &#39;BOOLEAN&#39;, &#39;UNDEFINED&#39;, &#39;NULL&#39;, &#39;DATA&#39;, got &#39;CLOSE_BLOCK_PARAMS&#39;</p>
+    <div class="component-example"><span class="component-example__preview-link"><a href="../../components/detail/input--default">Open detail page of this component</a></span><iframe class="component-example__iframe" src="../../components/preview/input--default"></iframe></div>
 
-    </div>
-    
-</div>
+<h2 id="quand-utiliser-ce-composant">Quand utiliser ce composant</h2>
+<p>Utilisez le composant de saisie de texte lorsque les utilisateurs doivent saisir
+du texte ne comportant pas plus d’une ligne, comme leur nom ou leur numéro de
+téléphone.</p>
+<h2 id="quand-ne-pas-utiliser-ce-composant">Quand ne pas utiliser ce composant</h2>
+<p>N’utilisez pas le composant de saisie de texte si vous devez laisser les
+utilisateurs entrer des réponses plus longues pouvant s’étendre sur plusieurs
+lignes. Dans ce cas, vous devez utiliser le composant <a href="./textarea">textarea</a>.</p>
+<h2 id="fonctionnement">Fonctionnement</h2>
+<div class="component-example"><span class="component-example__preview-link"><a href="../../components/detail/input--default">Open detail page of this component</a></span><iframe class="component-example__iframe" src="../../components/preview/input--default"></iframe></div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"testInput"</span>&gt;</span>Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span>
+         <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>
+         <span class="hljs-attr">id</span>=<span class="hljs-string">"testInput"</span>
+         <span class="hljs-attr">name</span>=<span class="hljs-string">"testInput"</span>
+         <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">required</span> <span class="hljs-attr">aria-required</span>=<span class="hljs-string">"true"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre><h3 id="labelisez-les-entrées-de-texte">Labelisez les entrées de texte</h3>
+<p>Toutes les entrées de texte doivent avoir des label visibles; le placeholder
+n’est pas accepté pour remplacer un label car il disparaît lorsque les
+utilisateurs cliquent sur le champs texte.</p>
+<p>Les label doivent être alignés au-dessus du champs texte auxquel elles se
+réfèrent. Ils devraient être courts, directs et commencer par une majuscule.
+N’utilisez pas de deux-points à la fin des étiquettes.</p>
+<h3 id="la-taille-des-champs-texte-doit-être-adapté">la taille des champs texte doit être adapté</h3>
+<p>Aidez les utilisateurs à comprendre ce qu’ils doivent entrer en faisant en sorte
+que les entrées de texte soient de la bonne taille pour le contenu pour lequel
+elles sont destinées.</p>
+<p>Par défaut, la largeur des entrées de texte est fluide et correspond à la
+largeur totale du conteneur dans lequel elles sont placées.</p>
+<p>Si vous souhaitez réduire l’entrée, vous pouvez utiliser une entrée de largeur
+fixe ou utiliser les classes de remplacement de largeur pour créer une entrée de
+largeur de fluide plus petite.</p>
+<h4 id="entrées-de-largeur-fixe">Entrées de largeur fixe</h4>
+<p>Utilisez des entrées de largeur fixe pour le contenu ayant une longueur
+connue. Les champs pour un code postale ou un numéro de téléphone doivent avoir
+une taille adaptée.</p>
+<p>Sur les entrées à largeur fixe, la largeur restera fixe sur tous les écrans sauf
+si elle est plus large que la fenêtre, auquel cas elle rétrécira pour s’adapter.</p>
+<h3 id="text-daide">Text d’aide</h3>
+<p>Utilisez un texte d’aide qui est pertinent pour la majorité des utilisateurs -
+par exemple, comment leurs informations seront utilisées ou où les trouver.</p>
+<div class="component-example"><span class="component-example__preview-link"><a href="../../components/detail/input--help-text">Open detail page of this component</a></span><iframe class="component-example__iframe" src="../../components/preview/input--help-text"></iframe></div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"testInput"</span>&gt;</span>Couriel<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">small</span>
+      <span class="hljs-attr">id</span>=<span class="hljs-string">"testInputHelp"</span>
+      <span class="hljs-attr">class</span>=<span class="hljs-string">"form-text text-secondary"</span>&gt;</span>Votre courriel n'est pas conservé et ne sera pas communiqué à des organismes tiers.<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span>
+         <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span>
+         <span class="hljs-attr">id</span>=<span class="hljs-string">"testInput"</span>
+         <span class="hljs-attr">name</span>=<span class="hljs-string">"testInput"</span>
+         <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">required</span> <span class="hljs-attr">aria-required</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">"testInputHelp "</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre><h3 id="ne-désactivez-pas-le-copiercoller">Ne désactivez pas le copier/coller</h3>
+<p>Les utilisateurs doivent souvent copier et coller des informations dans une
+champs de saisie texte, vous ne devriez donc pas les empêcher de le faire.</p>
 
     
 
@@ -137,8 +188,11 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
 
     
         
-<div class="Navigation-group">
 
+    
+    
+    <div class="Navigation-group">
+        
 <div class="Tree" data-behaviour="tree" id="tree-components">
     <div class="Tree-header">
         <h3 class="Tree-title">components</h3>
@@ -152,15 +206,17 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-atoms">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-atoms-items">
-                Atoms
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-atoms-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-atoms">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-atoms-items">
+                    Atoms
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-atoms-items">
+                
+                
+                
+                
     
         
         
@@ -187,15 +243,17 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-button">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-button-items">
-                Button
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-button-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-button">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-button-items">
+                    Button
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-button-items">
+                
+                
+                
+                
     
         
         
@@ -342,20 +400,23 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-global">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-global-items">
-                Global
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-global-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-global">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-global-items">
+                    Global
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-global-items">
+                
+                
+                
+                
     
         
         
@@ -382,31 +443,36 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-images">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-images-items">
-                Images
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-images-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-images">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-images-items">
+                    Images
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-images-items">
+                
+                
+                
+                
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-image">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-image-items">
-                Image
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-image-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-image">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-image-items">
+                    Image
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-image-items">
+                
+                
+                
+                
     
         
         
@@ -505,8 +571,9 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
@@ -534,8 +601,9 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
@@ -587,15 +655,17 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-search-form">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-search-form-items">
-                Search Form
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-search-form-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-search-form">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-search-form-items">
+                    Search Form
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-search-form-items">
+                
+                
+                
+                
     
         
         
@@ -670,8 +740,9 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
@@ -723,26 +794,30 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-text">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-text-items">
-                Text
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-text-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-text">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-text-items">
+                    Text
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-text-items">
+                
+                
+                
+                
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-headings">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-headings-items">
-                Headings
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-headings-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-headings">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-headings-items">
+                    Headings
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-headings-items">
+                
+                
+                
+                
     
         
         
@@ -889,20 +964,23 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-inlinetexts">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-inlinetexts-items">
-                Inlinetexts
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-inlinetexts-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-inlinetexts">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-inlinetexts-items">
+                    Inlinetexts
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-inlinetexts-items">
+                
+                
+                
+                
     
         
         
@@ -1433,8 +1511,9 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
@@ -1486,36 +1565,42 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-molecules">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-molecules-items">
-                Molecules
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-molecules-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-molecules">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-molecules-items">
+                    Molecules
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-molecules-items">
+                
+                
+                
+                
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-alert">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-alert-items">
-                Alert
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-alert-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-alert">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-alert-items">
+                    Alert
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-alert-items">
+                
+                
+                
+                
     
         
         
@@ -1566,8 +1651,9 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
@@ -1667,15 +1753,17 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-form">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-form-items">
-                Form
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-form-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-form">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-form-items">
+                    Form
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-form-items">
+                
+                
+                
+                
     
         
         
@@ -1726,15 +1814,17 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-datalist">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-datalist-items">
-                Datalist
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-datalist-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-datalist">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-datalist-items">
+                    Datalist
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-datalist-items">
+                
+                
+                
+                
     
         
         
@@ -1785,20 +1875,23 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-dates">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-dates-items">
-                Dates
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-dates-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-dates">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-dates-items">
+                    Dates
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-dates-items">
+                
+                
+                
+                
     
         
         
@@ -1849,20 +1942,23 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-fieldset">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-fieldset-items">
-                Fieldset
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-fieldset-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-fieldset">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-fieldset-items">
+                    Fieldset
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-fieldset-items">
+                
+                
+                
+                
     
         
         
@@ -1985,8 +2081,9 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
@@ -2110,20 +2207,23 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-highlight">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-highlight-items">
-                Highlight
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-highlight-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-highlight">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-highlight-items">
+                    Highlight
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-highlight-items">
+                
+                
+                
+                
     
         
         
@@ -2174,20 +2274,23 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-lists">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-lists-items">
-                Lists
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-lists-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-lists">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-lists-items">
+                    Lists
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-lists-items">
+                
+                
+                
+                
     
         
         
@@ -2238,20 +2341,23 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-login">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-login-items">
-                Login
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-login-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-login">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-login-items">
+                    Login
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-login-items">
+                
+                
+                
+                
     
         
         
@@ -2302,31 +2408,36 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-media">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-media-items">
-                Media
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-media-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-media">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-media-items">
+                    Media
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-media-items">
+                
+                
+                
+                
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-embed-container">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-embed-container-items">
-                Embed Container
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-embed-container-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-embed-container">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-embed-container-items">
+                    Embed Container
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-embed-container-items">
+                
+                
+                
+                
     
         
         
@@ -2377,20 +2488,23 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-figure">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-figure-items">
-                Figure
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-figure-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-figure">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-figure-items">
+                    Figure
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-figure-items">
+                
+                
+                
+                
     
         
         
@@ -2441,20 +2555,23 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-logo">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-logo-items">
-                Logo
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-logo-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-logo">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-logo-items">
+                    Logo
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-logo-items">
+                
+                
+                
+                
     
         
         
@@ -2505,20 +2622,23 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-logo-etat">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-logo-etat-items">
-                Logo Etat
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-logo-etat-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-logo-etat">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-logo-etat-items">
+                    Logo Etat
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-logo-etat-items">
+                
+                
+                
+                
     
         
         
@@ -2593,13 +2713,15 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
@@ -2627,15 +2749,17 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-navigation">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-navigation-items">
-                Navigation
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-navigation-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-navigation">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-navigation-items">
+                    Navigation
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-navigation-items">
+                
+                
+                
+                
     
         
         
@@ -2686,15 +2810,17 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-domain-item">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-domain-item-items">
-                Domain Item
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-domain-item-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-domain-item">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-domain-item-items">
+                    Domain Item
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-domain-item-items">
+                
+                
+                
+                
     
         
         
@@ -2745,8 +2871,9 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
@@ -2822,15 +2949,17 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-nav-primary">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-nav-primary-items">
-                Nav Primary
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-nav-primary-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-nav-primary">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-nav-primary-items">
+                    Nav Primary
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-nav-primary-items">
+                
+                
+                
+                
     
         
         
@@ -2881,8 +3010,9 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
@@ -2934,20 +3064,23 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-search-item">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-search-item-items">
-                Search Item
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-search-item-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-search-item">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-search-item-items">
+                    Search Item
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-search-item-items">
+                
+                
+                
+                
     
         
         
@@ -3046,8 +3179,9 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
@@ -3075,26 +3209,30 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-teaser">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-teaser-items">
-                Teaser
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-teaser-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-teaser">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-teaser-items">
+                    Teaser
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-teaser-items">
+                
+                
+                
+                
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-teaser">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-teaser-items">
-                Teaser
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-teaser-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-teaser">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-teaser-items">
+                    Teaser
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-teaser-items">
+                
+                
+                
+                
     
         
         
@@ -3169,20 +3307,23 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-teaser-card">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-teaser-card-items">
-                Teaser Card
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-teaser-card-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-teaser-card">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-teaser-card-items">
+                    Teaser Card
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-teaser-card-items">
+                
+                
+                
+                
     
         
         
@@ -3281,20 +3422,23 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-teaser-small">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-teaser-small-items">
-                Teaser Small
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-teaser-small-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-teaser-small">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-teaser-small-items">
+                    Teaser Small
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-teaser-small-items">
+                
+                
+                
+                
     
         
         
@@ -3369,36 +3513,42 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-text">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-text-items">
-                Text
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-text-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-text">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-text-items">
+                    Text
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-text-items">
+                
+                
+                
+                
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-blockquote">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-blockquote-items">
-                Blockquote
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-blockquote-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-blockquote">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-blockquote-items">
+                    Blockquote
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-blockquote-items">
+                
+                
+                
+                
     
         
         
@@ -3473,8 +3623,9 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
@@ -3550,25 +3701,29 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-organisms">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-organisms-items">
-                Organisms
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-organisms-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-organisms">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-organisms-items">
+                    Organisms
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-organisms-items">
+                
+                
+                
+                
     
         
         
@@ -3595,15 +3750,17 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-autority-address">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-autority-address-items">
-                Autority Address
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-autority-address-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-autority-address">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-autority-address-items">
+                    Autority Address
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-autority-address-items">
+                
+                
+                
+                
     
         
         
@@ -3654,8 +3811,9 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
@@ -3707,15 +3865,17 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-forms">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-forms-items">
-                Forms
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-forms-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-forms">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-forms-items">
+                    Forms
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-forms-items">
+                
+                
+                
+                
     
         
         
@@ -3766,31 +3926,36 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-global">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-global-items">
-                Global
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-global-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-global">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-global-items">
+                    Global
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-global-items">
+                
+                
+                
+                
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-footer">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-footer-items">
-                Footer
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-footer-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-footer">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-footer-items">
+                    Footer
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-footer-items">
+                
+                
+                
+                
     
         
         
@@ -3841,20 +4006,23 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-header">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-header-items">
-                Header
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-header-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-header">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-header-items">
+                    Header
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-header-items">
+                
+                
+                
+                
     
         
         
@@ -3905,20 +4073,23 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-header-application">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-header-application-items">
-                Header Application
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-header-application-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-header-application">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-header-application-items">
+                    Header Application
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-header-application-items">
+                
+                
+                
+                
     
         
         
@@ -3993,8 +4164,9 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
@@ -4022,15 +4194,17 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-page-title-banner">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-page-title-banner-items">
-                Page Title Banner
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-page-title-banner-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-page-title-banner">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-page-title-banner-items">
+                    Page Title Banner
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-page-title-banner-items">
+                
+                
+                
+                
     
         
         
@@ -4105,25 +4279,29 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-lists">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-lists-items">
-                Lists
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-lists-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-lists">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-lists-items">
+                    Lists
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-lists-items">
+                
+                
+                
+                
     
         
         
@@ -4222,15 +4400,17 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-filter-list">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-filter-list-items">
-                Filter List
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-filter-list-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-filter-list">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-filter-list-items">
+                    Filter List
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-filter-list-items">
+                
+                
+                
+                
     
         
         
@@ -4281,8 +4461,9 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
@@ -4382,15 +4563,17 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-teaser">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-teaser-items">
-                Teaser
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-teaser-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-teaser">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-teaser-items">
+                    Teaser
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-teaser-items">
+                
+                
+                
+                
     
         
         
@@ -4417,15 +4600,17 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-5" data-behaviour="collection" id="tree-components-collection-teaser-list">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-teaser-list-items">
-                Teaser List
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-teaser-list-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-5" data-behaviour="collection" id="tree-components-collection-teaser-list">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-teaser-list-items">
+                    Teaser List
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-teaser-list-items">
+                
+                
+                
+                
     
         
         
@@ -4476,13 +4661,15 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
@@ -4534,8 +4721,9 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
@@ -4563,15 +4751,17 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-text-and-image">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-text-and-image-items">
-                Text And Image
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-text-and-image-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-text-and-image">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-text-and-image-items">
+                    Text And Image
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-text-and-image-items">
+                
+                
+                
+                
     
         
         
@@ -4646,47 +4836,55 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-templates">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-templates-items">
-                Templates
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-templates-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-templates">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-templates-items">
+                    Templates
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-templates-items">
+                
+                
+                
+                
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-communiques-presse">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-communiques-presse-items">
-                Communiques Presse
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-communiques-presse-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-communiques-presse">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-communiques-presse-items">
+                    Communiques Presse
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-communiques-presse-items">
+                
+                
+                
+                
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-template-communiques-presse-detail">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-template-communiques-presse-detail-items">
-                Détail
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-template-communiques-presse-detail-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-template-communiques-presse-detail">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-template-communiques-presse-detail-items">
+                    Détail
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-template-communiques-presse-detail-items">
+                
+                
+                
+                
     
         
         
@@ -4737,20 +4935,23 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-template-communiques-presse-list">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-template-communiques-presse-list-items">
-                Liste
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-template-communiques-presse-list-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-template-communiques-presse-list">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-template-communiques-presse-list-items">
+                    Liste
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-template-communiques-presse-list-items">
+                
+                
+                
+                
     
         
         
@@ -4801,25 +5002,29 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-espace-securise">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-espace-securise-items">
-                Espace Securise
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-espace-securise-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-espace-securise">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-espace-securise-items">
+                    Espace Securise
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-espace-securise-items">
+                
+                
+                
+                
     
         
         
@@ -4870,20 +5075,23 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-template">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-template-items">
-                Template
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-template-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-template">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-template-items">
+                    Template
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-template-items">
+                
+                
+                
+                
     
         
         
@@ -5030,47 +5238,55 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-pages">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-pages-items">
-                Pages
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-pages-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-pages">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-pages-items">
+                    Pages
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-pages-items">
+                
+                
+                
+                
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-autority">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-autority-items">
-                Autority
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-autority-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-autority">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-autority-items">
+                    Autority
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-autority-items">
+                
+                
+                
+                
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-service">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-service-items">
-                Service
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-service-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-service">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-service-items">
+                    Service
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-service-items">
+                
+                
+                
+                
     
         
         
@@ -5121,13 +5337,15 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
@@ -5203,15 +5421,17 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-espace-securise">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-espace-securise-items">
-                Espace Securise
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-espace-securise-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-espace-securise">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-espace-securise-items">
+                    Espace Securise
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-espace-securise-items">
+                
+                
+                
+                
     
         
         
@@ -5262,15 +5482,17 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-formulaire-prestation">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-formulaire-prestation-items">
-                Formulaire Prestation
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-formulaire-prestation-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-formulaire-prestation">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-formulaire-prestation-items">
+                    Formulaire Prestation
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-formulaire-prestation-items">
+                
+                
+                
+                
     
         
         
@@ -5345,8 +5567,9 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
@@ -5398,20 +5621,23 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-special">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-special-items">
-                Special
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-special-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-special">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-special-items">
+                    Special
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-special-items">
+                
+                
+                
+                
     
         
         
@@ -5510,15 +5736,17 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-error">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-error-items">
-                Error
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-error-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-error">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-error-items">
+                    Error
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-error-items">
+                
+                
+                
+                
     
         
         
@@ -5569,20 +5797,23 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-news">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-news-items">
-                News
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-news-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-news">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-news-items">
+                    News
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-news-items">
+                
+                
+                
+                
     
         
         
@@ -5609,15 +5840,17 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-5" data-behaviour="collection" id="tree-components-collection-news-list">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-news-list-items">
-                News List
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-news-list-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-5" data-behaviour="collection" id="tree-components-collection-news-list">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-news-list-items">
+                    News List
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-news-list-items">
+                
+                
+                
+                
     
         
         
@@ -5692,25 +5925,29 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-search">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-search-items">
-                Search
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-search-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-search">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-search-items">
+                    Search
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-search-items">
+                
+                
+                
+                
     
         
         
@@ -5785,25 +6022,29 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-theme">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-theme-items">
-                Theme
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-theme-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-theme">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-theme-items">
+                    Theme
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-theme-items">
+                
+                
+                
+                
     
         
         
@@ -5878,20 +6119,23 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
 
     </ul>
 </div>
 
-</div>
+    </div>
+    
 
 
     
@@ -5935,15 +6179,17 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-get-started">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-get-started-items">
-                Get Started
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-get-started-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-get-started">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-get-started-items">
+                    Get Started
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-get-started-items">
+                
+                
+                
+                
     
         
         
@@ -5994,20 +6240,23 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-styles">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-styles-items">
-                Styles
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-styles-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-styles">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-styles-items">
+                    Styles
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-styles-items">
+                
+                
+                
+                
     
         
         
@@ -6108,8 +6357,8 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../styles/spacing.html" data-pjax>
-                <span>Spacing</span>
+            <a class="Tree-entityLink" href="../styles/page-template.html" data-pjax>
+                <span>Page Template</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -6154,20 +6403,23 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-components">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-components-items">
-                Components
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-components-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-components">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-components-items">
+                    Components
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-components-items">
+                
+                
+                
+                
     
         
         
@@ -6206,78 +6458,6 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
 
 
 <span class="Status-dot" style="border-color: #32edff;" title="Need review"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="checkboxes.html" data-pjax>
-                <span>Checkboxes</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="date-input.html" data-pjax>
-                <span>Date Input</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="details.html" data-pjax>
-                <span>Details</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
 
 
 </div>
@@ -6340,78 +6520,6 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="fieldset.html" data-pjax>
-                <span>Fieldset</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="file-upload.html" data-pjax>
-                <span>File Upload</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="footer.html" data-pjax>
-                <span>Footer</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="header.html" data-pjax>
                 <span>En-tête</span>
                 
@@ -6460,6 +6568,342 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="page-template.html" data-pjax>
+                <span>Page Template</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="page-template.html" data-pjax>
+                <span>Page Template</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="page-template.html" data-pjax>
+                <span>Page Template</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="page-template.html" data-pjax>
+                <span>Page Template</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="page-template.html" data-pjax>
+                <span>Page Template</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="page-template.html" data-pjax>
+                <span>Page Template</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="page-template.html" data-pjax>
+                <span>Page Template</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="page-template.html" data-pjax>
+                <span>Page Template</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="page-template.html" data-pjax>
+                <span>Page Template</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="page-template.html" data-pjax>
+                <span>Page Template</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="page-template.html" data-pjax>
+                <span>Page Template</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="page-template.html" data-pjax>
+                <span>Page Template</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="page-template.html" data-pjax>
+                <span>Page Template</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="page-template.html" data-pjax>
+                <span>Page Template</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="pagination.html" data-pjax>
                 <span>Pagination</span>
                 
@@ -6470,174 +6914,6 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
 
 
 <span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="panel.html" data-pjax>
-                <span>Panel</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="radios.html" data-pjax>
-                <span>Radios</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="select.html" data-pjax>
-                <span>Select</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="skip-link.html" data-pjax>
-                <span>Skip Link</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="table.html" data-pjax>
-                <span>Table</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="tabs.html" data-pjax>
-                <span>Tabs</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="tag.html" data-pjax>
-                <span>Tag</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
 
 
 </div>
@@ -6697,45 +6973,24 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         </li>
         
     
+
+                </ul>
+            </li>
+            
         
+    
         
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="warning-text.html" data-pjax>
-                <span>Warning Text</span>
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-patterns">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-patterns-items">
+                    Patterns
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-patterns-items">
                 
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-
-            </ul>
-        </li>
-        
-    
-        
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-patterns">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-patterns-items">
-                Patterns
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-patterns-items">
-            
-            
-            
-            
+                
+                
+                
     
         
         
@@ -6810,20 +7065,23 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-writing-for-vdch">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-writing-for-vdch-items">
-                Writing For Vdch
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-writing-for-vdch-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-writing-for-vdch">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-writing-for-vdch-items">
+                    Writing For Vdch
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-writing-for-vdch-items">
+                
+                
+                
+                
     
         
         
@@ -6850,8 +7108,9 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
@@ -6889,21 +7148,31 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
         
 
     
-        <div class="Navigation-group">
+        
+<div class="Navigation-group">
     <div class="Tree">
         <div class="Tree-header">
-            <div class="Tree-title">
+            <h3 class="Tree-title">
                 Information
-            </div>
+            </h3>
         </div>
-        <div class="Tree-aside">
-            Built on:
-            <time datetime="2020-11-05T10:46:35.290Z">
-                11/5/2020
-            </time>
-        </div>
+        <dl class="Tree-aside">
+            
+                <div>
+                    <dt class="Tree-asideTerm">Built on:</dt>
+                    <dd class="Tree-asideDescription">
+                        
+                            <time datetime="2020-11-17T13:08:10.401Z">
+                                11/17/2020
+                            </time>
+                        
+                    </dd>
+                </div>
+            
+        </dl>
     </div>
 </div>
+
 
     
 </nav>
@@ -6915,7 +7184,7 @@ Expecting &#39;CLOSE_RAW_BLOCK&#39;, &#39;CLOSE&#39;, &#39;CLOSE_UNESCAPED&#39;,
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.5.1"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.6.0"></script>
 
 
 
