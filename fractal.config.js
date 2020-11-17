@@ -5,6 +5,17 @@ const fractal = (module.exports = require("@frctl/fractal").create());
 
 const pkg = require("./package.json");
 
+// require the Mandelbrot theme module
+const mandelbrot = require("@frctl/mandelbrot");
+
+// create a new instance with custom config options
+const foehnTheme = mandelbrot({
+    skin: "olive",
+});
+
+// tell Fractal to use the configured theme by default
+fractal.web.theme(foehnTheme);
+
 /* Tune Nunjucks */
 const njk = require("@frctl/nunjucks")({
     filters: {
