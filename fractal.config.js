@@ -33,6 +33,7 @@ const foehnTheme = mandelbrot({
             },
         },
     ],
+    favicon: "/foehn/img/favicon.ico",
 });
 
 // tell Fractal to use the configured theme by default
