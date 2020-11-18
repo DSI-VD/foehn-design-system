@@ -24,7 +24,7 @@
     "watch:styles": "sass src/assets/styles:public/assets/styles --watch",
     "prebuild": "run-p clean:* && npm run mkdir:public && run-p import:* && npm run lint && npm run styles",
     "build": "run-p build:*",
-    "build:styles": "sass src/assets/styles:public/assets/styles",
+    "build:styles": "sass src/assets/styles:public/assets/styles --style=compressed",
     "build:fractal": "fractal build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build -r https://github.com/DSI-VD/foehn-design-system.git"
