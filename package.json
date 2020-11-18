@@ -9,12 +9,13 @@
   "author": "Direction générale du numérique et des systèmes d'information",
   "license": "ISC",
   "scripts": {
-    "clean:build": "del build",
-    "clean:public": "del public",
+    "clean:build": "rimraf build",
+    "clean:public": "rimraf public",
     "mkdir:public": "mkdir public/",
     "import:fontawesome": "echo \"[ Copying Fontawesome in public/ folder ]\" && cp -R node_modules/@fortawesome/fontawesome-free/ public/fontawesome/",
     "import:foehn": "echo \"[ Copying Foehn in public/ folder]\" && cp -R node_modules/@dsivd/foehn/dist/assets/ public/foehn/",
-    "import:assets": "echo \"[ Copying documentation assets in public/ folder ]\" && cp -R src/assets public/assets",
+    "imports:assets": "echo \"[ Copying documentation assets in public/ folder ]\" && cp -R src/assets public/assets",
+    "import:assets": "echo \"[ Copying documentation assets in public/ folder ]\" && copyfiles src/assets/**/* public/assets -u 2 -e **/*.scss --error --verbose",
     "lint": "echo \"[ Linting and reformating files ]\" && npx prettier --write .",
     "styles": "sass src/assets/styles:public/assets/styles",
     "prestart": "npm run prebuild",
@@ -34,11 +35,12 @@
     "@frctl/fractal": "^1.5.1",
     "@frctl/mandelbrot": "^1.6.0",
     "@frctl/nunjucks": "^2.0.5",
-    "del-cli": "^3.0.1",
+    "copyfiles": "^2.4.0",
     "faker": "^5.1.0",
     "gh-pages": "^3.1.0",
     "npm-run-all": "^4.1.5",
     "prettier": "2.1.2",
+    "rimraf": "^3.0.2",
     "sass": "^1.29.0"
   }
 }
