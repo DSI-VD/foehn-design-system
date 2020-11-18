@@ -12,6 +12,7 @@ const mandelbrot = require("@frctl/mandelbrot");
 const foehnTheme = mandelbrot({
     skin: "olive",
     styles: ["default", "assets/styles/styleguide.css"],
+    nav: ["search", "docs", "components", "information"],
 });
 
 // tell Fractal to use the configured theme by default
