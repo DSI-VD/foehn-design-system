@@ -12,7 +12,7 @@ const mandelbrot = require("@frctl/mandelbrot");
 const foehnTheme = mandelbrot({
     lang: "fr",
     skin: "olive",
-    styles: ["default", "assets/styles/styleguide.css"],
+    styles: ["default", "/assets/styles/styleguide.css"],
     nav: ["search", "docs", "components", "information"],
     labels: {
         search: {
