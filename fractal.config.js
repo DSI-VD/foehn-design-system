@@ -10,9 +10,29 @@ const mandelbrot = require("@frctl/mandelbrot");
 
 // create a new instance with custom config options
 const foehnTheme = mandelbrot({
+    lang: "fr",
     skin: "olive",
     styles: ["default", "assets/styles/styleguide.css"],
     nav: ["search", "docs", "components", "information"],
+    labels: {
+        search: {
+            placeholder: "Rechercher…",
+        },
+    },
+    information: [
+        {
+            label: "Version",
+            value: require("./package.json").version,
+        },
+        {
+            label: "Généré le",
+            value: new Date(),
+            type: "time", // Outputs a <time /> HTML tag
+            format: (value) => {
+                return value.toLocaleDateString("fr");
+            },
+        },
+    ],
 });
 
 // tell Fractal to use the configured theme by default
