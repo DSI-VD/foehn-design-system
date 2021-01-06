@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/olive.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/olive.css?cachebust=1.7.0" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styles/styleguide.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../assets/styles/styleguide.css?cachebust=1.7.0" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.7.0" type="text/css">
 
 
 <title>Video List | Foehn Design System</title>
@@ -82,6 +82,9 @@
 
         </a>
     </h1>
+
+    <span class="Pen-preview-size" data-role="preview-size"></span>
+
     
 
 <div class="Status Status--tag">
@@ -179,16 +182,16 @@
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Médias<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-responsive embed-responsive-16by9 mb-3"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-responsive-item"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.youtube.com/embed/ZDf5hRFwg6w"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;embed-responsive embed-responsive-16by9 mb-3&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;embed-responsive-item&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://www.youtube.com/embed/ZDf5hRFwg6w&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-responsive embed-responsive-16by9 mb-3"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-responsive-item"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://www.dailymotion.com/embed/video/xsr67x"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;embed-responsive embed-responsive-16by9 mb-3&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;embed-responsive-item&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://www.dailymotion.com/embed/video/xsr67x&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-responsive embed-responsive-16by9 mb-3"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-responsive-item"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://player.vimeo.com/video/14111896"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;embed-responsive embed-responsive-16by9 mb-3&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;embed-responsive-item&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://player.vimeo.com/video/14111896&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
@@ -199,7 +202,7 @@
     <code class="Code Code--lang-html hljs">
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Médias<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 {% for video in items %}
-{% render '<a href="video.html">@video</a>', video, true %}
+{% render &#x27;<a href="video.html">@video</a>&#x27;, video, true %}
 {% endfor %}</pre>
     </code>
 </div>
@@ -210,15 +213,15 @@
         
             
             <pre>{
-  <span class="hljs-attr">"items"</span>: [
+  <span class="hljs-attr">&quot;items&quot;</span>: [
     {
-      <span class="hljs-attr">"src"</span>: <span class="hljs-string">"https://www.youtube.com/embed/ZDf5hRFwg6w"</span>
+      <span class="hljs-attr">&quot;src&quot;</span>: <span class="hljs-string">&quot;https://www.youtube.com/embed/ZDf5hRFwg6w&quot;</span>
     },
     {
-      <span class="hljs-attr">"src"</span>: <span class="hljs-string">"http://www.dailymotion.com/embed/video/xsr67x"</span>
+      <span class="hljs-attr">&quot;src&quot;</span>: <span class="hljs-string">&quot;http://www.dailymotion.com/embed/video/xsr67x&quot;</span>
     },
     {
-      <span class="hljs-attr">"src"</span>: <span class="hljs-string">"https://player.vimeo.com/video/14111896"</span>
+      <span class="hljs-attr">&quot;src&quot;</span>: <span class="hljs-string">&quot;https://player.vimeo.com/video/14111896&quot;</span>
     }
   ]
 }</pre>
@@ -7314,8 +7317,8 @@
                     <dt class="Tree-asideTerm">Généré le:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2020-12-17T11:30:46.211Z">
-                                17/12/2020
+                            <time datetime="2021-01-06T10:02:54.658Z">
+                                06/01/2021
                             </time>
                         
                     </dd>
@@ -7336,7 +7339,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.6.0"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.7.0"></script>
 
 
 

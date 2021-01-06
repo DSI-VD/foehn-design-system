@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/olive.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/olive.css?cachebust=1.7.0" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styles/styleguide.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../assets/styles/styleguide.css?cachebust=1.7.0" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.7.0" type="text/css">
 
 
 <title>Datalist: Default | Foehn Design System</title>
@@ -82,6 +82,9 @@
 
         </a>
     </h1>
+
+    <span class="Pen-preview-size" data-role="preview-size"></span>
+
     
 
 <div class="Status Status--tag">
@@ -177,10 +180,10 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-eaceff058926c0848d80d8a26af5a0bd-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"testDataInput"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"testDataInputLabel"</span>&gt;</span>Quel est votre fruit favoris ?<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">datalist</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"list"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"testDataInput"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"testDataInputLabel"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;testDataInput&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;testDataInputLabel&quot;</span>&gt;</span>Quel est votre fruit favoris ?<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">datalist</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;list&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;testDataInput&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;testDataInputLabel&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Abricot<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Ananas<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Citron<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
@@ -189,9 +192,9 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Groseille<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Kaki<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Kiwi<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"testDataInputfallbackLabel"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-text"</span>&gt;</span>Merci de le spécifier s<span class="hljs-symbol">&amp;#39;</span>il ne figure pas dans la liste<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;testDataInputfallbackLabel&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-text&quot;</span>&gt;</span>Merci de le spécifier s<span class="hljs-symbol">&amp;#39;</span>il ne figure pas dans la liste<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">datalist</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"testDataInput"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"state"</span> <span class="hljs-attr">list</span>=<span class="hljs-string">"list"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"testDataInputfallbackLabel"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;testDataInput&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;state&quot;</span> <span class="hljs-attr">list</span>=<span class="hljs-string">&quot;list&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;testDataInputfallbackLabel&quot;</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
@@ -200,16 +203,16 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-eaceff058926c0848d80d8a26af5a0bd-panel-view">
     <code class="Code Code--lang-html hljs">
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"{{ id }}"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"{{ id }}Label"</span>&gt;</span>{{ label }}<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">datalist</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"{{ list.id }}"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"{{ id }}"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"{{ id }}Label"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;{{ id }}&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;{{ id }}Label&quot;</span>&gt;</span>{{ label }}<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">datalist</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;{{ list.id }}&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;{{ id }}&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;{{ id }}Label&quot;</span>&gt;</span>
       {%- for option in list.options %}
       <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>{{ option.name }}<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
       {%- endfor %}
-    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"{{ id }}fallbackLabel"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-text"</span>&gt;</span>{{ fallbackLabel }}<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;{{ id }}fallbackLabel&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-text&quot;</span>&gt;</span>{{ fallbackLabel }}<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">datalist</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"{{ id }}"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"{{ class }}"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"state"</span> <span class="hljs-attr">list</span>=<span class="hljs-string">"{{ list.id }}"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"{{ id }}fallbackLabel"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;{{ id }}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;{{ class }}&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;state&quot;</span> <span class="hljs-attr">list</span>=<span class="hljs-string">&quot;{{ list.id }}&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;{{ id }}fallbackLabel&quot;</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
     </code>
 </div>
@@ -220,39 +223,39 @@
         
             
             <pre>{
-  <span class="hljs-attr">"label"</span>: <span class="hljs-string">"Quel est votre fruit favoris ?"</span>,
-  <span class="hljs-attr">"id"</span>: <span class="hljs-string">"testDataInput"</span>,
-  <span class="hljs-attr">"class"</span>: <span class="hljs-string">"form-control"</span>,
-  <span class="hljs-attr">"list"</span>: {
-    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"list"</span>,
-    <span class="hljs-attr">"options"</span>: [
+  <span class="hljs-attr">&quot;label&quot;</span>: <span class="hljs-string">&quot;Quel est votre fruit favoris ?&quot;</span>,
+  <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;testDataInput&quot;</span>,
+  <span class="hljs-attr">&quot;class&quot;</span>: <span class="hljs-string">&quot;form-control&quot;</span>,
+  <span class="hljs-attr">&quot;list&quot;</span>: {
+    <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;list&quot;</span>,
+    <span class="hljs-attr">&quot;options&quot;</span>: [
       {
-        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Abricot"</span>
+        <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Abricot&quot;</span>
       },
       {
-        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Ananas"</span>
+        <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Ananas&quot;</span>
       },
       {
-        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Citron"</span>
+        <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Citron&quot;</span>
       },
       {
-        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Fruit de la passion"</span>
+        <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Fruit de la passion&quot;</span>
       },
       {
-        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Grenade"</span>
+        <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Grenade&quot;</span>
       },
       {
-        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Groseille"</span>
+        <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Groseille&quot;</span>
       },
       {
-        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Kaki"</span>
+        <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Kaki&quot;</span>
       },
       {
-        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Kiwi"</span>
+        <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Kiwi&quot;</span>
       }
     ]
   },
-  <span class="hljs-attr">"fallbackLabel"</span>: <span class="hljs-string">"Merci de le spécifier s'il ne figure pas dans la liste"</span>
+  <span class="hljs-attr">&quot;fallbackLabel&quot;</span>: <span class="hljs-string">&quot;Merci de le spécifier s&#x27;il ne figure pas dans la liste&quot;</span>
 }</pre>
             
         
@@ -7358,8 +7361,8 @@
                     <dt class="Tree-asideTerm">Généré le:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2020-12-17T11:30:46.211Z">
-                                17/12/2020
+                            <time datetime="2021-01-06T10:02:54.658Z">
+                                06/01/2021
                             </time>
                         
                     </dd>
@@ -7380,7 +7383,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.6.0"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.7.0"></script>
 
 
 

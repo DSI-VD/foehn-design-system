@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/olive.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/olive.css?cachebust=1.7.0" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styles/styleguide.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../assets/styles/styleguide.css?cachebust=1.7.0" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.7.0" type="text/css">
 
 
 <title>Blockquote: Bubble | Foehn Design System</title>
@@ -82,6 +82,9 @@
 
         </a>
     </h1>
+
+    <span class="Pen-preview-size" data-role="preview-size"></span>
+
     
 
 <div class="Status Status--tag">
@@ -181,10 +184,10 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-744e0f89a4ce3b7fa677bc7fe99d2688-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"blockquote vd-blockquote-bubble"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;blockquote vd-blockquote-bubble&quot;</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>La démocratie ne se découpe pas en morceaux dont on ne choisirait que les meilleurs.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">cite</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"blockquote-footer"</span>&gt;</span>Pascal Broulis, Conseil d<span class="hljs-symbol">&amp;#39;</span>État de Vaud<span class="hljs-tag">&lt;/<span class="hljs-name">cite</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">cite</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;blockquote-footer&quot;</span>&gt;</span>Pascal Broulis, Conseil d<span class="hljs-symbol">&amp;#39;</span>État de Vaud<span class="hljs-tag">&lt;/<span class="hljs-name">cite</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span></pre>
         
@@ -194,10 +197,10 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-744e0f89a4ce3b7fa677bc7fe99d2688-panel-view">
     <code class="Code Code--lang-html hljs">
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"blockquote{% if class %} {{ class }}{% endif %}"</span>&gt;</span>
-  {% if image %}{% render '<a href="image--rounded.html">@image--rounded</a>', image, true %}{% endif %}
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;blockquote{% if class %} {{ class }}{% endif %}&quot;</span>&gt;</span>
+  {% if image %}{% render &#x27;<a href="image--rounded.html">@image--rounded</a>&#x27;, image, true %}{% endif %}
   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>La démocratie ne se découpe pas en morceaux dont on ne choisirait que les meilleurs.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-  {% render '<a href="citation.html">@citation</a>', {styleModifier: 'blockquote-footer', text:'Pascal Broulis, Conseil d\'État de Vaud'}, true %}
+  {% render &#x27;<a href="citation.html">@citation</a>&#x27;, {styleModifier: &#x27;blockquote-footer&#x27;, text:&#x27;Pascal Broulis, Conseil d\&#x27;État de Vaud&#x27;}, true %}
 <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span></pre>
     </code>
 </div>
@@ -208,7 +211,7 @@
         
             
             <pre>{
-  <span class="hljs-attr">"class"</span>: <span class="hljs-string">"vd-blockquote-bubble"</span>
+  <span class="hljs-attr">&quot;class&quot;</span>: <span class="hljs-string">&quot;vd-blockquote-bubble&quot;</span>
 }</pre>
             
         
@@ -240,7 +243,7 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
-                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">'UTF-8'</span>;
+                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">&#x27;UTF-8&#x27;</span>;
 
 <span class="hljs-selector-tag">blockquote</span>,
 <span class="hljs-selector-class">.blockquote</span> {
@@ -250,7 +253,7 @@
   <span class="hljs-attribute">color</span>: <span class="hljs-variable">$gray-500</span>;
 
   &amp;<span class="hljs-selector-pseudo">:before</span> {
-    <span class="hljs-attribute">content</span>: <span class="hljs-string">"“"</span>;
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;“&quot;</span>;
     <span class="hljs-attribute">position</span>: absolute;
     <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
     <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
@@ -293,7 +296,7 @@
   <span class="hljs-attribute">position</span>: relative;
   <span class="hljs-attribute">margin</span>: (<span class="hljs-variable">$spacer</span> * <span class="hljs-number">1.5</span>) <span class="hljs-number">0</span>;
   <span class="hljs-attribute">padding</span>: (<span class="hljs-variable">$spacer</span> * <span class="hljs-number">1.45</span>) (<span class="hljs-variable">$spacer</span> * <span class="hljs-number">1.8</span>);
-  <span class="hljs-attribute">background</span>: theme-color(<span class="hljs-string">"dark"</span>);
+  <span class="hljs-attribute">background</span>: theme-color(<span class="hljs-string">&quot;dark&quot;</span>);
   <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">10px</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
   <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.3</span>;
@@ -303,7 +306,7 @@
   }
 
   &amp;<span class="hljs-selector-pseudo">:after</span> {
-    <span class="hljs-attribute">content</span>: <span class="hljs-string">""</span>;
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;
     <span class="hljs-attribute">display</span>: block;
     <span class="hljs-attribute">position</span>: absolute;
     <span class="hljs-attribute">top</span>: <span class="hljs-number">100%</span>;
@@ -317,7 +320,7 @@
 
     <span class="hljs-keyword">@include</span> vd-background-image-icon(
       <span class="hljs-variable">$vd-blockquote-pointer</span>,
-      theme-color(<span class="hljs-string">"dark"</span>),
+      theme-color(<span class="hljs-string">&quot;dark&quot;</span>),
       <span class="hljs-number">41</span>,
       <span class="hljs-number">18</span>
     );
@@ -7483,8 +7486,8 @@
                     <dt class="Tree-asideTerm">Généré le:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2020-12-17T11:30:46.211Z">
-                                17/12/2020
+                            <time datetime="2021-01-06T10:02:54.658Z">
+                                06/01/2021
                             </time>
                         
                     </dd>
@@ -7505,7 +7508,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.6.0"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.7.0"></script>
 
 
 

@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/olive.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/olive.css?cachebust=1.7.0" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styles/styleguide.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../assets/styles/styleguide.css?cachebust=1.7.0" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.7.0" type="text/css">
 
 
 <title>Search Item: Page | Foehn Design System</title>
@@ -82,6 +82,9 @@
 
         </a>
     </h1>
+
+    <span class="Pen-preview-size" data-role="preview-size"></span>
+
     
 
 <div class="Status Status--tag">
@@ -176,7 +179,7 @@
     <code class="Code Code--lang-html hljs">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
         Titre du document
     <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
@@ -193,18 +196,18 @@
     <code class="Code Code--lang-html hljs">
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>
   {%<span class="hljs-attr">-</span> <span class="hljs-attr">if</span> <span class="hljs-attr">heading.styleModifier</span> %}
-  <span class="hljs-attr">class</span>=<span class="hljs-string">"{{ heading.styleModifier }}"</span>
+  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;{{ heading.styleModifier }}&quot;</span>
   {%<span class="hljs-attr">-</span> <span class="hljs-attr">endif</span> <span class="hljs-attr">-</span>%}
   &gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ url }}"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{{ url }}&quot;</span>&gt;</span>
     {{ title }}
     {%- if type.file %}
-    (<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Fichier <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"{{ type.file.abbr }}"</span>&gt;</span>PDF<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span>)
+    (<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>Fichier <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;{{ type.file.abbr }}&quot;</span>&gt;</span>PDF<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span>)
     {%- endif %}
   <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
 {% if type and not type.file -%}
-  <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;small&quot;</span>&gt;</span>
   {%- if type.news -%}
   Actualité du {{ type.news.date }}
   {%- elif type.prestation -%}
@@ -226,9 +229,9 @@
         
             
             <pre>{
-  <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Titre du document"</span>,
-  <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>,
-  <span class="hljs-attr">"excerpt"</span>: <span class="hljs-string">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt ligula eget elit rutrum, vitae ornare turpis pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum elementum sodales. Phasellus in enim nunc. Phasellus et dolor purus. Integer facilisis libero vitae libero ultricies, a tempor mi mattis. Nulla risus lectus, fringilla vel placerat viverra, semper finibus neque. Fusce placerat ligula mollis, imperdiet lacus id, malesuada nulla. Vivamus mollis hendrerit sollicitudin. Sed eget lacinia leo, ut bibendum purus. Sed condimentum varius convallis. Integer quis massa lacus. Pellentesque lacinia magna id odio ultricies, quis maximus enim porttitor. Aenean et tincidunt nisl."</span>
+  <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Titre du document&quot;</span>,
+  <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;#&quot;</span>,
+  <span class="hljs-attr">&quot;excerpt&quot;</span>: <span class="hljs-string">&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt ligula eget elit rutrum, vitae ornare turpis pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum elementum sodales. Phasellus in enim nunc. Phasellus et dolor purus. Integer facilisis libero vitae libero ultricies, a tempor mi mattis. Nulla risus lectus, fringilla vel placerat viverra, semper finibus neque. Fusce placerat ligula mollis, imperdiet lacus id, malesuada nulla. Vivamus mollis hendrerit sollicitudin. Sed eget lacinia leo, ut bibendum purus. Sed condimentum varius convallis. Integer quis massa lacus. Pellentesque lacinia magna id odio ultricies, quis maximus enim porttitor. Aenean et tincidunt nisl.&quot;</span>
 }</pre>
             
         
@@ -7334,8 +7337,8 @@
                     <dt class="Tree-asideTerm">Généré le:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2020-12-17T11:30:46.211Z">
-                                17/12/2020
+                            <time datetime="2021-01-06T10:02:54.658Z">
+                                06/01/2021
                             </time>
                         
                     </dd>
@@ -7356,7 +7359,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.6.0"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.7.0"></script>
 
 
 

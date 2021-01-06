@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/olive.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/olive.css?cachebust=1.7.0" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styles/styleguide.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../assets/styles/styleguide.css?cachebust=1.7.0" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.7.0" type="text/css">
 
 
 <title>Autority Info | Foehn Design System</title>
@@ -82,6 +82,9 @@
 
         </a>
     </h1>
+
+    <span class="Pen-preview-size" data-role="preview-size"></span>
+
     
 
 <div class="Status Status--tag">
@@ -181,16 +184,16 @@
 
 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam libero aliquid enim dolores minus sint dolor nisi harum deleniti cumque aspernatur nihil, non obcaecati quae vero quisquam nostrum ab! Laudantium.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-list-icons"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;vd-list-icons&quot;</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-info-circle"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Plus d<span class="hljs-symbol">&amp;#39;</span>information<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-info-circle&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Plus d<span class="hljs-symbol">&amp;#39;</span>information<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Contacter l<span class="hljs-symbol">&amp;#39;</span>office link to somewhere"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-dark"</span>&gt;</span>Contacter l<span class="hljs-symbol">&amp;#39;</span>office<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Contacter l<span class="hljs-symbol">&amp;#39;</span>office link to somewhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-dark&quot;</span>&gt;</span>Contacter l<span class="hljs-symbol">&amp;#39;</span>office<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></pre>
         
@@ -204,10 +207,10 @@
 
 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ description }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
-{% include '<a href="list-icon.html">@list-icon</a>' %}
+{% include &#x27;<a href="list-icon.html">@list-icon</a>&#x27; %}
 
 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
-  {% render '<a href="button--default.html">@button--default</a>', button, true %}
+  {% render &#x27;<a href="button--default.html">@button--default</a>&#x27;, button, true %}
 <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></pre>
     </code>
 </div>
@@ -218,19 +221,19 @@
         
             
             <pre>{
-  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Service name"</span>,
-  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam libero aliquid enim dolores minus sint dolor nisi harum deleniti cumque aspernatur nihil, non obcaecati quae vero quisquam nostrum ab! Laudantium."</span>,
-  <span class="hljs-attr">"listIcon"</span>: {
-    <span class="hljs-attr">"items"</span>: [
+  <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Service name&quot;</span>,
+  <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam libero aliquid enim dolores minus sint dolor nisi harum deleniti cumque aspernatur nihil, non obcaecati quae vero quisquam nostrum ab! Laudantium.&quot;</span>,
+  <span class="hljs-attr">&quot;listIcon&quot;</span>: {
+    <span class="hljs-attr">&quot;items&quot;</span>: [
       {
-        <span class="hljs-attr">"item"</span>: <span class="hljs-string">"Plus d'information"</span>,
-        <span class="hljs-attr">"icon"</span>: <span class="hljs-string">"fa-info-circle"</span>,
-        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+        <span class="hljs-attr">&quot;item&quot;</span>: <span class="hljs-string">&quot;Plus d&#x27;information&quot;</span>,
+        <span class="hljs-attr">&quot;icon&quot;</span>: <span class="hljs-string">&quot;fa-info-circle&quot;</span>,
+        <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;#&quot;</span>
       }
     ]
   },
-  <span class="hljs-attr">"button"</span>: {
-    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Contacter l'office"</span>
+  <span class="hljs-attr">&quot;button&quot;</span>: {
+    <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Contacter l&#x27;office&quot;</span>
   }
 }</pre>
             
@@ -7318,8 +7321,8 @@
                     <dt class="Tree-asideTerm">Généré le:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2020-12-17T11:30:46.211Z">
-                                17/12/2020
+                            <time datetime="2021-01-06T10:02:54.658Z">
+                                06/01/2021
                             </time>
                         
                     </dd>
@@ -7340,7 +7343,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.6.0"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.7.0"></script>
 
 
 

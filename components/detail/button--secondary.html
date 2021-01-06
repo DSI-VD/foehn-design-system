@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/olive.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/olive.css?cachebust=1.7.0" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styles/styleguide.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../assets/styles/styleguide.css?cachebust=1.7.0" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.7.0" type="text/css">
 
 
 <title>Button: Secondary | Foehn Design System</title>
@@ -82,6 +82,9 @@
 
         </a>
     </h1>
+
+    <span class="Pen-preview-size" data-role="preview-size"></span>
+
     
 
 <div class="Status Status--tag">
@@ -181,7 +184,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-eda9a80fc2e6bf51542a47b18ea2f1c5-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Trouver l<span class="hljs-symbol">&amp;#39;</span>adresse link to somewhere"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-secondary"</span>&gt;</span>Trouver l<span class="hljs-symbol">&amp;#39;</span>adresse<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Trouver l<span class="hljs-symbol">&amp;#39;</span>adresse link to somewhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary&quot;</span>&gt;</span>Trouver l<span class="hljs-symbol">&amp;#39;</span>adresse<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -189,17 +192,17 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-eda9a80fc2e6bf51542a47b18ea2f1c5-panel-view">
     <code class="Code Code--lang-html hljs">
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ href }}"</span>
-   {%<span class="hljs-attr">-</span> <span class="hljs-attr">if</span> <span class="hljs-attr">title</span> %}<span class="hljs-attr">title</span>=<span class="hljs-string">"{{ text }} {{ title }}"</span>{% <span class="hljs-attr">endif</span> <span class="hljs-attr">-</span>%}
-   <span class="hljs-attr">class</span>=<span class="hljs-string">"{{ class }}"</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{{ href }}&quot;</span>
+   {%<span class="hljs-attr">-</span> <span class="hljs-attr">if</span> <span class="hljs-attr">title</span> %}<span class="hljs-attr">title</span>=<span class="hljs-string">&quot;{{ text }} {{ title }}&quot;</span>{% <span class="hljs-attr">endif</span> <span class="hljs-attr">-</span>%}
+   <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;{{ class }}&quot;</span>
    {% <span class="hljs-attr">if</span> <span class="hljs-attr">attributes</span> %}
    {% <span class="hljs-attr">for</span> <span class="hljs-attr">attribute</span>, <span class="hljs-attr">value</span> <span class="hljs-attr">in</span> <span class="hljs-attr">attributes</span> %}
-   {{ <span class="hljs-attr">attribute</span> }}=<span class="hljs-string">"{{ value }}"</span>
+   {{ <span class="hljs-attr">attribute</span> }}=<span class="hljs-string">&quot;{{ value }}&quot;</span>
    {% <span class="hljs-attr">endfor</span> %}
    {% <span class="hljs-attr">endif</span> %}&gt;</span>
-{%- if iconBefore %} <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa {{ iconBefore }}"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> {% endif -%}
+{%- if iconBefore %} <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa {{ iconBefore }}&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> {% endif -%}
 {{ text }}
-{%- if iconAfter %} <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa {{ iconAfter }}"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+{%- if iconAfter %} <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa {{ iconAfter }}&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 {% endif -%}
 <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></pre>
     </code>
@@ -211,10 +214,10 @@
         
             
             <pre>{
-  <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Trouver l'adresse"</span>,
-  <span class="hljs-attr">"href"</span>: <span class="hljs-string">"#"</span>,
-  <span class="hljs-attr">"title"</span>: <span class="hljs-string">"link to somewhere"</span>,
-  <span class="hljs-attr">"class"</span>: <span class="hljs-string">"btn btn-secondary"</span>
+  <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Trouver l&#x27;adresse&quot;</span>,
+  <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;#&quot;</span>,
+  <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;link to somewhere&quot;</span>,
+  <span class="hljs-attr">&quot;class&quot;</span>: <span class="hljs-string">&quot;btn btn-secondary&quot;</span>
 }</pre>
             
         
@@ -248,7 +251,7 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
-                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">'UTF-8'</span>;
+                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">&#x27;UTF-8&#x27;</span>;
 
 <span class="hljs-comment">// Override normalize.css – because setting the font-family on `body` is not</span>
 <span class="hljs-comment">// specific enough for those tags</span>
@@ -374,10 +377,10 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
-                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">'UTF-8'</span>;
+                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">&#x27;UTF-8&#x27;</span>;
 
 <span class="hljs-comment">/**
- * 1. Overrides Bootstrap behavior: it's broken in IE if we don't specify
+ * 1. Overrides Bootstrap behavior: it&#x27;s broken in IE if we don&#x27;t specify
  *    shrink and basis value.
  */</span>
 
@@ -7524,8 +7527,8 @@
                     <dt class="Tree-asideTerm">Généré le:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2020-12-17T11:30:46.211Z">
-                                17/12/2020
+                            <time datetime="2021-01-06T10:02:54.658Z">
+                                06/01/2021
                             </time>
                         
                     </dd>
@@ -7546,7 +7549,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.6.0"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.7.0"></script>
 
 
 

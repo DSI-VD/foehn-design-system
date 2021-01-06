@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/olive.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/olive.css?cachebust=1.7.0" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styles/styleguide.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../assets/styles/styleguide.css?cachebust=1.7.0" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.7.0" type="text/css">
 
 
 <title>List Icon | Foehn Design System</title>
@@ -82,6 +82,9 @@
 
         </a>
     </h1>
+
+    <span class="Pen-preview-size" data-role="preview-size"></span>
+
     
 
 <div class="Status Status--tag">
@@ -181,14 +184,14 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-14bc5fe19c3d0157f395c34f010174bc-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-list-icons"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;vd-list-icons&quot;</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-info-circle"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>info.spi@vd.ch<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-info-circle&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>info.spi@vd.ch<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-map-marker"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>voir sur la carte<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-map-marker&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>voir sur la carte<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></pre>
@@ -199,18 +202,18 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-14bc5fe19c3d0157f395c34f010174bc-panel-view">
     <code class="Code Code--lang-html hljs">
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-list-icons"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;vd-list-icons&quot;</span>&gt;</span>
   {% for item in listIcon.items %}
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa {{ item.icon }}"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> {% if item.accessibleLegend %}<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>{{ item.accessibleLegend }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>{% endif %}<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ item.url }}"</span>&gt;</span>{{ item.item }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa {{ item.icon }}&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> {% if item.accessibleLegend %}<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>{{ item.accessibleLegend }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>{% endif %}<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{{ item.url }}&quot;</span>&gt;</span>{{ item.item }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
   {% endfor %}
   {% if listIcon.button %}
-    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-3"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mt-3&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
-        <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>
-        <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-dark"</span>
-        {% <span class="hljs-attr">if</span> <span class="hljs-attr">listIcon.button.title</span> %} <span class="hljs-attr">title</span>=<span class="hljs-string">"{{ listIcon.button.title }}"</span>&gt;</span>
+        <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>
+        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-dark&quot;</span>
+        {% <span class="hljs-attr">if</span> <span class="hljs-attr">listIcon.button.title</span> %} <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;{{ listIcon.button.title }}&quot;</span>&gt;</span>
           {{ listIcon.button.text }}
         {% endif %}
       <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -226,17 +229,17 @@
         
             
             <pre>{
-  <span class="hljs-attr">"listIcon"</span>: {
-    <span class="hljs-attr">"items"</span>: [
+  <span class="hljs-attr">&quot;listIcon&quot;</span>: {
+    <span class="hljs-attr">&quot;items&quot;</span>: [
       {
-        <span class="hljs-attr">"item"</span>: <span class="hljs-string">"info.spi@vd.ch"</span>,
-        <span class="hljs-attr">"icon"</span>: <span class="hljs-string">"fa-info-circle"</span>,
-        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+        <span class="hljs-attr">&quot;item&quot;</span>: <span class="hljs-string">&quot;info.spi@vd.ch&quot;</span>,
+        <span class="hljs-attr">&quot;icon&quot;</span>: <span class="hljs-string">&quot;fa-info-circle&quot;</span>,
+        <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;#&quot;</span>
       },
       {
-        <span class="hljs-attr">"item"</span>: <span class="hljs-string">"voir sur la carte"</span>,
-        <span class="hljs-attr">"icon"</span>: <span class="hljs-string">"fa-map-marker"</span>,
-        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+        <span class="hljs-attr">&quot;item&quot;</span>: <span class="hljs-string">&quot;voir sur la carte&quot;</span>,
+        <span class="hljs-attr">&quot;icon&quot;</span>: <span class="hljs-string">&quot;fa-map-marker&quot;</span>,
+        <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;#&quot;</span>
       }
     ]
   }
@@ -271,7 +274,7 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
-                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">'UTF-8'</span>;
+                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">&#x27;UTF-8&#x27;</span>;
 
 <span class="hljs-selector-class">.vd-list-icons</span> {
   <span class="hljs-keyword">@include</span> list-unstyled;
@@ -7388,8 +7391,8 @@
                     <dt class="Tree-asideTerm">Généré le:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2020-12-17T11:30:46.211Z">
-                                17/12/2020
+                            <time datetime="2021-01-06T10:02:54.658Z">
+                                06/01/2021
                             </time>
                         
                     </dd>
@@ -7410,7 +7413,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.6.0"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.7.0"></script>
 
 
 

@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/olive.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/olive.css?cachebust=1.7.0" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styles/styleguide.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../assets/styles/styleguide.css?cachebust=1.7.0" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.7.0" type="text/css">
 
 
 <title>Domain Item | Foehn Design System</title>
@@ -82,6 +82,9 @@
 
         </a>
     </h1>
+
+    <span class="Pen-preview-size" data-role="preview-size"></span>
+
     
 
 <div class="Status Status--tag">
@@ -181,10 +184,10 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-1c93c46a9d4575d7e97b731cd50b6217-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-domain-item vd-domain-item--big"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"domaines"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-link-invisible vd-domain-item__link h2"</span>&gt;</span>This is the title<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-domain-item__text"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>(Exemple de contenu: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;vd-domain-item vd-domain-item--big&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;domaines&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;vd-link-invisible vd-domain-item__link h2&quot;</span>&gt;</span>This is the title<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;vd-domain-item__text&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>(Exemple de contenu: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;<span class="hljs-name">Lorem</span></span> ipsum dolor sit amet, consectetur adipisicing elit.<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></pre>
         
@@ -194,15 +197,15 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-1c93c46a9d4575d7e97b731cd50b6217-panel-view">
     <code class="Code Code--lang-html hljs">
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-domain-item vd-domain-item--big{% if styleModifier %} {{ styleModifier }}{% endif %}"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{% if url %}{{ url }}{% else %}domaines{% endif %}"</span>
-    <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-link-invisible vd-domain-item__link h2"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;vd-domain-item vd-domain-item--big{% if styleModifier %} {{ styleModifier }}{% endif %}&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% if url %}{{ url }}{% else %}domaines{% endif %}&quot;</span>
+    <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;vd-link-invisible vd-domain-item__link h2&quot;</span>&gt;</span>
     {{- name -}}
   <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-domain-item__text"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>(Exemple de contenu: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;vd-domain-item__text&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>(Exemple de contenu: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     {{- description -}}
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></pre>
     </code>
@@ -214,8 +217,8 @@
         
             
             <pre>{
-  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"This is the title"</span>,
-  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Lorem ipsum dolor sit amet, consectetur adipisicing elit."</span>
+  <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;This is the title&quot;</span>,
+  <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&quot;</span>
 }</pre>
             
         
@@ -247,7 +250,7 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
-                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">'UTF-8'</span>;
+                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">&#x27;UTF-8&#x27;</span>;
 
 <span class="hljs-comment">/**
  * Teaser links
@@ -280,7 +283,7 @@
     <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>; <span class="hljs-comment">/* [2] */</span>
     <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>; <span class="hljs-comment">/* [2] */</span>
     <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>; <span class="hljs-comment">/* [2] */</span>
-    <span class="hljs-attribute">content</span>: <span class="hljs-string">""</span>; <span class="hljs-comment">/* [2] */</span>
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>; <span class="hljs-comment">/* [2] */</span>
   }
 }
 
@@ -7419,8 +7422,8 @@
                     <dt class="Tree-asideTerm">Généré le:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2020-12-17T11:30:46.211Z">
-                                17/12/2020
+                            <time datetime="2021-01-06T10:02:54.658Z">
+                                06/01/2021
                             </time>
                         
                     </dd>
@@ -7441,7 +7444,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.6.0"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.7.0"></script>
 
 
 

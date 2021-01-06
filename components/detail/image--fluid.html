@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/olive.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/olive.css?cachebust=1.7.0" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styles/styleguide.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../assets/styles/styleguide.css?cachebust=1.7.0" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.7.0" type="text/css">
 
 
 <title>Image: Fluid | Foehn Design System</title>
@@ -82,6 +82,9 @@
 
         </a>
     </h1>
+
+    <span class="Pen-preview-size" data-role="preview-size"></span>
+
     
 
 <div class="Status Status--tag">
@@ -181,7 +184,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-09ac33d32950a6fb953d4c91c0673a47-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://placehold.it/960x640/ea09ff/000001?text=Default|960x640"</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"https://placehold.it/320x210/d8e7ff/000001?text=320x210 320w, https://placehold.it/540x360/a4c6fc/000001?text=540x360 540w, https://placehold.it/720x480/6ba4ff/000001?text=720x480 720w, https://placehold.it/960x640/3f89ff/000001?text=960x640 960w, https://placehold.it/1140x760/0a68ff/fffffa?text=1140x760 1140w"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Alternative text"</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;img-fluid&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://placehold.it/960x640/ea09ff/000001?text=Default|960x640&quot;</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">&quot;https://placehold.it/320x210/d8e7ff/000001?text=320x210 320w, https://placehold.it/540x360/a4c6fc/000001?text=540x360 540w, https://placehold.it/720x480/6ba4ff/000001?text=720x480 720w, https://placehold.it/960x640/3f89ff/000001?text=960x640 960w, https://placehold.it/1140x760/0a68ff/fffffa?text=1140x760 1140w&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Alternative text&quot;</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -190,14 +193,14 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-09ac33d32950a6fb953d4c91c0673a47-panel-view">
     <code class="Code Code--lang-html hljs">
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">img</span>
-    {% <span class="hljs-attr">if</span> <span class="hljs-attr">class</span> %}<span class="hljs-attr">class</span>=<span class="hljs-string">"{{ class }}{% if styleModifier %} {{ styleModifier }}{% endif %}"</span>
-    {% <span class="hljs-attr">elif</span> <span class="hljs-attr">styleModifier</span> %} <span class="hljs-attr">class</span>=<span class="hljs-string">"{{ styleModifier }}"</span> {% <span class="hljs-attr">endif</span> %}
-    <span class="hljs-attr">src</span>=<span class="hljs-string">"{{ src }}"</span>
-    {%<span class="hljs-attr">if</span> <span class="hljs-attr">srcset</span> %}<span class="hljs-attr">srcset</span>=<span class="hljs-string">"
+    {% <span class="hljs-attr">if</span> <span class="hljs-attr">class</span> %}<span class="hljs-attr">class</span>=<span class="hljs-string">&quot;{{ class }}{% if styleModifier %} {{ styleModifier }}{% endif %}&quot;</span>
+    {% <span class="hljs-attr">elif</span> <span class="hljs-attr">styleModifier</span> %} <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;{{ styleModifier }}&quot;</span> {% <span class="hljs-attr">endif</span> %}
+    <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;{{ src }}&quot;</span>
+    {%<span class="hljs-attr">if</span> <span class="hljs-attr">srcset</span> %}<span class="hljs-attr">srcset</span>=<span class="hljs-string">&quot;
       {%- for item in srcset -%}
       {{ item.file }} {{ item.width }}{% if not loop.last %}, {% endif %}
       {%- endfor -%}
-    "</span>{% <span class="hljs-attr">endif</span> %} <span class="hljs-attr">alt</span>=<span class="hljs-string">"{{ alt }}"</span>&gt;</span></pre>
+    &quot;</span>{% <span class="hljs-attr">endif</span> %} <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;{{ alt }}&quot;</span>&gt;</span></pre>
     </code>
 </div>
 
@@ -207,31 +210,31 @@
         
             
             <pre>{
-  <span class="hljs-attr">"src"</span>: <span class="hljs-string">"https://placehold.it/960x640/ea09ff/000001?text=Default|960x640"</span>,
-  <span class="hljs-attr">"alt"</span>: <span class="hljs-string">"Alternative text"</span>,
-  <span class="hljs-attr">"srcset"</span>: [
+  <span class="hljs-attr">&quot;src&quot;</span>: <span class="hljs-string">&quot;https://placehold.it/960x640/ea09ff/000001?text=Default|960x640&quot;</span>,
+  <span class="hljs-attr">&quot;alt&quot;</span>: <span class="hljs-string">&quot;Alternative text&quot;</span>,
+  <span class="hljs-attr">&quot;srcset&quot;</span>: [
     {
-      <span class="hljs-attr">"width"</span>: <span class="hljs-string">"320w"</span>,
-      <span class="hljs-attr">"file"</span>: <span class="hljs-string">"https://placehold.it/320x210/d8e7ff/000001?text=320x210"</span>
+      <span class="hljs-attr">&quot;width&quot;</span>: <span class="hljs-string">&quot;320w&quot;</span>,
+      <span class="hljs-attr">&quot;file&quot;</span>: <span class="hljs-string">&quot;https://placehold.it/320x210/d8e7ff/000001?text=320x210&quot;</span>
     },
     {
-      <span class="hljs-attr">"width"</span>: <span class="hljs-string">"540w"</span>,
-      <span class="hljs-attr">"file"</span>: <span class="hljs-string">"https://placehold.it/540x360/a4c6fc/000001?text=540x360"</span>
+      <span class="hljs-attr">&quot;width&quot;</span>: <span class="hljs-string">&quot;540w&quot;</span>,
+      <span class="hljs-attr">&quot;file&quot;</span>: <span class="hljs-string">&quot;https://placehold.it/540x360/a4c6fc/000001?text=540x360&quot;</span>
     },
     {
-      <span class="hljs-attr">"width"</span>: <span class="hljs-string">"720w"</span>,
-      <span class="hljs-attr">"file"</span>: <span class="hljs-string">"https://placehold.it/720x480/6ba4ff/000001?text=720x480"</span>
+      <span class="hljs-attr">&quot;width&quot;</span>: <span class="hljs-string">&quot;720w&quot;</span>,
+      <span class="hljs-attr">&quot;file&quot;</span>: <span class="hljs-string">&quot;https://placehold.it/720x480/6ba4ff/000001?text=720x480&quot;</span>
     },
     {
-      <span class="hljs-attr">"width"</span>: <span class="hljs-string">"960w"</span>,
-      <span class="hljs-attr">"file"</span>: <span class="hljs-string">"https://placehold.it/960x640/3f89ff/000001?text=960x640"</span>
+      <span class="hljs-attr">&quot;width&quot;</span>: <span class="hljs-string">&quot;960w&quot;</span>,
+      <span class="hljs-attr">&quot;file&quot;</span>: <span class="hljs-string">&quot;https://placehold.it/960x640/3f89ff/000001?text=960x640&quot;</span>
     },
     {
-      <span class="hljs-attr">"width"</span>: <span class="hljs-string">"1140w"</span>,
-      <span class="hljs-attr">"file"</span>: <span class="hljs-string">"https://placehold.it/1140x760/0a68ff/fffffa?text=1140x760"</span>
+      <span class="hljs-attr">&quot;width&quot;</span>: <span class="hljs-string">&quot;1140w&quot;</span>,
+      <span class="hljs-attr">&quot;file&quot;</span>: <span class="hljs-string">&quot;https://placehold.it/1140x760/0a68ff/fffffa?text=1140x760&quot;</span>
     }
   ],
-  <span class="hljs-attr">"class"</span>: <span class="hljs-string">"img-fluid"</span>
+  <span class="hljs-attr">&quot;class&quot;</span>: <span class="hljs-string">&quot;img-fluid&quot;</span>
 }</pre>
             
         
@@ -263,7 +266,7 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
-                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">'UTF-8'</span>;
+                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">&#x27;UTF-8&#x27;</span>;
 
 <span class="hljs-comment">/**
  * Image
@@ -394,8 +397,8 @@
 </ul>
 <pre><code class="hljs">&lt;img
 
-    src="https://placehold.it/<span class="hljs-number">960x640</span>/ea09ff/<span class="hljs-number">000001</span>?text=Default|<span class="hljs-number">960x640</span>"
-    srcset="https://placehold.it/<span class="hljs-number">320x210</span>/d8e7ff/<span class="hljs-number">000001</span>?text=<span class="hljs-number">320x210</span> <span class="hljs-number">320w</span>, https://placehold.it/<span class="hljs-number">540x360</span>/a4c6fc/<span class="hljs-number">000001</span>?text=<span class="hljs-number">540x360</span> <span class="hljs-number">540w</span>, https://placehold.it/<span class="hljs-number">720x480</span>/<span class="hljs-number">6</span>ba4ff/<span class="hljs-number">000001</span>?text=<span class="hljs-number">720x480</span> <span class="hljs-number">720w</span>, https://placehold.it/<span class="hljs-number">960x640</span>/<span class="hljs-number">3</span>f89ff/<span class="hljs-number">000001</span>?text=<span class="hljs-number">960x640</span> <span class="hljs-number">960w</span>, https://placehold.it/<span class="hljs-number">1140x760</span>/<span class="hljs-number">0</span>a68ff/fffffa?text=<span class="hljs-number">1140x760</span> <span class="hljs-number">1140w</span>" alt="Alternative text"&gt;
+    src=&quot;https://placehold.it/<span class="hljs-number">960x640</span>/ea09ff/<span class="hljs-number">000001</span>?text=Default|<span class="hljs-number">960x640</span>&quot;
+    srcset=&quot;https://placehold.it/<span class="hljs-number">320x210</span>/d8e7ff/<span class="hljs-number">000001</span>?text=<span class="hljs-number">320x210</span> <span class="hljs-number">320w</span>, https://placehold.it/<span class="hljs-number">540x360</span>/a4c6fc/<span class="hljs-number">000001</span>?text=<span class="hljs-number">540x360</span> <span class="hljs-number">540w</span>, https://placehold.it/<span class="hljs-number">720x480</span>/<span class="hljs-number">6</span>ba4ff/<span class="hljs-number">000001</span>?text=<span class="hljs-number">720x480</span> <span class="hljs-number">720w</span>, https://placehold.it/<span class="hljs-number">960x640</span>/<span class="hljs-number">3</span>f89ff/<span class="hljs-number">000001</span>?text=<span class="hljs-number">960x640</span> <span class="hljs-number">960w</span>, https://placehold.it/<span class="hljs-number">1140x760</span>/<span class="hljs-number">0</span>a68ff/fffffa?text=<span class="hljs-number">1140x760</span> <span class="hljs-number">1140w</span>&quot; alt=&quot;Alternative text&quot;&gt;
 </code></pre>
         
     </div>
@@ -7417,8 +7420,8 @@
                     <dt class="Tree-asideTerm">Généré le:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2020-12-17T11:30:46.211Z">
-                                17/12/2020
+                            <time datetime="2021-01-06T10:02:54.658Z">
+                                06/01/2021
                             </time>
                         
                     </dd>
@@ -7439,7 +7442,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.6.0"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.7.0"></script>
 
 
 
