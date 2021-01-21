@@ -31,7 +31,6 @@
   },
   "devDependencies": {
     "@dsivd/foehn": "^1.8.0",
-    "@fortawesome/fontawesome-free": "^5.15.1",
     "@frctl/fractal": "^1.5.2",
     "@frctl/mandelbrot": "^1.7.0",
     "@frctl/nunjucks": "^2.0.6",
