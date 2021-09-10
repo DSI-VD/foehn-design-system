@@ -30,17 +30,17 @@
     "deploy": "gh-pages -d build -r https://github.com/DSI-VD/foehn-design-system.git"
   },
   "devDependencies": {
-    "@dsivd/foehn": "^1.8.0",
-    "@fortawesome/fontawesome-free": "^5.15.3",
-    "@frctl/fractal": "^1.5.6",
-    "@frctl/mandelbrot": "^1.9.0",
-    "@frctl/nunjucks": "^2.0.10",
+    "@dsivd/foehn": "^1.8.2",
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@frctl/fractal": "^1.5.11",
+    "@frctl/mandelbrot": "^1.9.4",
+    "@frctl/nunjucks": "^2.0.13",
     "copyfiles": "^2.4.1",
     "faker": "^5.5.3",
-    "gh-pages": "^3.1.0",
+    "gh-pages": "^3.2.3",
     "npm-run-all": "^4.1.5",
-    "prettier": "2.2.1",
+    "prettier": "2.4.0",
     "rimraf": "^3.0.2",
-    "sass": "^1.32.11"
+    "sass": "^1.39.2"
   }
 }
