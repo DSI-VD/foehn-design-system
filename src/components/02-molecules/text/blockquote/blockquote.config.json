@@ -12,7 +12,7 @@
       "context": {
         "class": "vd-blockquote-bubble vd-blockquote-bubble-media",
         "image": {
-          "src": "https://api.adorable.io/avatars/200/hello@vd.png",
+          "src": "https://source.unsplash.com/75x75",
           "alt": "Alternative text",
           "styleModifier": "img-fluid"
         }
