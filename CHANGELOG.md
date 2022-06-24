@@ -5,6 +5,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add documentation about form structure
+
 ### Fixes
 
 - Fix `@blockquote--bubble-media` image url
