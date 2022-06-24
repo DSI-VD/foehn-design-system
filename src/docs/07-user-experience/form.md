@@ -11,7 +11,7 @@ Les formulaires sur une colonne sont plus facile à scanner
 
 Les mises en page de formulaires à plusieurs colonnes sont sujettes à de mauvaises interprétations. Les utilisateurs sont plus susceptibles d'ignorer les champs obligatoires, de saisir des données dans les mauvais champs ou simplement d'abandonner complètement le formulaire. L'image ci-dessous illustre comment les utilisateurs ont tendance à mal interpréter les formulaires à plusieurs colonnes:
 
-![Exemples de mauvaises intérprétations du chemin dans un formulaire](../assets/img/form-path-misinterpretation.png)
+![Exemples de mauvaises intérprétations du chemin dans un formulaire](../../assets/img/form-path-misinterpretation.png)
 
 Lorsqu'un formulaire n'offre pas un chemin clair afin d'être complété, il faut beaucoup plus de temps pour le comprendre et le remplir. Avec un chemin de complétion linéaire (c'est-à-dire sur une colonne), il n'y a pas d'ambiguïté quant à la façon dont un formulaire doit être saisi.
 
