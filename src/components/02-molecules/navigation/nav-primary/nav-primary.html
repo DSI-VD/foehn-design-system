@@ -4,8 +4,8 @@
   <div class="container">
     <button type="button"
           class="btn btn-sm btn-link vd-nav-primary__button {% if navOpen %}js-closeMenuOnMobile__button {% else %}collapsed{% endif %}"
-          data-toggle="collapse"
-          data-target="#nav-primary-container"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav-primary-container"
           aria-controls="nav-primary-container"
         aria-expanded="{%- if navOpen %}true{% else %}false{% endif -%}">
       <div class="d-flex justify-content-between">
@@ -34,7 +34,7 @@
                 <ul class="list-unstyled mb-0 row">
                   {% for domain in domains.domains %}
                     {% render '@domain-item--small', {name:domain.name,
-                    styleModifier:'col-sm-6 col-lg-4 mb-3', description:domain.description}, true %}
+                    styleModifier:'col-sm-6 col-lg-4 mb-2', description:domain.description}, true %}
                   {% endfor %}
                 </ul>
               </nav>

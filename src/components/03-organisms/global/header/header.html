@@ -6,7 +6,7 @@
                 justify-content-between
                 justify-content-md-end
                 d-print-none">
-      <div class="mr-3">
+      <div class="me-3">
         {% render '@nav', nav, true %}
       </div>
       {% render '@login', { styleModifier: 'mb-3'}, true %}
@@ -16,7 +16,7 @@
       <div class="col-md-5 vd-print-full-width">
         {% render '@logo-etat' %}
       </div>
-      <div class="col-md-5 ml-auto d-print-none">
+      <div class="col-md-5 d-print-none ms-auto">
         {% render '@search-form--default', { styleModifier: 'mt-2 mb-4' }, true %}
       </div>
     </div>

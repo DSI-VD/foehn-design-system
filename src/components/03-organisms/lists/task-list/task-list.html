@@ -10,7 +10,7 @@
             <a href="#" class="align-self-baseline mt-2">{{ item.text }}</a>
             {% if item.status %}
               <strong class="align-self-baseline
-                             badge badge-{{ item.status.badge }}
+                             badge text-bg-{{ item.status.badge }}
                              mt-2
                              {%- if item.status.styleModifier %} {{ item.status.stylemodifier }}{% endif %}
                              ">{{ item.status.text }}</strong>
