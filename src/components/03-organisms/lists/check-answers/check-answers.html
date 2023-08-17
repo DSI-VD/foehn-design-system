@@ -13,7 +13,7 @@
           <dt class="col-md-4">{{ item.question }}</dt>
           {% if item.url %}
             <dd class="col-md-6">{{ item.answer | safe }}</dd>
-            <dd class="col-md-2 text-md-right"><a href="{{ item.url }}">Modifier</a></dd>
+            <dd class="col-md-2 text-md-end"><a href="{{ item.url }}">Modifier</a></dd>
           {% else %}
             <dd class="col-md-8">{{ item.answer | safe }}</dd>
           {% endif %}

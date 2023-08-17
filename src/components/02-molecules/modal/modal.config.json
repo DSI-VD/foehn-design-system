@@ -9,7 +9,7 @@
           {
             "text": "Fermer",
             "attributes": {
-              "data-dismiss": "modal"
+              "data-bs-dismiss": "modal"
             }
           }
         ]

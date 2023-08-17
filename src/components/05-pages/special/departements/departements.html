@@ -19,7 +19,7 @@
       {% if autority.autorities %}
       <ul class="list-unstyled">
         {% for autority in autority.autorities %}
-        <li class="ml-5 my-3"><a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible d-inline-block"><span class="lead">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; <span class="sr-only">Abbreviation: </span>{{ autority.abbr }}</small>{% endif %}</a></li>
+        <li class="ms-5 my-3"><a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible d-inline-block"><span class="lead">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; <span class="sr-only">Abbreviation: </span>{{ autority.abbr }}</small>{% endif %}</a></li>
         {% endfor %}
       </ul>
       {% endif %}
@@ -40,7 +40,7 @@
       {% if autority.autorities %}
       <ul class="list-unstyled">
         {% for autority in autority.autorities %}
-        <li class="ml-5 my-3"><a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible d-inline-block"><span class="lead">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; {{ autority.abbr }}</small>{% endif %}</a></li>
+        <li class="ms-5 my-3"><a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible d-inline-block"><span class="lead">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; {{ autority.abbr }}</small>{% endif %}</a></li>
         {% endfor %}
       </ul>
       {% endif %}

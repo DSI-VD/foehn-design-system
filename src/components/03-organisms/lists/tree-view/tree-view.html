@@ -23,7 +23,7 @@
           <span class="sr-only"> de {{ entitie.text }}</span>
         </a>
 
-        <ul class="list-unstyled ml-3 ml-md-5 collapse" id="{{ entitie.id }}">
+        <ul class="list-unstyled ms-3 ms-md-5 collapse" id="{{ entitie.id }}">
           {% for entitie in entitie.enfants %}
             <li>
               <span class="h4 d-inline-block"><a href="#">{{ entitie.text }}</a></span>
@@ -46,17 +46,17 @@
                   Cacher les sous-entités
                   <span class="sr-only"> de {{ entitie.text }}</span>
                 </a>
-                <ul class="list-unstyled ml-3 ml-md-5 collapse" id="{{ entitie.id }}">
+                <ul class="list-unstyled ms-3 ms-md-5 collapse" id="{{ entitie.id }}">
                   {% for entitie in entitie.enfants %}
                     <li>
                       <span class="h5 d-inline-block"><a href="#">{{ entitie.text }}</a></span>
                       {% if entitie.enfants %}
-                        <ul class="list-unstyled ml-3 ml-md-5">
+                        <ul class="list-unstyled ms-3 ms-md-5">
                           {% for entitie in entitie.enfants %}
                             <li class="mb-1">
                               <a href="#">{{ entitie.text }}</a>
                               {% if entitie.enfants %}
-                                <ul class="list-unstyled ml-3 ml-md-5">
+                                <ul class="list-unstyled ms-3 ms-md-5">
                                   {% for entitie in entitie.enfants %}
                                     <li class="mb-1">
                                       <a href="#">{{ entitie.text }}</a>
