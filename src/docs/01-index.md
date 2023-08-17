@@ -3,11 +3,9 @@ title: "Fœhn - VD.ch"
 status: ready
 ---
 
-**This styleguide is under development. Please, refer to the [official one](http://dsi-vd.github.io/foehn/).**
-
 ## Design your service using VD.CH styles, components and patterns
 
-Use this design system to make your service consistent with GOV.UK. Learn from the research and experience of other service teams and avoid repeating work that’s already been done.
+Use this design system to make your service consistent with VD.CH. Learn from the research and experience of other service teams and avoid repeating work that’s already been done.
 
 ## Content & hierarchy
 
