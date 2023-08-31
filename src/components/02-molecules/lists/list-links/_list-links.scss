@@ -1,5 +1,4 @@
-*/
-.vd-list-links,
+*/ .vd-list-links,
 .vd-menu-list-links {
   padding-left: $spacer;
   list-style-type: square;
@@ -12,7 +11,7 @@
   }
 
   .nav-link {
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     color: $primary;
   }
 }

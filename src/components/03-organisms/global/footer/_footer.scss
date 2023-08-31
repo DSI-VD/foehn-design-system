@@ -18,7 +18,7 @@
   color: $white; /* [2] */
 
   &:after {
-    content: ''; /* [1] */
+    content: ""; /* [1] */
     display: block; /* [1] */
     position: absolute; /* [1] */
     bottom: 0; /* [1] */

@@ -1,5 +1,5 @@
 @charset 'UTF-8';
-@use 'sass:math';
+@use "sass:math";
 
 .vd-list-icons {
   @include list-unstyled;
@@ -10,5 +10,7 @@
     text-align: center;
   }
 
-  li { margin-bottom: 0; }
+  li {
+    margin-bottom: 0;
+  }
 }

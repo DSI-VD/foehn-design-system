@@ -51,10 +51,10 @@ const njk = require("@frctl/nunjucks")({
         renderComponent(handle) {
             return `<div class="component-example"><span class="component-example__preview-link"><a href="../../components/detail/${handle.replace(
                 "@",
-                ""
+                "",
             )}">Open detail page of this component</a></span><iframe class="component-example__iframe" src="../../components/preview/${handle.replace(
                 "@",
-                ""
+                "",
             )}"></iframe></div>`;
         },
     },
@@ -65,7 +65,7 @@ fractal.set("project.title", "Foehn Design System");
 fractal.set("project.version", pkg.version);
 fractal.set(
     "project.author",
-    "Direction générale du numérique et des systèmes d'information"
+    "Direction générale du numérique et des systèmes d'information",
 );
 
 /* Configuring components */
