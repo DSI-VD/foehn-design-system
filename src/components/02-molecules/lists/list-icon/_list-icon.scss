@@ -1,15 +1,14 @@
 @charset 'UTF-8';
+@use 'sass:math';
 
 .vd-list-icons {
   @include list-unstyled;
 
   .fa {
     width: 1em;
-    margin-right: ($spacer / 2);
+    margin-right: (math.div($spacer, 2));
     text-align: center;
   }
 
-  li {
-    margin-bottom: 0;
-  }
+  li { margin-bottom: 0; }
 }

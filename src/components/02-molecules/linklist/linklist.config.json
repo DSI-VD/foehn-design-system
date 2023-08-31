@@ -1,0 +1,21 @@
+{
+  "status": "ready",
+  "context": {
+    "color": "primary",
+    "title": "Title",
+    "links": [
+      {
+        "url": "https://www.google.ch",
+        "label": "Google"
+      },
+      {
+        "url": "#",
+        "label": "Informations"
+      }
+    ],
+    "relatedLink": {
+      "url": "#",
+      "label": "En savoir plus"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "status": "ready",
+  "context": {
+    "items": [
+      {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum neque commodi libero.",
+        "title": "Title 1",
+        "show": true
+      },
+      {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum neque commodi libero.",
+        "title": "Title 2",
+        "show": false
+      }
+    ]
+  }
+}

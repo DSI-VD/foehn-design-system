@@ -1,0 +1,77 @@
+{
+  "status": "ready",
+  "context": {
+    "title": "Authorités",
+    "autoritiesLinks": [
+      {
+        "url": "#",
+        "title": "Lorem ipsum dolor sit amet"
+      },
+      {
+        "url": "#",
+        "title": "Lorem ipsum dolor sit amet 2"
+      },
+      {
+        "url": "#",
+        "title": "Lorem ipsum dolor sit amet 3"
+      }
+    ],
+    "newsList": [
+      {
+        "url": "#",
+        "title": "Lorem ipsum dolor sit amet",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "url": "#",
+        "title": "Lorem ipsum dolor sit amet 2",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "url": "#",
+        "title": "Lorem ipsum dolor sit amet 3",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }
+    ],
+    "communiqueList": [
+      {
+        "url": "#",
+        "title": "Lorem ipsum dolor sit amet"
+      },
+      {
+        "url": "#",
+        "title": "Lorem ipsum dolor sit amet 2"
+      },
+      {
+        "url": "#",
+        "title": "Lorem ipsum dolor sit amet 3"
+      }
+    ],
+    "decisionList": [
+      {
+        "url": "#",
+        "title": "Lorem ipsum dolor sit amet"
+      },
+      {
+        "url": "#",
+        "title": "Lorem ipsum dolor sit amet 2"
+      },
+      {
+        "url": "#",
+        "title": "Lorem ipsum dolor sit amet 3"
+      }
+    ],
+    "allAuthorities": {
+      "src": "#"
+    },
+    "allNews": {
+      "src": "#"
+    },
+    "allCommunique": {
+      "src": "#"
+    },
+    "allDecision": {
+      "src": "#"
+    }
+  }
+}

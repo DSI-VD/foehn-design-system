@@ -1,0 +1,15 @@
+{
+  "status": "ready",
+  "context": {
+    "images": [
+      {
+        "url": "#",
+        "title": "Title 1"
+      },
+      {
+        "url": "#",
+        "title": "Title 2"
+      }
+    ]
+  }
+}

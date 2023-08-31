@@ -1,0 +1,13 @@
+<div class="bg-{{ color }} bg-opacity-10 linklist-color-{{ color }} p-3 pb-4 text-{{ color }} vd-linklist">
+  <h2 class="list-header m-0">{{ title }}</h2>
+  <ul class="list-link list-unstyled">
+    {%- for link in links -%}
+    <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+    {%- endfor -%}
+  </ul>
+  {%- if relatedLink -%}
+    <div class="bottom-link text-center vd-text-md-small">
+      <a href="{{ relatedLink.url }}">{{ relatedLink.label }} <i class="fa fa-arrow-right-long"></i></a>
+    </div>
+  {%- endif -%}
+</div>
