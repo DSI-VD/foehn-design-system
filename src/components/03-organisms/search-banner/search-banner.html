@@ -1,15 +1,17 @@
 <div class="container bg-dark py-5">
-  <form action="#" role="search" class="w-100 d-flex justify-content-center">
-    <label class="sr-only" for="vd-search-input">Champ de recherche</label>
-    <div class="input-group vd-search-form-width">
-      <input id="vd-search-input" type="search" class="w-100 p-3 form-control border-end-0 border" placeholder="Entrez votre recherche" />
-      <span class="input-group-btn position-absolute vd-search-button-container">
+  <div id="search-form-container">
+    <form action="#" role="search" class="w-100 d-flex justify-content-center">
+      <label class="sr-only" for="vd-search-input">Champ de recherche</label>
+      <div class="input-group" id="search-input-container">
+        <input id="vd-search-input" type="search" class="w-100 p-3 form-control border" placeholder="Entrez votre recherche" />
+        <span class="input-group-btn position-absolute vd-search-button-container">
         <button type="submit" class="btn">
           <i class="fas fa-search text-primary vd-search-icon"></i>
         </button>
       </span>
-    </div>
-  </form>
+      </div>
+    </form>
+  </div>
   <div class="w-100 d-flex justify-content-center mt-4">
     <div class="d-flex vd-search-form-width text-center flex-column">
       <p class="text-white">Exemples de recherche :</p>
