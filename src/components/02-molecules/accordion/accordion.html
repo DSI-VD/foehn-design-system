@@ -1,0 +1,16 @@
+<div class="accordion" id="accordion-0">
+  {%- for item in items -%}
+  <div class="accordion-item">
+    <h2 class="accordion-header mt-0" id="heading-0-{{ loop.index }}">
+      <button aria-controls="collapse-0-{{ loop.index }}" aria-expanded="{%- if item.show -%}true{%- else -%}false{%- endif -%}" class="{%- if item.show -%}accordion-button{%- else -%}accordion-button collapsed{%- endif -%}" data-bs-target="#collapse-0-{{ loop.index }}" data-bs-toggle="collapse" data-search-field="1" type="button">
+        {{ item.title }}
+      </button>
+    </h2>
+    <div aria-labelledby="heading-0-{{ loop.index }}" class="{%- if item.show -%}accordion-collapse collapse show{%- else -%}accordion-collapse collapse{%- endif -%}" data-bs-parent="#accordion-0" id="collapse-0-{{ loop.index }}">
+      <div class="accordion-body">
+        {{ item.text }}
+      </div>
+    </div>
+  </div>
+  {%- endfor -%}
+</div>

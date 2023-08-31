@@ -30,7 +30,7 @@
     "deploy": "gh-pages -d build -r https://github.com/DSI-VD/foehn-design-system.git"
   },
   "devDependencies": {
-    "@dsivd/foehn": "^2.0.0-beta.2",
+    "@dsivd/foehn": "^2.0.0-beta.5",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@frctl/fractal": "^1.5.11",
     "@frctl/mandelbrot": "^1.9.4",
