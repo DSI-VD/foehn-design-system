@@ -1,0 +1,19 @@
+{
+  "status": "ready",
+  "context": {
+    "ratio": "16x9"
+  },
+  "variants": [
+    {
+      "name": "default",
+      "label": "Embed ratio 16x9"
+    },
+    {
+      "name": "ratio-4x3",
+      "label": "Embed ratio 4x3",
+      "context": {
+        "ratio": "4x3"
+      }
+    }
+  ]
+}
