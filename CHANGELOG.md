@@ -7,12 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Add documentation about form structure
+- Link list component
+- Login form component
+- Authorities news component
+- Accordion component
+- Featured card component
 
-### Fixes
+### Updated
 
-- Fix typo
-- Fix `@blockquote--bubble-media` image url
+- Updated foehn to 2.0.0
+- Dependencies all updated
+- Updated existing components to comply with Bootstrap 5
 
 ## [1.8.1] - 2021-09-10
 
