@@ -1,24 +1,35 @@
 
 
-<div class="vd-bg-pattern-bars-gray clearfix mt-3 py-4">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        <h4>Rechercher dans les actualités</h4>
-
-
-<form class="input-group vd-search-form-regular" action="#" role="search">
-  <label class="sr-only" for="search-form" id="search-form-label">Rechercher dans les actualités</label>
-  <input id="search-form"
-         type="text"
-         class="form-control"
-         placeholder="Rechercher"
-         aria-describedby="search-form-label">
-  <span class="input-group-btn">
-    <button class="btn btn-dark" type="submit" aria-label="Rechercher"><i class="fas fa-search" aria-hidden="true"></i></button>
-  </span>
-</form>
-
+<div class="container bg-dark py-5">
+  <div id="search-form-container">
+    <form action="#" role="search" class="w-100 d-flex justify-content-center">
+      <label class="sr-only" for="vd-search-input">Champ de recherche</label>
+      <div class="input-group" id="search-input-container">
+        <input id="vd-search-input" type="search" class="w-100 p-3 form-control border" placeholder="Entrez votre recherche" />
+        <span class="input-group-btn position-absolute vd-search-button-container">
+        <button type="submit" class="btn">
+          <i class="fas fa-search text-primary vd-search-icon"></i>
+        </button>
+      </span>
+      </div>
+    </form>
+  </div>
+  <div class="w-100 d-flex justify-content-center mt-4">
+    <div class="d-flex vd-search-form-width text-center flex-column">
+      <p class="text-white">Exemples de recherche :</p>
+      <div class="d-flex flex-md-row flex-column text-center">
+        <a href="#" class="col-12 col-md-3 mb-2 mb-md-0 text-white">
+          eDélai
+        </a>
+        <a href="#" class="col-12 col-md-3 mb-2 mb-md-0 text-white">
+          VaudTax
+        </a>
+        <a href="#" class="col-12 col-md-3 mb-2 mb-md-0 text-white">
+          dates vacances
+        </a>
+        <a href="#" class="col-12 col-md-3 mb-2 mb-md-0 text-white">
+          permis C
+        </a>
       </div>
     </div>
   </div>

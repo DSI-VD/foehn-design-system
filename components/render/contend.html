@@ -34,40 +34,87 @@
 </nav>
 
   <div class="container">
-    <div class="d-flex
-                flex-wrap
-                justify-content-between
-                justify-content-md-end
-                d-print-none">
-      <div class="mr-3">
-        <nav class="d-print-none">
-  <h2 class="sr-only">Sous-navigation</h2>
-  <ul class="list-inline text-md-right small">
-    
-    <li class="list-inline-item">
-      <a href="" class=""></a>
+    <div class="d-flex flex-wrap justify-content-between justify-content-md-end d-print-none">
+      <nav class="align-items-center d-flex d-print-none">
+  <h2 class="sr-only">
+    Sous-navigation
+  </h2>
+  <ul class="list-inline text-md-end small" >
+    <li class="list-inline-item me-2">
+      <a href="#">Autorités</a>
     </li>
-    
+    <li class="list-inline-item me-2">
+      <a href="#">Annuaire</a>
+    </li>
   </ul>
 </nav>
 
+      <button
+  id="login-button"
+  type="button"
+  class="btn btn-primary fs-6"
+  data-bs-toggle="collapse"
+  data-bs-target="#login-form-collapse"
+  aria-expanded="false"
+  aria-controls="login-form-collapse"
+>
+  Se connecter <span class="fas fa-chevron-down text-white ms-1" id="login-button-icon"></span>
+</button>
+
+<div id="login-form-collapse" class="collapse shadow border p-3">
+  <div class="d-flex flex-column mb-5">
+    <div class="d-flex flex-row justify-content-between mb-2">
+      <div class="p-2">
+        <span class="h4">Particuliers et professionnels</span>
       </div>
-      <section class="small mb-3">
-  <h2 class="sr-only">Votre identité</h2>
-  <p class="mb-0">
-    <span class="fas fa-lock" aria-hidden="true"></span>
-    
-    <a href="#">Se connecter</a>
-    
-  </p>
-  
-</section>
+      <div class="p-2">
+        <a href="#">
+          <span class="fas fa-question-circle"></span>
+        </a>
+      </div>
+    </div>
+    <div class="p-2 mb-3">
+      <a class="btn btn-primary text-center w-100 py-2" href="#">
+        <span class="fas fa-external-link-alt me-1 text-white"></span>
+        Portail prestations
+      </a>
+    </div>
+    <div class="p-2">
+      <a href="#" class="text-decoration-none">
+        Vous n'avez pas encore assez au portail ?
+      </a>
+    </div>
+    <div class="px-2">
+      <a href="#" class="btn btn-outline-primary text-center w-100 py-2">
+        Demander l'accès
+      </a>
+    </div>
+  </div>
+  <div class="px-2 mb-5">
+    <hr class="opacity-25">
+  </div>
+  <div class="d-flex flex-column">
+    <div class="d-flex flex-row justify-content-between mb-2">
+      <div class="p-2">
+        <span class="h4">Collaborateurs-trices et partenaires</span>
+      </div>
+      <div class="p-2">
+        <a href="#">
+          <span class="fas fa-question-circle"></span>
+        </a>
+      </div>
+    </div>
+    <div class="p-2">
+      <a class="btn btn-secondary text-center w-100 py-2" href="#">
+        <span class="fas fa-external-link-alt me-1 text-white"></span>
+        Portail IAM
+      </a>
+    </div>
+  </div>
+</div>
 
     </div>
-    
-    <div class="row">
-      <div class="col-md-5 vd-print-full-width">
-        <a
+    <a
   href="../accueil"
   class="vd-logo"
   title="Aller à la page d'accueil du Site du Canton de Vaud"
@@ -80,46 +127,32 @@
   />
 </a>
 
-      </div>
-      <div class="col-md-5 ml-auto d-print-none">
-        <form class="input-group vd-search-form mt-2 mb-4" action="#" role="search">
-  <label class="sr-only" for="search-form" id="search-form-label">Champ de recherche</label>
-  <input id="search-form"
-         type="text"
-         class="form-control" placeholder="Rechercher" aria-describedby="search-form-label">
-  <span class="input-group-btn">
-    <button class="btn" type="submit" aria-label="Rechercher">
-      <i class="fas fa-search" aria-hidden="true"></i>
-    </button>
-  </span>
-</form>
-
-      </div>
-    </div>
-    
   </div>
-
   <div class="vd-nav-primary d-print-none">
 
   <!-- button -->
   <div class="container">
-    <button type="button"
-          class="btn btn-sm btn-link vd-nav-primary__button collapsed"
-          data-toggle="collapse"
-          data-target="#nav-primary-container"
-          aria-controls="nav-primary-container"
-        aria-expanded="false">
-      <div class="d-flex justify-content-between">
-        <div>
-          <span class="vd-nav-primary__button--close">Cacher les thèmes</span>
-          <span class="vd-nav-primary__button--open">Afficher les thèmes</span>
-        </div>
-        <div>
-          <span class="vd-nav-primary__button--open fas fa-plus"></span>
-          <span class="vd-nav-primary__button--close fas fa-minus"></span>
-        </div>
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-md-end">
+        <button type="button"
+                class="btn btn-primary btn-sm vd-nav-primary__button align-self-end collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav-primary-container"
+                aria-controls="nav-primary-container"
+                aria-expanded="false">
+          <div class="d-flex justify-content-between">
+            <div>
+              <span class="vd-nav-primary__button--close">Cacher les thèmes</span>
+              <span class="vd-nav-primary__button--open">Afficher les thèmes</span>
+            </div>
+            <div>
+              <span class="vd-nav-primary__button--open fas fa-plus"></span>
+              <span class="vd-nav-primary__button--close fas fa-minus"></span>
+            </div>
+          </div>
+        </button>
       </div>
-    </button>
+    </div>
   </div>
 
   <!-- menu -->
@@ -134,116 +167,129 @@
                 <h2 class="sr-only">Navigation par thèmes</h2>
                 <ul class="list-unstyled mb-0 row">
                   
-                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-3">
+                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2">
   <a href="domaines#culture"
-    class="vd-domain-item__link vd-link-invisible h4">Culture</a>
-  <span class="vd-domain-item__text">
-    <span class="sr-only">(Exemple de contenu: </span>Aides et subventions, passculture, Musées, Bibliothèques, Patrimoine vaudois, etc.<span class="sr-only">)</span>
-  </span>
+     class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
+    <span class="vd-domain-item__link vd-link-invisible h4">Culture</span>
+    <span class="vd-domain-item__text">
+      <span class="sr-only">(Exemple de contenu: </span>Aides et subventions, passculture, Musées, Bibliothèques, Patrimoine vaudois, etc.<span class="sr-only">)</span>
+    </span>
+  </a>
 </li>
 
                   
-                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-3">
+                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2">
   <a href="domaines#economie"
-    class="vd-domain-item__link vd-link-invisible h4">Economie</a>
-  <span class="vd-domain-item__text">
-    <span class="sr-only">(Exemple de contenu: </span>Registre du commerce, poursuites et faillites, Entreprise, Chômage, Agriculture, développement économique, etc.<span class="sr-only">)</span>
-  </span>
+     class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
+    <span class="vd-domain-item__link vd-link-invisible h4">Economie</span>
+    <span class="vd-domain-item__text">
+      <span class="sr-only">(Exemple de contenu: </span>Registre du commerce, poursuites et faillites, Entreprise, Chômage, Agriculture, développement économique, etc.<span class="sr-only">)</span>
+    </span>
+  </a>
 </li>
 
                   
-                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-3">
+                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2">
   <a href="domaines#environnement"
-    class="vd-domain-item__link vd-link-invisible h4">Environnement</a>
-  <span class="vd-domain-item__text">
-    <span class="sr-only">(Exemple de contenu: </span>Subventions pour l’énergie, faune et nature, eaux, forêts, air, développement durable, etc.<span class="sr-only">)</span>
-  </span>
+     class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
+    <span class="vd-domain-item__link vd-link-invisible h4">Environnement</span>
+    <span class="vd-domain-item__text">
+      <span class="sr-only">(Exemple de contenu: </span>Subventions pour l’énergie, faune et nature, eaux, forêts, air, développement durable, etc.<span class="sr-only">)</span>
+    </span>
+  </a>
 </li>
 
                   
-                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-3">
+                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2">
   <a href="domaines#etat%2C%20droit%2C%20finance"
-    class="vd-domain-item__link vd-link-invisible h4">Etat, Droit, Finance</a>
-  <span class="vd-domain-item__text">
-    <span class="sr-only">(Exemple de contenu: </span>Justice, votations, Egalité, protection des données, Impôts, finances publiques, Etat employeur, statistiques, etc.<span class="sr-only">)</span>
-  </span>
+     class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
+    <span class="vd-domain-item__link vd-link-invisible h4">Etat, Droit, Finance</span>
+    <span class="vd-domain-item__text">
+      <span class="sr-only">(Exemple de contenu: </span>Justice, votations, Egalité, protection des données, Impôts, finances publiques, Etat employeur, statistiques, etc.<span class="sr-only">)</span>
+    </span>
+  </a>
 </li>
 
                   
-                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-3">
+                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2">
   <a href="domaines#formation"
-    class="vd-domain-item__link vd-link-invisible h4">Formation</a>
-  <span class="vd-domain-item__text">
-    <span class="sr-only">(Exemple de contenu: </span>Vacances scolaires, scolarité obligatoire, orientation, apprentissage, gymnase, Bourses, etc.<span class="sr-only">)</span>
-  </span>
+     class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
+    <span class="vd-domain-item__link vd-link-invisible h4">Formation</span>
+    <span class="vd-domain-item__text">
+      <span class="sr-only">(Exemple de contenu: </span>Vacances scolaires, scolarité obligatoire, orientation, apprentissage, gymnase, Bourses, etc.<span class="sr-only">)</span>
+    </span>
+  </a>
 </li>
 
                   
-                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-3">
+                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2">
   <a href="domaines#mobilit%C3%A9"
-    class="vd-domain-item__link vd-link-invisible h4">Mobilité</a>
-  <span class="vd-domain-item__text">
-    <span class="sr-only">(Exemple de contenu: </span>Automobiles, Routes, navigation, transports publics, mobilités durables, etc.<span class="sr-only">)</span>
-  </span>
+     class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
+    <span class="vd-domain-item__link vd-link-invisible h4">Mobilité</span>
+    <span class="vd-domain-item__text">
+      <span class="sr-only">(Exemple de contenu: </span>Automobiles, Routes, navigation, transports publics, mobilités durables, etc.<span class="sr-only">)</span>
+    </span>
+  </a>
 </li>
 
                   
-                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-3">
+                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2">
   <a href="domaines#sant%C3%A9"
-    class="vd-domain-item__link vd-link-invisible h4">Santé</a>
-  <span class="vd-domain-item__text">
-    <span class="sr-only">(Exemple de contenu: </span>Prévention, système de santé, dépendances, santé en milieu scolaire, droit des patients, les professionnels de la santé, etc.<span class="sr-only">)</span>
-  </span>
+     class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
+    <span class="vd-domain-item__link vd-link-invisible h4">Santé</span>
+    <span class="vd-domain-item__text">
+      <span class="sr-only">(Exemple de contenu: </span>Prévention, système de santé, dépendances, santé en milieu scolaire, droit des patients, les professionnels de la santé, etc.<span class="sr-only">)</span>
+    </span>
+  </a>
 </li>
 
                   
-                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-3">
+                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2">
   <a href="domaines#social"
-    class="vd-domain-item__link vd-link-invisible h4">Social</a>
-  <span class="vd-domain-item__text">
-    <span class="sr-only">(Exemple de contenu: </span>Subside à l’assurance maladie, revenu d’insertion, violence, le RDU, les prestations familles, PC familles, Rente-pont, etc.<span class="sr-only">)</span>
-  </span>
+     class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
+    <span class="vd-domain-item__link vd-link-invisible h4">Social</span>
+    <span class="vd-domain-item__text">
+      <span class="sr-only">(Exemple de contenu: </span>Subside à l’assurance maladie, revenu d’insertion, violence, le RDU, les prestations familles, PC familles, Rente-pont, etc.<span class="sr-only">)</span>
+    </span>
+  </a>
 </li>
 
                   
-                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-3">
+                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2">
   <a href="domaines#vie%20priv%C3%A9e"
-    class="vd-domain-item__link vd-link-invisible h4">Vie privée</a>
-  <span class="vd-domain-item__text">
-    <span class="sr-only">(Exemple de contenu: </span>Vacances scolaires, scolarité obligatoire, orientation, apprentissage, gymnase, Bourses, etc.<span class="sr-only">)</span>
-  </span>
+     class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
+    <span class="vd-domain-item__link vd-link-invisible h4">Vie privée</span>
+    <span class="vd-domain-item__text">
+      <span class="sr-only">(Exemple de contenu: </span>Vacances scolaires, scolarité obligatoire, orientation, apprentissage, gymnase, Bourses, etc.<span class="sr-only">)</span>
+    </span>
+  </a>
 </li>
 
                   
-                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-3">
+                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2">
   <a href="domaines#s%C3%A9curit%C3%A9"
-    class="vd-domain-item__link vd-link-invisible h4">Sécurité</a>
-  <span class="vd-domain-item__text">
-    <span class="sr-only">(Exemple de contenu: </span>Police, pénitentiaire, armée, catastrophe, protection de la population, etc.<span class="sr-only">)</span>
-  </span>
+     class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
+    <span class="vd-domain-item__link vd-link-invisible h4">Sécurité</span>
+    <span class="vd-domain-item__text">
+      <span class="sr-only">(Exemple de contenu: </span>Police, pénitentiaire, armée, catastrophe, protection de la population, etc.<span class="sr-only">)</span>
+    </span>
+  </a>
 </li>
 
                   
-                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-3">
+                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2">
   <a href="domaines#territoire"
-    class="vd-domain-item__link vd-link-invisible h4">Territoire</a>
-  <span class="vd-domain-item__text">
-    <span class="sr-only">(Exemple de contenu: </span>Aménagement, permis de construire, registre foncier, communes, préfectures, dangers naturels, etc.<span class="sr-only">)</span>
-  </span>
+     class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
+    <span class="vd-domain-item__link vd-link-invisible h4">Territoire</span>
+    <span class="vd-domain-item__text">
+      <span class="sr-only">(Exemple de contenu: </span>Aménagement, permis de construire, registre foncier, communes, préfectures, dangers naturels, etc.<span class="sr-only">)</span>
+    </span>
+  </a>
 </li>
 
                   
                 </ul>
               </nav>
-              <div class="col-md-4 order-first order-md-2 mt-3">
-                <h2 class="vd-heading-light-alt h4">Les plus visités</h2>
-                <ul class="vd-menu-list-links">
-                  <li><a href="#0">Inscription au chômage</a></li>
-                  <li><a href="#0">Formulaire d'indemnisation</a></li>
-                  <li><a href="#0">Vaud Tax 2017</a></li>
-                  <li><a href="#0">Vacances scolaires et jours fériés</a></li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
@@ -252,7 +298,6 @@
   </div>
 
 </div>
-
 
 </header>
 
@@ -503,7 +548,7 @@
 <footer>
 
   <div class="container">
-  <div class="text-right">
+  <div class="text-end">
     <a href="#" class="btn btn-sm btn-dark" title="Retour vers le haut de la page">Haut <span class="fas fa-chevron-up"></span></a>
   </div>
 </div>
@@ -529,7 +574,7 @@
         </div>
         <div class="col-xs-2">
           <div class="d-flex align-items-end flex-column h-100">
-            <div class="mt-auto w-100 text-right">
+            <div class="mt-auto w-100 end">
               <a href="#" class="d-inline-block">
                 <span class="sr-only">Retour à la page d'accueil</span>
                 <img aria-hidden="true" class="img-fluid footer-logo" src="../../foehn/svg/logo/logo--white.svg" alt="Canton de Vaud">

@@ -34,40 +34,87 @@
 </nav>
 
   <div class="container">
-    <div class="d-flex
-                flex-wrap
-                justify-content-between
-                justify-content-md-end
-                d-print-none">
-      <div class="mr-3">
-        <nav class="d-print-none">
-  <h2 class="sr-only">Sous-navigation</h2>
-  <ul class="list-inline text-md-right small">
-    
-    <li class="list-inline-item">
-      <a href="" class=""></a>
+    <div class="d-flex flex-wrap justify-content-between justify-content-md-end d-print-none">
+      <nav class="align-items-center d-flex d-print-none">
+  <h2 class="sr-only">
+    Sous-navigation
+  </h2>
+  <ul class="list-inline text-md-end small" >
+    <li class="list-inline-item me-2">
+      <a href="#">Autorités</a>
     </li>
-    
+    <li class="list-inline-item me-2">
+      <a href="#">Annuaire</a>
+    </li>
   </ul>
 </nav>
 
+      <button
+  id="login-button"
+  type="button"
+  class="btn btn-primary fs-6"
+  data-bs-toggle="collapse"
+  data-bs-target="#login-form-collapse"
+  aria-expanded="false"
+  aria-controls="login-form-collapse"
+>
+  Se connecter <span class="fas fa-chevron-down text-white ms-1" id="login-button-icon"></span>
+</button>
+
+<div id="login-form-collapse" class="collapse shadow border p-3">
+  <div class="d-flex flex-column mb-5">
+    <div class="d-flex flex-row justify-content-between mb-2">
+      <div class="p-2">
+        <span class="h4">Particuliers et professionnels</span>
       </div>
-      <section class="small mb-3">
-  <h2 class="sr-only">Votre identité</h2>
-  <p class="mb-0">
-    <span class="fas fa-lock" aria-hidden="true"></span>
-    
-    <a href="#">Se connecter</a>
-    
-  </p>
-  
-</section>
+      <div class="p-2">
+        <a href="#">
+          <span class="fas fa-question-circle"></span>
+        </a>
+      </div>
+    </div>
+    <div class="p-2 mb-3">
+      <a class="btn btn-primary text-center w-100 py-2" href="#">
+        <span class="fas fa-external-link-alt me-1 text-white"></span>
+        Portail prestations
+      </a>
+    </div>
+    <div class="p-2">
+      <a href="#" class="text-decoration-none">
+        Vous n'avez pas encore assez au portail ?
+      </a>
+    </div>
+    <div class="px-2">
+      <a href="#" class="btn btn-outline-primary text-center w-100 py-2">
+        Demander l'accès
+      </a>
+    </div>
+  </div>
+  <div class="px-2 mb-5">
+    <hr class="opacity-25">
+  </div>
+  <div class="d-flex flex-column">
+    <div class="d-flex flex-row justify-content-between mb-2">
+      <div class="p-2">
+        <span class="h4">Collaborateurs-trices et partenaires</span>
+      </div>
+      <div class="p-2">
+        <a href="#">
+          <span class="fas fa-question-circle"></span>
+        </a>
+      </div>
+    </div>
+    <div class="p-2">
+      <a class="btn btn-secondary text-center w-100 py-2" href="#">
+        <span class="fas fa-external-link-alt me-1 text-white"></span>
+        Portail IAM
+      </a>
+    </div>
+  </div>
+</div>
 
     </div>
-    
-    <div class="row">
-      <div class="col-md-5 vd-print-full-width">
-        <a
+    <a
   href="../accueil"
   class="vd-logo"
   title="Aller à la page d'accueil du Site du Canton de Vaud"
@@ -80,46 +127,32 @@
   />
 </a>
 
-      </div>
-      <div class="col-md-5 ml-auto d-print-none">
-        <form class="input-group vd-search-form mt-2 mb-4" action="#" role="search">
-  <label class="sr-only" for="search-form" id="search-form-label">Champ de recherche</label>
-  <input id="search-form"
-         type="text"
-         class="form-control" placeholder="Rechercher" aria-describedby="search-form-label">
-  <span class="input-group-btn">
-    <button class="btn" type="submit" aria-label="Rechercher">
-      <i class="fas fa-search" aria-hidden="true"></i>
-    </button>
-  </span>
-</form>
-
-      </div>
-    </div>
-    
   </div>
-
   <div class="vd-nav-primary d-print-none">
 
   <!-- button -->
   <div class="container">
-    <button type="button"
-          class="btn btn-sm btn-link vd-nav-primary__button collapsed"
-          data-toggle="collapse"
-          data-target="#nav-primary-container"
-          aria-controls="nav-primary-container"
-        aria-expanded="false">
-      <div class="d-flex justify-content-between">
-        <div>
-          <span class="vd-nav-primary__button--close">Cacher les thèmes</span>
-          <span class="vd-nav-primary__button--open">Afficher les thèmes</span>
-        </div>
-        <div>
-          <span class="vd-nav-primary__button--open fas fa-plus"></span>
-          <span class="vd-nav-primary__button--close fas fa-minus"></span>
-        </div>
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-md-end">
+        <button type="button"
+                class="btn btn-primary btn-sm vd-nav-primary__button align-self-end collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav-primary-container"
+                aria-controls="nav-primary-container"
+                aria-expanded="false">
+          <div class="d-flex justify-content-between">
+            <div>
+              <span class="vd-nav-primary__button--close">Cacher les thèmes</span>
+              <span class="vd-nav-primary__button--open">Afficher les thèmes</span>
+            </div>
+            <div>
+              <span class="vd-nav-primary__button--open fas fa-plus"></span>
+              <span class="vd-nav-primary__button--close fas fa-minus"></span>
+            </div>
+          </div>
+        </button>
       </div>
-    </button>
+    </div>
   </div>
 
   <!-- menu -->
@@ -134,116 +167,129 @@
                 <h2 class="sr-only">Navigation par thèmes</h2>
                 <ul class="list-unstyled mb-0 row">
                   
-                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-3">
+                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2">
   <a href="domaines#culture"
-    class="vd-domain-item__link vd-link-invisible h4">Culture</a>
-  <span class="vd-domain-item__text">
-    <span class="sr-only">(Exemple de contenu: </span>Aides et subventions, passculture, Musées, Bibliothèques, Patrimoine vaudois, etc.<span class="sr-only">)</span>
-  </span>
+     class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
+    <span class="vd-domain-item__link vd-link-invisible h4">Culture</span>
+    <span class="vd-domain-item__text">
+      <span class="sr-only">(Exemple de contenu: </span>Aides et subventions, passculture, Musées, Bibliothèques, Patrimoine vaudois, etc.<span class="sr-only">)</span>
+    </span>
+  </a>
 </li>
 
                   
-                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-3">
+                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2">
   <a href="domaines#economie"
-    class="vd-domain-item__link vd-link-invisible h4">Economie</a>
-  <span class="vd-domain-item__text">
-    <span class="sr-only">(Exemple de contenu: </span>Registre du commerce, poursuites et faillites, Entreprise, Chômage, Agriculture, développement économique, etc.<span class="sr-only">)</span>
-  </span>
+     class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
+    <span class="vd-domain-item__link vd-link-invisible h4">Economie</span>
+    <span class="vd-domain-item__text">
+      <span class="sr-only">(Exemple de contenu: </span>Registre du commerce, poursuites et faillites, Entreprise, Chômage, Agriculture, développement économique, etc.<span class="sr-only">)</span>
+    </span>
+  </a>
 </li>
 
                   
-                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-3">
+                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2">
   <a href="domaines#environnement"
-    class="vd-domain-item__link vd-link-invisible h4">Environnement</a>
-  <span class="vd-domain-item__text">
-    <span class="sr-only">(Exemple de contenu: </span>Subventions pour l’énergie, faune et nature, eaux, forêts, air, développement durable, etc.<span class="sr-only">)</span>
-  </span>
+     class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
+    <span class="vd-domain-item__link vd-link-invisible h4">Environnement</span>
+    <span class="vd-domain-item__text">
+      <span class="sr-only">(Exemple de contenu: </span>Subventions pour l’énergie, faune et nature, eaux, forêts, air, développement durable, etc.<span class="sr-only">)</span>
+    </span>
+  </a>
 </li>
 
                   
-                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-3">
+                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2">
   <a href="domaines#etat%2C%20droit%2C%20finance"
-    class="vd-domain-item__link vd-link-invisible h4">Etat, Droit, Finance</a>
-  <span class="vd-domain-item__text">
-    <span class="sr-only">(Exemple de contenu: </span>Justice, votations, Egalité, protection des données, Impôts, finances publiques, Etat employeur, statistiques, etc.<span class="sr-only">)</span>
-  </span>
+     class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
+    <span class="vd-domain-item__link vd-link-invisible h4">Etat, Droit, Finance</span>
+    <span class="vd-domain-item__text">
+      <span class="sr-only">(Exemple de contenu: </span>Justice, votations, Egalité, protection des données, Impôts, finances publiques, Etat employeur, statistiques, etc.<span class="sr-only">)</span>
+    </span>
+  </a>
 </li>
 
                   
-                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-3">
+                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2">
   <a href="domaines#formation"
-    class="vd-domain-item__link vd-link-invisible h4">Formation</a>
-  <span class="vd-domain-item__text">
-    <span class="sr-only">(Exemple de contenu: </span>Vacances scolaires, scolarité obligatoire, orientation, apprentissage, gymnase, Bourses, etc.<span class="sr-only">)</span>
-  </span>
+     class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
+    <span class="vd-domain-item__link vd-link-invisible h4">Formation</span>
+    <span class="vd-domain-item__text">
+      <span class="sr-only">(Exemple de contenu: </span>Vacances scolaires, scolarité obligatoire, orientation, apprentissage, gymnase, Bourses, etc.<span class="sr-only">)</span>
+    </span>
+  </a>
 </li>
 
                   
-                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-3">
+                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2">
   <a href="domaines#mobilit%C3%A9"
-    class="vd-domain-item__link vd-link-invisible h4">Mobilité</a>
-  <span class="vd-domain-item__text">
-    <span class="sr-only">(Exemple de contenu: </span>Automobiles, Routes, navigation, transports publics, mobilités durables, etc.<span class="sr-only">)</span>
-  </span>
+     class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
+    <span class="vd-domain-item__link vd-link-invisible h4">Mobilité</span>
+    <span class="vd-domain-item__text">
+      <span class="sr-only">(Exemple de contenu: </span>Automobiles, Routes, navigation, transports publics, mobilités durables, etc.<span class="sr-only">)</span>
+    </span>
+  </a>
 </li>
 
                   
-                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-3">
+                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2">
   <a href="domaines#sant%C3%A9"
-    class="vd-domain-item__link vd-link-invisible h4">Santé</a>
-  <span class="vd-domain-item__text">
-    <span class="sr-only">(Exemple de contenu: </span>Prévention, système de santé, dépendances, santé en milieu scolaire, droit des patients, les professionnels de la santé, etc.<span class="sr-only">)</span>
-  </span>
+     class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
+    <span class="vd-domain-item__link vd-link-invisible h4">Santé</span>
+    <span class="vd-domain-item__text">
+      <span class="sr-only">(Exemple de contenu: </span>Prévention, système de santé, dépendances, santé en milieu scolaire, droit des patients, les professionnels de la santé, etc.<span class="sr-only">)</span>
+    </span>
+  </a>
 </li>
 
                   
-                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-3">
+                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2">
   <a href="domaines#social"
-    class="vd-domain-item__link vd-link-invisible h4">Social</a>
-  <span class="vd-domain-item__text">
-    <span class="sr-only">(Exemple de contenu: </span>Subside à l’assurance maladie, revenu d’insertion, violence, le RDU, les prestations familles, PC familles, Rente-pont, etc.<span class="sr-only">)</span>
-  </span>
+     class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
+    <span class="vd-domain-item__link vd-link-invisible h4">Social</span>
+    <span class="vd-domain-item__text">
+      <span class="sr-only">(Exemple de contenu: </span>Subside à l’assurance maladie, revenu d’insertion, violence, le RDU, les prestations familles, PC familles, Rente-pont, etc.<span class="sr-only">)</span>
+    </span>
+  </a>
 </li>
 
                   
-                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-3">
+                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2">
   <a href="domaines#vie%20priv%C3%A9e"
-    class="vd-domain-item__link vd-link-invisible h4">Vie privée</a>
-  <span class="vd-domain-item__text">
-    <span class="sr-only">(Exemple de contenu: </span>Vacances scolaires, scolarité obligatoire, orientation, apprentissage, gymnase, Bourses, etc.<span class="sr-only">)</span>
-  </span>
+     class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
+    <span class="vd-domain-item__link vd-link-invisible h4">Vie privée</span>
+    <span class="vd-domain-item__text">
+      <span class="sr-only">(Exemple de contenu: </span>Vacances scolaires, scolarité obligatoire, orientation, apprentissage, gymnase, Bourses, etc.<span class="sr-only">)</span>
+    </span>
+  </a>
 </li>
 
                   
-                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-3">
+                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2">
   <a href="domaines#s%C3%A9curit%C3%A9"
-    class="vd-domain-item__link vd-link-invisible h4">Sécurité</a>
-  <span class="vd-domain-item__text">
-    <span class="sr-only">(Exemple de contenu: </span>Police, pénitentiaire, armée, catastrophe, protection de la population, etc.<span class="sr-only">)</span>
-  </span>
+     class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
+    <span class="vd-domain-item__link vd-link-invisible h4">Sécurité</span>
+    <span class="vd-domain-item__text">
+      <span class="sr-only">(Exemple de contenu: </span>Police, pénitentiaire, armée, catastrophe, protection de la population, etc.<span class="sr-only">)</span>
+    </span>
+  </a>
 </li>
 
                   
-                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-3">
+                    <li class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2">
   <a href="domaines#territoire"
-    class="vd-domain-item__link vd-link-invisible h4">Territoire</a>
-  <span class="vd-domain-item__text">
-    <span class="sr-only">(Exemple de contenu: </span>Aménagement, permis de construire, registre foncier, communes, préfectures, dangers naturels, etc.<span class="sr-only">)</span>
-  </span>
+     class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
+    <span class="vd-domain-item__link vd-link-invisible h4">Territoire</span>
+    <span class="vd-domain-item__text">
+      <span class="sr-only">(Exemple de contenu: </span>Aménagement, permis de construire, registre foncier, communes, préfectures, dangers naturels, etc.<span class="sr-only">)</span>
+    </span>
+  </a>
 </li>
 
                   
                 </ul>
               </nav>
-              <div class="col-md-4 order-first order-md-2 mt-3">
-                <h2 class="vd-heading-light-alt h4">Les plus visités</h2>
-                <ul class="vd-menu-list-links">
-                  <li><a href="#0">Inscription au chômage</a></li>
-                  <li><a href="#0">Formulaire d'indemnisation</a></li>
-                  <li><a href="#0">Vaud Tax 2017</a></li>
-                  <li><a href="#0">Vacances scolaires et jours fériés</a></li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
@@ -252,7 +298,6 @@
   </div>
 
 </div>
-
 
 </header>
 
@@ -315,9 +360,9 @@
 </div>
   <div class="row">
     
-    <article role="article" aria-label="Try to index the GB alarm, maybe it will copy the haptic protocol!" class="col-md-6">
+    <article role="article" aria-label="Try to transmit the RAM firewall, maybe it will synthesize the bluetooth transmitter!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://nicolas.info">Try to index the GB alarm, maybe it will copy the haptic protocol!</a></h3>
+    <h3><a class="vd-link-invisible" href="http://laureline.info">Try to transmit the RAM firewall, maybe it will synthesize the bluetooth transmitter!</a></h3>
 
     <p class="small">
       <span class="sr-only">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -329,8 +374,8 @@
   <a href="#"><img
     class="img-fluid"
     
-    src="http://placeimg.com/960/640/?5237"
-    srcset="http://placeimg.com/320/213/?9145 320w, http://placeimg.com/540/360/?70856 540w, http://placeimg.com/720/480/?9113 720w, http://placeimg.com/960/640/?37493 960w, http://placeimg.com/1140/760/?12901 1140w" alt="">
+    src="http://placeimg.com/960/640/?50379"
+    srcset="http://placeimg.com/320/213/?90356 320w, http://placeimg.com/540/360/?57905 540w, http://placeimg.com/720/480/?15890 720w, http://placeimg.com/960/640/?95498 960w, http://placeimg.com/1140/760/?29399 1140w" alt="">
 
   </a>
 </figure>
@@ -338,20 +383,20 @@
   
   
   <p>
-    quasi
+    Fuga aut saepe. Aliquid dolor dicta velit est laboriosam aspernatur quia sunt quasi. Rerum molestiae et et neque repudiandae sit.
   </p>
   
   
   <p>
-    <a href="https://nicolas.info">Lire la suite<span class="sr-only"> de l'article Try to index the GB alarm, maybe it will copy the haptic protocol!</span></a>
+    <a href="http://laureline.info">Lire la suite<span class="sr-only"> de l'article Try to transmit the RAM firewall, maybe it will synthesize the bluetooth transmitter!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="I&#39;ll synthesize the optical SDD capacitor, that should protocol the SDD interface!" class="col-md-6">
+    <article role="article" aria-label="bypassing the program won&#39;t do anything, we need to transmit the back-end HDD card!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://adelin.com">I&#39;ll synthesize the optical SDD capacitor, that should protocol the SDD interface!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://oger.net">bypassing the program won&#39;t do anything, we need to transmit the back-end HDD card!</a></h3>
 
     <p class="small">
       <span class="sr-only">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -363,8 +408,8 @@
   <a href="#"><img
     class="img-fluid"
     
-    src="http://placeimg.com/960/640/?25629"
-    srcset="http://placeimg.com/320/213/?23465 320w, http://placeimg.com/540/360/?44520 540w, http://placeimg.com/720/480/?35116 720w, http://placeimg.com/960/640/?56233 960w, http://placeimg.com/1140/760/?53469 1140w" alt="">
+    src="http://placeimg.com/960/640/?98246"
+    srcset="http://placeimg.com/320/213/?78432 320w, http://placeimg.com/540/360/?93266 540w, http://placeimg.com/720/480/?32230 720w, http://placeimg.com/960/640/?60461 960w, http://placeimg.com/1140/760/?91701 1140w" alt="">
 
   </a>
 </figure>
@@ -372,20 +417,20 @@
   
   
   <p>
-    Ut eveniet officiis accusantium eaque ab quod deleniti. Qui itaque excepturi quia et.
+    laudantium et hic
   </p>
   
   
   <p>
-    <a href="https://adelin.com">Lire la suite<span class="sr-only"> de l'article I&#39;ll synthesize the optical SDD capacitor, that should protocol the SDD interface!</span></a>
+    <a href="https://oger.net">Lire la suite<span class="sr-only"> de l'article bypassing the program won&#39;t do anything, we need to transmit the back-end HDD card!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="If we index the circuit, we can get to the PCI microchip through the online XSS program!" class="col-md-6">
+    <article role="article" aria-label="Use the open-source SMTP array, then you can quantify the haptic microchip!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://sauveur.fr">If we index the circuit, we can get to the PCI microchip through the online XSS program!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://ariel.eu">Use the open-source SMTP array, then you can quantify the haptic microchip!</a></h3>
 
     <p class="small">
       <span class="sr-only">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -397,8 +442,8 @@
   <a href="#"><img
     class="img-fluid"
     
-    src="http://placeimg.com/960/640/?55611"
-    srcset="http://placeimg.com/320/213/?71141 320w, http://placeimg.com/540/360/?29258 540w, http://placeimg.com/720/480/?35935 720w, http://placeimg.com/960/640/?75705 960w, http://placeimg.com/1140/760/?72277 1140w" alt="">
+    src="http://placeimg.com/960/640/?91520"
+    srcset="http://placeimg.com/320/213/?43414 320w, http://placeimg.com/540/360/?48272 540w, http://placeimg.com/720/480/?78987 720w, http://placeimg.com/960/640/?51255 960w, http://placeimg.com/1140/760/?57878 1140w" alt="">
 
   </a>
 </figure>
@@ -406,22 +451,20 @@
   
   
   <p>
-    Consequuntur mollitia sint nihil.
-Dolores maiores alias amet nemo iusto doloremque eveniet est amet.
-Distinctio quasi expedita.
+    Laboriosam recusandae et. Omnis officia ut iure fugiat possimus non ea. Nihil voluptatum et et a. Non itaque illo aut.
   </p>
   
   
   <p>
-    <a href="https://sauveur.fr">Lire la suite<span class="sr-only"> de l'article If we index the circuit, we can get to the PCI microchip through the online XSS program!</span></a>
+    <a href="https://ariel.eu">Lire la suite<span class="sr-only"> de l'article Use the open-source SMTP array, then you can quantify the haptic microchip!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="Try to copy the IB transmitter, maybe it will program the open-source system!" class="col-md-6">
+    <article role="article" aria-label="Try to input the SCSI interface, maybe it will override the wireless sensor!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://viviane.eu">Try to copy the IB transmitter, maybe it will program the open-source system!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://céleste.name">Try to input the SCSI interface, maybe it will override the wireless sensor!</a></h3>
 
     <p class="small">
       <span class="sr-only">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -433,8 +476,8 @@ Distinctio quasi expedita.
   <a href="#"><img
     class="img-fluid"
     
-    src="http://placeimg.com/960/640/?33481"
-    srcset="http://placeimg.com/320/213/?76437 320w, http://placeimg.com/540/360/?34839 540w, http://placeimg.com/720/480/?95746 720w, http://placeimg.com/960/640/?57109 960w, http://placeimg.com/1140/760/?87769 1140w" alt="">
+    src="http://placeimg.com/960/640/?98529"
+    srcset="http://placeimg.com/320/213/?22229 320w, http://placeimg.com/540/360/?80640 540w, http://placeimg.com/720/480/?91325 720w, http://placeimg.com/960/640/?23581 960w, http://placeimg.com/1140/760/?70842 1140w" alt="">
 
   </a>
 </figure>
@@ -442,20 +485,20 @@ Distinctio quasi expedita.
   
   
   <p>
-    Mollitia aut earum quam velit molestiae aut quo odit voluptatem. Esse dolorem assumenda modi odio voluptatem voluptas. Magni et et porro beatae dolorem. Est illo eveniet culpa.
+    Deleniti ut dignissimos ullam amet in et eos dignissimos. Est id repudiandae natus. Asperiores molestias laudantium harum ratione corrupti deserunt facilis quia quasi.
   </p>
   
   
   <p>
-    <a href="https://viviane.eu">Lire la suite<span class="sr-only"> de l'article Try to copy the IB transmitter, maybe it will program the open-source system!</span></a>
+    <a href="https://céleste.name">Lire la suite<span class="sr-only"> de l'article Try to input the SCSI interface, maybe it will override the wireless sensor!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="I&#39;ll override the mobile HTTP feed, that should bus the FTP circuit!" class="col-md-6">
+    <article role="article" aria-label="You can&#39;t override the alarm without parsing the back-end TCP program!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="http://abraham.info">I&#39;ll override the mobile HTTP feed, that should bus the FTP circuit!</a></h3>
+    <h3><a class="vd-link-invisible" href="http://mélanie.org">You can&#39;t override the alarm without parsing the back-end TCP program!</a></h3>
 
     <p class="small">
       <span class="sr-only">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -467,8 +510,8 @@ Distinctio quasi expedita.
   <a href="#"><img
     class="img-fluid"
     
-    src="http://placeimg.com/960/640/?54715"
-    srcset="http://placeimg.com/320/213/?67508 320w, http://placeimg.com/540/360/?90906 540w, http://placeimg.com/720/480/?49278 720w, http://placeimg.com/960/640/?70983 960w, http://placeimg.com/1140/760/?60353 1140w" alt="">
+    src="http://placeimg.com/960/640/?88116"
+    srcset="http://placeimg.com/320/213/?33761 320w, http://placeimg.com/540/360/?46384 540w, http://placeimg.com/720/480/?70832 720w, http://placeimg.com/960/640/?21277 960w, http://placeimg.com/1140/760/?5044 1140w" alt="">
 
   </a>
 </figure>
@@ -476,20 +519,20 @@ Distinctio quasi expedita.
   
   
   <p>
-    Iste suscipit quis maiores alias non maiores.
+    Ut nihil cupiditate sit architecto. Pariatur aliquam nam ut. Velit velit atque fugiat repellat delectus et quisquam qui. Tempora non facere nihil aut molestias.
   </p>
   
   
   <p>
-    <a href="http://abraham.info">Lire la suite<span class="sr-only"> de l'article I&#39;ll override the mobile HTTP feed, that should bus the FTP circuit!</span></a>
+    <a href="http://mélanie.org">Lire la suite<span class="sr-only"> de l'article You can&#39;t override the alarm without parsing the back-end TCP program!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="The JSON alarm is down, transmit the wireless capacitor so we can override the PCI transmitter!" class="col-md-6">
+    <article role="article" aria-label="Try to reboot the CSS monitor, maybe it will connect the open-source bus!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="http://amiel.net">The JSON alarm is down, transmit the wireless capacitor so we can override the PCI transmitter!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://marius.net">Try to reboot the CSS monitor, maybe it will connect the open-source bus!</a></h3>
 
     <p class="small">
       <span class="sr-only">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -501,8 +544,8 @@ Distinctio quasi expedita.
   <a href="#"><img
     class="img-fluid"
     
-    src="http://placeimg.com/960/640/?9110"
-    srcset="http://placeimg.com/320/213/?51810 320w, http://placeimg.com/540/360/?49088 540w, http://placeimg.com/720/480/?65546 720w, http://placeimg.com/960/640/?16798 960w, http://placeimg.com/1140/760/?34729 1140w" alt="">
+    src="http://placeimg.com/960/640/?35712"
+    srcset="http://placeimg.com/320/213/?28771 320w, http://placeimg.com/540/360/?30362 540w, http://placeimg.com/720/480/?11626 720w, http://placeimg.com/960/640/?98569 960w, http://placeimg.com/1140/760/?51930 1140w" alt="">
 
   </a>
 </figure>
@@ -510,20 +553,23 @@ Distinctio quasi expedita.
   
   
   <p>
-    doloribus reprehenderit ipsum
+    Aut et expedita.
+Delectus dolorem inventore et in ut alias quia.
+Aut sunt illum nam saepe consequatur.
+Deleniti tempore sit provident quo nisi praesentium.
   </p>
   
   
   <p>
-    <a href="http://amiel.net">Lire la suite<span class="sr-only"> de l'article The JSON alarm is down, transmit the wireless capacitor so we can override the PCI transmitter!</span></a>
+    <a href="https://marius.net">Lire la suite<span class="sr-only"> de l'article Try to reboot the CSS monitor, maybe it will connect the open-source bus!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="Try to reboot the CSS array, maybe it will parse the open-source program!" class="col-md-6">
+    <article role="article" aria-label="quantifying the driver won&#39;t do anything, we need to parse the solid state SQL hard drive!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="http://josselin.fr">Try to reboot the CSS array, maybe it will parse the open-source program!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://isabeau.org">quantifying the driver won&#39;t do anything, we need to parse the solid state SQL hard drive!</a></h3>
 
     <p class="small">
       <span class="sr-only">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -535,8 +581,8 @@ Distinctio quasi expedita.
   <a href="#"><img
     class="img-fluid"
     
-    src="http://placeimg.com/960/640/?98472"
-    srcset="http://placeimg.com/320/213/?99623 320w, http://placeimg.com/540/360/?60441 540w, http://placeimg.com/720/480/?9199 720w, http://placeimg.com/960/640/?81507 960w, http://placeimg.com/1140/760/?13467 1140w" alt="">
+    src="http://placeimg.com/960/640/?33767"
+    srcset="http://placeimg.com/320/213/?16445 320w, http://placeimg.com/540/360/?68808 540w, http://placeimg.com/720/480/?17058 720w, http://placeimg.com/960/640/?14268 960w, http://placeimg.com/1140/760/?69441 1140w" alt="">
 
   </a>
 </figure>
@@ -544,20 +590,22 @@ Distinctio quasi expedita.
   
   
   <p>
-    Quia atque nobis et.
+    Possimus quia qui. Illum nihil ut. Consequatur quis ratione omnis iusto sit vel. Nisi fugiat ut alias corrupti officia. Et illum et esse repellat.
+ Qui consequatur laborum ipsum quisquam et enim dignissimos architecto reiciendis. Vel quia placeat quas quisquam quia sapiente. Pariatur quod adipisci sequi excepturi sit et assumenda voluptas. Itaque veniam atque dolores deleniti nihil ipsa.
+ Beatae et nulla. Non eaque alias sunt repellat libero...
   </p>
   
   
   <p>
-    <a href="http://josselin.fr">Lire la suite<span class="sr-only"> de l'article Try to reboot the CSS array, maybe it will parse the open-source program!</span></a>
+    <a href="https://isabeau.org">Lire la suite<span class="sr-only"> de l'article quantifying the driver won&#39;t do anything, we need to parse the solid state SQL hard drive!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="You can&#39;t program the sensor without copying the optical HDD hard drive!" class="col-md-6">
+    <article role="article" aria-label="The ADP monitor is down, synthesize the mobile monitor so we can program the FTP hard drive!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://thomas.name">You can&#39;t program the sensor without copying the optical HDD hard drive!</a></h3>
+    <h3><a class="vd-link-invisible" href="http://prudence.name">The ADP monitor is down, synthesize the mobile monitor so we can program the FTP hard drive!</a></h3>
 
     <p class="small">
       <span class="sr-only">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -569,8 +617,8 @@ Distinctio quasi expedita.
   <a href="#"><img
     class="img-fluid"
     
-    src="http://placeimg.com/960/640/?83322"
-    srcset="http://placeimg.com/320/213/?66187 320w, http://placeimg.com/540/360/?3156 540w, http://placeimg.com/720/480/?34776 720w, http://placeimg.com/960/640/?92884 960w, http://placeimg.com/1140/760/?83550 1140w" alt="">
+    src="http://placeimg.com/960/640/?51297"
+    srcset="http://placeimg.com/320/213/?91954 320w, http://placeimg.com/540/360/?59066 540w, http://placeimg.com/720/480/?46843 720w, http://placeimg.com/960/640/?11272 960w, http://placeimg.com/1140/760/?20654 1140w" alt="">
 
   </a>
 </figure>
@@ -578,20 +626,21 @@ Distinctio quasi expedita.
   
   
   <p>
-    Perspiciatis omnis eaque et quam fugit. Aliquid eum soluta facilis ut nemo ratione atque. Cumque aliquid vero fugiat autem quia. Cupiditate ad id iusto quam eos beatae quia exercitationem quam.
+    Voluptatem eligendi omnis.
+Illo fugit reiciendis laboriosam debitis temporibus ea laboriosam sequi.
   </p>
   
   
   <p>
-    <a href="https://thomas.name">Lire la suite<span class="sr-only"> de l'article You can&#39;t program the sensor without copying the optical HDD hard drive!</span></a>
+    <a href="http://prudence.name">Lire la suite<span class="sr-only"> de l'article The ADP monitor is down, synthesize the mobile monitor so we can program the FTP hard drive!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="calculating the circuit won&#39;t do anything, we need to navigate the mobile SMS microchip!" class="col-md-6">
+    <article role="article" aria-label="If we quantify the alarm, we can get to the COM microchip through the 1080p SSL protocol!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="http://coline.info">calculating the circuit won&#39;t do anything, we need to navigate the mobile SMS microchip!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://côme.net">If we quantify the alarm, we can get to the COM microchip through the 1080p SSL protocol!</a></h3>
 
     <p class="small">
       <span class="sr-only">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -603,8 +652,8 @@ Distinctio quasi expedita.
   <a href="#"><img
     class="img-fluid"
     
-    src="http://placeimg.com/960/640/?54286"
-    srcset="http://placeimg.com/320/213/?88135 320w, http://placeimg.com/540/360/?24492 540w, http://placeimg.com/720/480/?71602 720w, http://placeimg.com/960/640/?83788 960w, http://placeimg.com/1140/760/?39771 1140w" alt="">
+    src="http://placeimg.com/960/640/?57255"
+    srcset="http://placeimg.com/320/213/?12375 320w, http://placeimg.com/540/360/?61698 540w, http://placeimg.com/720/480/?48544 720w, http://placeimg.com/960/640/?73147 960w, http://placeimg.com/1140/760/?46618 1140w" alt="">
 
   </a>
 </figure>
@@ -612,20 +661,20 @@ Distinctio quasi expedita.
   
   
   <p>
-    recusandae recusandae porro
+    Id consequuntur aut exercitationem. Quia dolores praesentium omnis. Repudiandae culpa odit totam.
   </p>
   
   
   <p>
-    <a href="http://coline.info">Lire la suite<span class="sr-only"> de l'article calculating the circuit won&#39;t do anything, we need to navigate the mobile SMS microchip!</span></a>
+    <a href="https://côme.net">Lire la suite<span class="sr-only"> de l'article If we quantify the alarm, we can get to the COM microchip through the 1080p SSL protocol!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="If we compress the monitor, we can get to the PNG bandwidth through the auxiliary AI hard drive!" class="col-md-6">
+    <article role="article" aria-label="parsing the capacitor won&#39;t do anything, we need to connect the solid state AI driver!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="http://arsinoé.eu">If we compress the monitor, we can get to the PNG bandwidth through the auxiliary AI hard drive!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://armandine.net">parsing the capacitor won&#39;t do anything, we need to connect the solid state AI driver!</a></h3>
 
     <p class="small">
       <span class="sr-only">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -637,8 +686,8 @@ Distinctio quasi expedita.
   <a href="#"><img
     class="img-fluid"
     
-    src="http://placeimg.com/960/640/?31865"
-    srcset="http://placeimg.com/320/213/?61384 320w, http://placeimg.com/540/360/?59701 540w, http://placeimg.com/720/480/?51685 720w, http://placeimg.com/960/640/?33161 960w, http://placeimg.com/1140/760/?2286 1140w" alt="">
+    src="http://placeimg.com/960/640/?35020"
+    srcset="http://placeimg.com/320/213/?83003 320w, http://placeimg.com/540/360/?5088 540w, http://placeimg.com/720/480/?29309 720w, http://placeimg.com/960/640/?49622 960w, http://placeimg.com/1140/760/?84431 1140w" alt="">
 
   </a>
 </figure>
@@ -646,12 +695,14 @@ Distinctio quasi expedita.
   
   
   <p>
-    Quia voluptas reprehenderit tenetur perferendis ipsum assumenda temporibus. Quis occaecati tenetur praesentium sapiente dolor ipsam ullam. Aut aperiam et. Molestiae reiciendis accusantium eum.
+    Voluptatem laboriosam earum enim eum ratione et qui. Repellendus temporibus sit at voluptatibus. Quae sapiente ut aut sint consequatur consequatur et ad quaerat.
+ Adipisci reprehenderit quibusdam voluptates aut quam officia fuga suscipit corrupti. Vel ipsam corporis similique atque autem aspernatur veniam. Fugit et sunt est in. Quam eligendi totam veniam. Quae quia molestias omnis.
+ Vel cum quaerat et ullam voluptatibus quis. Consequatur...
   </p>
   
   
   <p>
-    <a href="http://arsinoé.eu">Lire la suite<span class="sr-only"> de l'article If we compress the monitor, we can get to the PNG bandwidth through the auxiliary AI hard drive!</span></a>
+    <a href="https://armandine.net">Lire la suite<span class="sr-only"> de l'article parsing the capacitor won&#39;t do anything, we need to connect the solid state AI driver!</span></a>
   </p>
   
 </article>
@@ -712,7 +763,7 @@ Distinctio quasi expedita.
 <footer>
 
   <div class="container">
-  <div class="text-right">
+  <div class="text-end">
     <a href="#" class="btn btn-sm btn-dark" title="Retour vers le haut de la page">Haut <span class="fas fa-chevron-up"></span></a>
   </div>
 </div>
@@ -738,7 +789,7 @@ Distinctio quasi expedita.
         </div>
         <div class="col-xs-2">
           <div class="d-flex align-items-end flex-column h-100">
-            <div class="mt-auto w-100 text-right">
+            <div class="mt-auto w-100 end">
               <a href="#" class="d-inline-block">
                 <span class="sr-only">Retour à la page d'accueil</span>
                 <img aria-hidden="true" class="img-fluid footer-logo" src="../../foehn/svg/logo/logo--white.svg" alt="Canton de Vaud">

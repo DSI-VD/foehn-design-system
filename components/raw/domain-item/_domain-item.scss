@@ -1,4 +1,5 @@
 @charset 'UTF-8';
+@use "sass:math";
 
 /**
  * Teaser links
@@ -12,6 +13,7 @@
 .vd-domain-item {
   display: flex;
   flex-direction: column;
+  text-decoration: none;
 
   &:focus-within {
     background: $vd-focus; /* [3] */
@@ -19,24 +21,8 @@
 }
 
 .vd-domain-item__link {
-  margin-top: $spacer / 4;
-
-  &:focus {
-    outline: 0; /* [4] */
-  }
-
-  &:after {
-    position: absolute; /* [2] */
-    top: 0; /* [2] */
-    left: 0; /* [2] */
-    bottom: 0; /* [2] */
-    right: 0; /* [2] */
-    content: ""; /* [2] */
-  }
-}
-
-.vd-domain-item__text {
-  color: $gray-500;
+  margin-top: math.div($spacer, 4);
+  color: $black;
 }
 
 .vd-domain-item--big {
@@ -45,11 +31,32 @@
   }
 }
 
+.vd-domain-item__text {
+  color: $gray-500;
+}
+
 .vd-domain-item--small {
   .vd-domain-item__link {
     margin-bottom: 0 !important;
   }
+
   .vd-domain-item__text {
     margin-top: 0;
+  }
+}
+
+.vd-domain-item__link-container {
+  width: 100%;
+
+  &:focus {
+    outline: 0; /* [4] */
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    > .vd-domain-item__link {
+      text-decoration: underline;
+    }
   }
 }
