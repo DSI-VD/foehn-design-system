@@ -1,7 +1,7 @@
 <p class="text-center small">
   Publié le {% render '@time' %}
   {%- if categories %}
-    &mdash; <span class="sr-only">Catégorie: </span>
+    &mdash; <span class="visually-hidden">Catégorie: </span>
     {%- for category in categories -%}
       {% if category.url %}
         <a href="#" rel="category" title="Les articles de la categorie {{ category.name }}">

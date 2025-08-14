@@ -1,5 +1,5 @@
 {%- if validation.class === 'danger' %}<div class="vd-form-group-{{ validation.class }}">{% endif %}
-  <fieldset class="form-group{% if styleModifier %} {{ styleModifier }}{% endif %}"
+  <fieldset class="mb-3{% if styleModifier %} {{ styleModifier }}{% endif %}"
     {% if helpText or validation.text -%}
               aria-describedby="
                                 {%- if helpText %}{{ id }}Help{% endif %}
@@ -7,7 +7,7 @@
                                 "
     {%- endif -%}>
   <legend{% if legendModifier %} class="{{ legendModifier }}"{% endif %}>{{ legend }}</legend>
-  {%- if validation.text %}<div id="{{ id }}ErrorMessage"class="form-control-feedback text-{{ validation.class }}"><span class="sr-only">Erreur: </span>{{ validation.text }}</div>{% endif %}
+  {%- if validation.text %}<div id="{{ id }}ErrorMessage"class="invalid-feedback text-{{ validation.class }}"><span class="visually-hidden">Erreur: </span>{{ validation.text }}</div>{% endif %}
   {% if helpText -%}
   <small
       id="{{ id }}Help"

@@ -1,12 +1,12 @@
 <form class="mb-4">
   <legend>Recherche dans le registre des avocats</legend>
 
-  <div class="form-group">
+  <div class="mb-3">
     <label for="name">Nom</label>
     <input class="form-control" type="text" id="name" name="name" value="">
   </div>
 
-  <div class="form-group">
+  <div class="mb-3">
     <label for="category">Catégorie</label>
     <select class="form-control" id="category">
       <option value="">Toutes</option>
@@ -16,7 +16,7 @@
       <option value="Avocat-conseil">Avocat-conseil</option>
     </select>
   </div>
-    <div class="form-group">
+    <div class="mb-3">
     <label for="municipality" id="municipality_label">Commune</label>
     <datalist id="municipalities">
       <select id="municipality" class="form-control">
@@ -79,7 +79,7 @@
     <input id="municipality" name="municipality" list="municipalities" class="form-control">
   </div>
 
-  <div class="form-group">
+  <div class="mb-3">
     <button type="submit" class="btn btn-dark">Envoyer</button>
   </div>
 
@@ -100,17 +100,17 @@
       <ul class="vd-list-icons">
         <li>
           <span class="fas fa-phone" aria-hidden="true"></span>
-          <span class="sr-only" title="Téléphone">Téléphone</span>
+          <span class="visually-hidden" title="Téléphone">Téléphone</span>
           <a href="tel:+41211234567" property="telephone">+41 21 123 45 67</a>
         </li>
         <li>
           <span class="fas fa-fax" aria-hidden="true"></span>
-            <span class="sr-only">Fax</span>
+            <span class="visually-hidden">Fax</span>
             <span>+41 21 123 45 67</span>
         </li>
         <li>
           <span class="fas fa-envelope" aria-hidden="true"></span>
-          <span class="sr-only">Courriel</span>
+          <span class="visually-hidden">Courriel</span>
           <a href="mailto:{{ people.mail }}" property="email">{{ people.email }}</a>
         </li>
       </ul>

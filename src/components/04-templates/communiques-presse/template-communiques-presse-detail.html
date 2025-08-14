@@ -15,10 +15,10 @@
           <p class="small fw-bold">{{ pressRelease.date }}</p>
 
           {% if icons %}
-          <h2 class="sr-only">Partnaires</h2>
+          <h2 class="visually-hidden">Partnaires</h2>
           <ul class="list-inline">
             {% for partner in pressRelease.partners %}
-            <li class="list-inline-item"><span class="sr-only">{{ partner.name }}</span><img class="img-fluid" src="{{ partner.src }}" alt="{{ partner.alt }}"></li>
+            <li class="list-inline-item"><span class="visually-hidden">{{ partner.name }}</span><img class="img-fluid" src="{{ partner.src }}" alt="{{ partner.alt }}"></li>
             {% endfor %}
           </ul>
           {% endif %}
@@ -31,7 +31,7 @@
 
       {% include '@lead' %}
 
-      {% render '@social-icons', {titleModifier: 'sr-only', styleModifier: 'text-center mb-3'}, true %}
+      {% render '@social-icons', {titleModifier: 'visually-hidden', styleModifier: 'text-center mb-3'}, true %}
 
       {% block main %}
       {% render '@paragraph' %}
@@ -40,10 +40,10 @@
       {% render '@signature', pressRelease.signature, true %}
 
       {% if not icons %}
-      <h2 class="sr-only">Partnaires</h2>
+      <h2 class="visually-hidden">Partnaires</h2>
       <ul class="list-inline">
         {% for partner in pressRelease.partners %}
-        <li class="list-inline-item"><span class="sr-only">{{ partner.name }}</span><img class="img-fluid" src="{{ partner.src }}" alt="{{ partner.alt }}"></li>
+        <li class="list-inline-item"><span class="visually-hidden">{{ partner.name }}</span><img class="img-fluid" src="{{ partner.src }}" alt="{{ partner.alt }}"></li>
         {% endfor %}
       </ul>
       {% endif %}
