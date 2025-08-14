@@ -1,6 +1,6 @@
 "use strict";
 
-const faker = require("faker"); // Require the faker module
+const { faker } = require("@faker-js/faker"); // Require the faker module
 
 const peopleCount = 10; // How many peoples we should generate data for
 const peopleData = [];
@@ -10,13 +10,13 @@ faker.locale = "fr";
 
 for (let i = 0; i < peopleCount; i += 1) {
     peopleData.push({
-        name: faker.name.findName(), // Generate a random name
+        name: faker.person.fullName(), // Generate a random name
         email: faker.internet.email(), // Generate a random email address
-        jobTitle: faker.name.jobTitle(), // Generate a random email address
-        jobType: faker.name.jobTitle(), // Generate a random email address
-        streetPrefix: faker.address.streetPrefix(), // Generate a random email address
-        street: faker.address.streetName(), // Generate a random email address
-        city: faker.address.city(), // Generate a random email address
+        jobTitle: faker.person.jobTitle(), // Generate a random job title
+        jobType: faker.person.jobTitle(), // Generate a random job type
+        streetPrefix: faker.location.streetAddress(), // Generate a random street address
+        street: faker.location.street(), // Generate a random street name
+        city: faker.location.city(), // Generate a random city
     });
 }
 
