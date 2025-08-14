@@ -30,27 +30,27 @@
       "partners": [
         {
           "name": "Partenaire",
-          "src": "http://placehold.it/75x75",
+          "src": "/assets/img/picture-320x213.jpg",
           "alt": "logo du partenaire"
         },
         {
           "name": "Partenaire",
-          "src": "http://placehold.it/75x75",
+          "src": "/assets/img/picture-320x213.jpg",
           "alt": "logo du partenaire"
         },
         {
           "name": "Partenaire",
-          "src": "http://placehold.it/75x75",
+          "src": "/assets/img/picture-320x213.jpg",
           "alt": "logo du partenaire"
         },
         {
           "name": "Partenaire",
-          "src": "http://placehold.it/75x75",
+          "src": "/assets/img/picture-320x213.jpg",
           "alt": "logo du partenaire"
         },
         {
           "name": "Partenaire",
-          "src": "http://placehold.it/75x75",
+          "src": "/assets/img/picture-320x213.jpg",
           "alt": "logo du partenaire"
         }
       ],
@@ -74,17 +74,17 @@
           "partners": [
             {
               "name": "Partenaire",
-              "src": "http://placehold.it/75x75",
+              "src": "/assets/img/picture-320x213.jpg",
               "alt": "logo du partenaire"
             },
             {
               "name": "Partenaire",
-              "src": "http://placehold.it/75x75",
+              "src": "/assets/img/picture-320x213.jpg",
               "alt": "logo du partenaire"
             },
             {
               "name": "Partenaire",
-              "src": "http://placehold.it/75x75",
+              "src": "/assets/img/picture-320x213.jpg",
               "alt": "logo du partenaire"
             }
           ]
