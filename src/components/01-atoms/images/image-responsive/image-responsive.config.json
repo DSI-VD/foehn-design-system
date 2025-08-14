@@ -1,7 +1,7 @@
 {
   "status": "ready",
   "context": {
-    "src": "https://placehold.it/360x240/F1BF9F/ffffff?text=Default|360x240",
+    "src": "/assets/img/picture-540x360.jpg",
     "alt": "Alternative text"
   }
 }
