@@ -6,21 +6,21 @@
       {% if entitie.enfants|length %}
         <a href="#{{ entitie.id}}"
            class="is-collapsed vd-tree-view__button"
-           data-toggle="collapse"
+           data-bs-toggle="collapse"
            aria-expanded="false"
            aria-controls="{{ entitie.id }}"
            role="button">
           Voir les sous-entités
-          <span class="sr-only"> de {{ entitie.text }}</span>
+          <span class="visually-hidden"> de {{ entitie.text }}</span>
         </a>
         <a href="#{{ entitie.id }}"
            class="is-not-collapsed vd-tree-view__button"
-           data-toggle="collapse"
+           data-bs-toggle="collapse"
            aria-expanded="false"
            aria-controls="{{ entitie.id }}"
            role="button">
           Cacher les sous-entités
-          <span class="sr-only"> de {{ entitie.text }}</span>
+          <span class="visually-hidden"> de {{ entitie.text }}</span>
         </a>
 
         <ul class="list-unstyled ms-3 ms-md-5 collapse" id="{{ entitie.id }}">
@@ -30,21 +30,21 @@
               {% if entitie.enfants|length %}
                 <a href="#{{ entitie.id}}"
                    class="is-collapsed vd-tree-view__button"
-                   data-toggle="collapse"
+                   data-bs-toggle="collapse"
                    aria-expanded="false"
                    aria-controls="{{ entitie.id }}"
                    role="button">
                   Voir les sous-entités
-                  <span class="sr-only"> de {{ entitie.text }}</span>
+                  <span class="visually-hidden"> de {{ entitie.text }}</span>
                 </a>
                 <a href="#{{ entitie.id }}"
                    class="is-not-collapsed vd-tree-view__button"
-                   data-toggle="collapse"
+                   data-bs-toggle="collapse"
                    aria-expanded="false"
                    aria-controls="{{ entitie.id }}"
                    role="button">
                   Cacher les sous-entités
-                  <span class="sr-only"> de {{ entitie.text }}</span>
+                  <span class="visually-hidden"> de {{ entitie.text }}</span>
                 </a>
                 <ul class="list-unstyled ms-3 ms-md-5 collapse" id="{{ entitie.id }}">
                   {% for entitie in entitie.enfants %}

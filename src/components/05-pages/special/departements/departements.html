@@ -10,16 +10,16 @@
 </section>
 
 <section class="mb-4">
-  <h2 class="sr-only">Départements</h2>
+  <h2 class="visually-hidden">Départements</h2>
 
   <ul class="list-unstyled">
   {% for autority in autorities %}
     <li class="my-3">
-      <a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible d-inline-block"><span class="h3">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; <span class="sr-only">Abbreviation: </span>{{ autority.abbr }}</small>{% endif %}</a>
+      <a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible d-inline-block"><span class="h3">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; <span class="visually-hidden">Abbreviation: </span>{{ autority.abbr }}</small>{% endif %}</a>
       {% if autority.autorities %}
       <ul class="list-unstyled">
         {% for autority in autority.autorities %}
-        <li class="ms-5 my-3"><a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible d-inline-block"><span class="lead">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; <span class="sr-only">Abbreviation: </span>{{ autority.abbr }}</small>{% endif %}</a></li>
+        <li class="ms-5 my-3"><a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible d-inline-block"><span class="lead">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; <span class="visually-hidden">Abbreviation: </span>{{ autority.abbr }}</small>{% endif %}</a></li>
         {% endfor %}
       </ul>
       {% endif %}

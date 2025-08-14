@@ -5,6 +5,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Update Bootstrap classes from v4 to v5:
+  - sr-only → visually-hidden, sr-only-focusable → visually-hidden-focusable (44 files)
+  - embed-responsive → ratio ratio-16x9
+  - card-block → card-body
+  - form-group → mb-3
+  - form-control-feedback → invalid-feedback
+  - badge-pill → rounded-pill
+  - data-toggle → data-bs-toggle, data-target → data-bs-target
+  
+  Modified components:
+  - badge/badge.html
+  - card/card.html
+  - media/embed-container/google-map/google-map.html
+  - media/embed-container/video/video.html
+  - navigation/nav-horizontal/nav-horizontal.html
+  - lists/tree-view/tree-view.html
+  - forms/input/input.html
+  - forms/textarea/textarea.html
+  - forms/select/select.html
+  - forms/fieldset/fieldset.html
+  - forms/datalist/datalist.html
+  - forms/dates/dates.html
+  - And 32 other files with sr-only class updates
+
 ## [1.9.0] - 2023-09-14
 
 ### Added

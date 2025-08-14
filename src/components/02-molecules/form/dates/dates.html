@@ -18,8 +18,8 @@
     </legend>
 
     {% if validation.text %}
-    <div id="{{ id }}ErrorMessage" class="form-control-feedback text-danger mb-1">
-      {%- if validation.class == "danger" -%}<span class="sr-only">Erreur: </span>{%- endif -%}
+    <div id="{{ id }}ErrorMessage" class="invalid-feedback text-danger mb-1">
+      {%- if validation.class == "danger" -%}<span class="visually-hidden">Erreur: </span>{%- endif -%}
       {{- validation.text -}}
     </div>
     {% endif %}

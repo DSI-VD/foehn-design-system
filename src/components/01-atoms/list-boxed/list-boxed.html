@@ -2,7 +2,7 @@
   {% for item in list %}
   <li class="nav-item">
     <a class="nav-link d-inline-block" href="{{ item.url }}">{{ item.item }}{%
-    if item.secure %} <span class="fas fa-lock" aria-hidden="true" title="Cette prestation demande une identification"></span><span class="sr-only">(cette prestation demande un identification)</span>{% endif %}</a>
+    if item.secure %} <span class="fas fa-lock" aria-hidden="true" title="Cette prestation demande une identification"></span><span class="visually-hidden">(cette prestation demande un identification)</span>{% endif %}</a>
   </li>
   {% endfor %}
 </ul>
