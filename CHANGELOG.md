@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Migrate faker to modern @faker-js/faker package
 - Update Bootstrap classes from v4 to v5:
   - sr-only → visually-hidden, sr-only-focusable → visually-hidden-focusable (44 files)
   - embed-responsive → ratio ratio-16x9

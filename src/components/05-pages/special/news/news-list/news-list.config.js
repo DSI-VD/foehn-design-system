@@ -1,6 +1,6 @@
 "use strict";
 
-const faker = require("faker"); // Require the faker module
+const { faker } = require("@faker-js/faker"); // Require the faker module
 
 // sets locale to fr
 faker.locale = "fr";
@@ -21,28 +21,28 @@ for (let i = 0; i < teaserItemCount; i += 1) {
             caption: null,
             image: {
                 default: {
-                    src: faker.image.imageUrl(960, 640, "", 1),
+                    src: faker.image.url({ width: 960, height: 640 }),
                     class: "img-fluid",
                     srcset: [
                         {
                             width: "320w",
-                            file: faker.image.imageUrl(320, 213, "", 1),
+                            file: faker.image.url({ width: 320, height: 213 }),
                         },
                         {
                             width: "540w",
-                            file: faker.image.imageUrl(540, 360, "", 1),
+                            file: faker.image.url({ width: 540, height: 360 }),
                         },
                         {
                             width: "720w",
-                            file: faker.image.imageUrl(720, 480, "", 1),
+                            file: faker.image.url({ width: 720, height: 480 }),
                         },
                         {
                             width: "960w",
-                            file: faker.image.imageUrl(960, 640, "", 1),
+                            file: faker.image.url({ width: 960, height: 640 }),
                         },
                         {
                             width: "1140w",
-                            file: faker.image.imageUrl(1140, 760, "", 1),
+                            file: faker.image.url({ width: 1140, height: 760 }),
                         },
                     ],
                 },
