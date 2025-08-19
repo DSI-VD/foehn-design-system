@@ -1,6 +1,6 @@
 "use strict";
 
-const faker = require("faker"); // Require the faker module
+const { faker } = require("@faker-js/faker"); // Require the faker module
 
 const listItemCount = 10; // How many itmes we should generate data for
 const listItemData = [];
