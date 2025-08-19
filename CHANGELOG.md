@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Replace external placeholder images with local assets
 - Migrate faker to modern @faker-js/faker package
 
 ## [1.9.0] - 2023-09-14
