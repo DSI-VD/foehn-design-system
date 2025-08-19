@@ -1,6 +1,6 @@
 "use strict";
 
-const faker = require("faker"); // Require the faker module
+const { faker } = require("@faker-js/faker"); // Require the faker module
 
 const faqCount = 10; // How many faqs we should generate data for
 const faqData = [];
@@ -12,7 +12,7 @@ for (let i = 0; i < faqCount; i += 1) {
     faqData.push({
         question: faker.lorem.sentence(),
         answer: faker.lorem.paragraphs(),
-        author: `${faker.name.firstName()} ${faker.name.lastName()}`,
+        author: `${faker.person.firstName()} ${faker.person.lastName()}`,
     });
 }
 
