@@ -3,15 +3,15 @@
     <h3><a class="vd-link-invisible" href="{{ url }}">{{ title }}</a></h3>
 
     <p class="small">
-      {% if authors -%}<span class="sr-only">Publié par </span>
+      {% if authors -%}<span class="visually-hidden">Publié par </span>
       {%- for author in authors -%}{% if author.url %}<a href="#" rel="author" title="Les articles de {{ author.name }}">{% endif %}{{ author.name }}{% if author.url %}</a>{% endif -%}
       {%- if loop.revindex == 2 %} et {% elseif loop.last %}{% else %}, {% endif %}
       {%- endfor %},
       {% endif -%}
 
-      <span class="sr-only">{% if not authors %}Publié {% endif %} {{ datePreText }}</span>{%- render '@time', date, true -%}
+      <span class="visually-hidden">{% if not authors %}Publié {% endif %} {{ datePreText }}</span>{%- render '@time', date, true -%}
 
-      {%- if categories -%} — <span class="sr-only">Catégorie: </span>
+      {%- if categories -%} — <span class="visually-hidden">Catégorie: </span>
       {%- for category in categories -%}{% if category.url %}<a href="#" rel="category" title="Les articles de la categorie {{ category.name }}">{% endif %}{{ category.name }}{% if category.url %}</a>{% endif -%}
       {%- if loop.revindex == 2 %} et {% elseif loop.last %}{% else %}, {% endif %}
       {%- endfor %}
@@ -28,7 +28,7 @@
   {% endif %}
   {% if readMore %}
   <p>
-    <a href="{{ url }}">{{ readMore }}<span class="sr-only"> de l'article {{ title }}</span></a>
+    <a href="{{ url }}">{{ readMore }}<span class="visually-hidden"> de l'article {{ title }}</span></a>
   </p>
   {% endif %}
 </article>

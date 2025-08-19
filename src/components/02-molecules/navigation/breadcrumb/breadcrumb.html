@@ -1,12 +1,12 @@
 <nav{% if styleModifier %} class="{{ styleModifier }}"{% endif %} aria-label="Fil d'Ariane">
-  <h2 class="sr-only">File d'Ariane</h2>
+  <h2 class="visually-hidden">File d'Ariane</h2>
   <ol class="breadcrumb">
     {% for item in breadcrumb %}
       {%-if item.page %}
       {% if not loop.last %}
         <li class="breadcrumb-item"><a href="{{ item.url }}">{{ item.page }}</a></li>
       {% else %}
-        <li class="sr-only" aria-current="page">{{ item.page  }}</li>
+        <li class="visually-hidden" aria-current="page">{{ item.page  }}</li>
       {% endif %}
       {%- endif %}
     {% endfor %}

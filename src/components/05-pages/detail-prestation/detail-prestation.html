@@ -1,7 +1,7 @@
 {% extends '@template--2-col' %}
 {% block main %}
   <section class="mb-5">
-    <h2 class="sr-only">Introduction</h2>
+    <h2 class="visually-hidden">Introduction</h2>
     <p>Toute personne (privé ou société) peut obtenir, en tout temps, un extrait du registre des poursuites la concernant, sur présentation de ses documents d'identité.</p>
     <ul>
       <li>Si vous n'avez pas de poursuite à votre encontre, l'extrait du registre consiste en une attestation de non poursuite (attestation de solvabilité).</li>
@@ -22,7 +22,7 @@
   {% render '@index-menu', indexMenu, true %}
 
   <section id="1" class="mb-5">
-    <h2><span class="sr-only">Obtenir la prestation </span>En ligne</h2>
+    <h2><span class="visually-hidden">Obtenir la prestation </span>En ligne</h2>
 
     <p>Pour commander un extrait du registre des poursuites en ligne, nous vous prions de prendre connaissance des conditions suivantes :</p>
     <ul>
@@ -56,12 +56,12 @@
     </div>
 
     <p class="text-center">
-    {% render '@button--cta', {text:"Commencer<span class='sr-only'> la prestation Extrait du registre des poursuite pour soi-même en ligne</span>", iconBefore:"fa-lock", title: false}, true %}
+    {% render '@button--cta', {text:"Commencer<span class='visually-hidden'> la prestation Extrait du registre des poursuite pour soi-même en ligne</span>", iconBefore:"fa-lock", title: false}, true %}
     </p>
   </section>
 
   <section id="2" class="mb-5">
-    <h2><span class="sr-only">Obtenir la prestation </span>Au guichet</h2>
+    <h2><span class="visually-hidden">Obtenir la prestation </span>Au guichet</h2>
 
     <p>Vous pouvez également vous rendre directement au guichet de l'un des offices des poursuites du canton avec :</p>
     <ul>
@@ -91,12 +91,12 @@
     </div>
 
     <p class="text-center">
-      {% render '@button--cta', {text:"Commencer<span class='sr-only'> la prestation Extrait du registre des poursuite pour soi-même au guichet</span>", iconBefore:"fa-lock", title: false}, true %}
+      {% render '@button--cta', {text:"Commencer<span class='visually-hidden'> la prestation Extrait du registre des poursuite pour soi-même au guichet</span>", iconBefore:"fa-lock", title: false}, true %}
     </p>
   </section>
 
   <section id="3" class="mb-5">
-    <h2><span class="sr-only">Obtenir la prestation </span>Par courrier</h2>
+    <h2><span class="visually-hidden">Obtenir la prestation </span>Par courrier</h2>
     <p>Vous devez adresser votre demande par écrit à l'office des poursuites compétent, c'est-à-dire celui du lieu de votre domicile privé ou, cas échéant, du siège principal de votre société, en joignant :</p>
     <ul>
       <li>votre pièce d'identité,</li>
@@ -127,7 +127,7 @@
     </div>
 
     <p class="text-center">
-      {% render '@button--cta', {text:"Commencer<span class='sr-only'> la prestation Extrait du registre des poursuite pour soi-même par téléphone</span>", iconBefore:"fa-lock", title: false}, true %}
+      {% render '@button--cta', {text:"Commencer<span class='visually-hidden'> la prestation Extrait du registre des poursuite pour soi-même par téléphone</span>", iconBefore:"fa-lock", title: false}, true %}
     </p>
   </section>
 
@@ -145,7 +145,7 @@
   </section>
 {% endblock %}
 {% block aside %}
-  <h2 class="sr-only">{{ contact.text }}</h2>
+  <h2 class="visually-hidden">{{ contact.text }}</h2>
   <p>
     {% render '@button--default', contact, true %}
   </p>

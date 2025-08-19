@@ -1,18 +1,18 @@
-<div class="form-group
+<div class="mb-3
      {%- if validation %} has-{{ validation.class }}
      {%- if validation.class === 'danger' %} vd-form-group-{{ validation.class }}
      {%- endif -%}
      {%- endif -%}
     ">
   <label for="{{ id }}"
-         {%- if labelHidden %} class="sr-only"{% endif -%}
+         {%- if labelHidden %} class="visually-hidden"{% endif -%}
          {%- if labelStyleModifier %} class="{{ labelStyleModifier }}" {%- endif -%}>
     {{- label | safe -}}
       {%- if optional %} <span aria-hidden="true">(facultatif)</span>{% endif -%}
   </label>
   {%- if validation.text -%}
-  <div id="{{id}}ErrorMessage" class="form-control-feedback{% if validation.class %} text-{{ validation.class }}{% endif %}">
-    {%- if validation.class == "danger" -%}<span class="sr-only">Erreur: </span>{%- endif -%}
+  <div id="{{id}}ErrorMessage" class="invalid-feedback{% if validation.class %} text-{{ validation.class }}{% endif %}">
+    {%- if validation.class == "danger" -%}<span class="visually-hidden">Erreur: </span>{%- endif -%}
     {{- validation.text -}}
   </div>
   {%- endif %}

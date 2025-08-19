@@ -6,7 +6,7 @@
         <a href="{{ url }}" title="Pages du service {{ name }}" itemprop="url">
     {%- endif %}
     {%- if accessibleLink %}
-      <span class="sr-only">{{ accessibleLink }}</span>{% endif -%}
+      <span class="visually-hidden">{{ accessibleLink }}</span>{% endif -%}
       <span itemprop="name">{{ name }}</span>
     {%- if url -%}
       </a>
@@ -34,7 +34,7 @@
     {%- endif %}
     <span itemprop="postalCode">{{ address.postalCode }}</span>
     <span itemprop="addressLocality">{{ address.addressLocality }}</span>
-    <span class="sr-only" itemprop="addressCountry">{{ address.addressCountry }}</span>
+    <span class="visually-hidden" itemprop="addressCountry">{{ address.addressCountry }}</span>
   </p>
   {%- endif %}
 
@@ -65,7 +65,7 @@
   <p>{% render '@button--default', button, true %}</p>
 
   <div itemscope itemtype="http://schema.org/GovernmentBuilding">
-  {% if openingHours.title %}<h3>{{ openingHours.title }}<span class="sr-only"> du {{ name }}</span></h3>{% endif %}
+  {% if openingHours.title %}<h3>{{ openingHours.title }}<span class="visually-hidden"> du {{ name }}</span></h3>{% endif %}
   {% if openingHours.openingHours %}
     {% for hour in openingHours.openingHours %}
     <p itemprop="openingHours" content="{{ hour.microdata }}">{{ hour.text }}</p>
@@ -75,7 +75,7 @@
   <p>{{ openingHours.info  }}</p>
   {%- endif %}
   </div>
-  {% if account %}<h3>{{ account.type }}<span class="sr-only"> du {{ name }}</span></h3>{% endif %}
+  {% if account %}<h3>{{ account.type }}<span class="visually-hidden"> du {{ name }}</span></h3>{% endif %}
   <p>{{ account.number }}</p>
 
   {% if image -%}

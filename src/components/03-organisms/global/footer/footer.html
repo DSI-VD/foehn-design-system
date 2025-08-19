@@ -1,7 +1,7 @@
 {% if (social) or (updateTime) %}
 <div class="container mt-5">
   {% if updateTime %}{% render '@update-time' %}{% endif %}
-  {%if social %}{%render '@social-icons', {title:'Partager la page', titleModifier:'sr-only', styleModifier:'mt-4 mb-3'}, true %}{% endif %}
+  {%if social %}{%render '@social-icons', {title:'Partager la page', titleModifier:'visually-hidden', styleModifier:'mt-4 mb-3'}, true %}{% endif %}
 </div>
 {% endif %}
 
@@ -16,7 +16,7 @@
           <nav class="row" aria-label="pied de page">
             {% for list in lists %}
             <div class="col-sm">
-              {% if list.title %}<h2 class="vd-heading-light h4 {% if list.hideTitle %}sr-only{% endif %}">{{ list.title }}</h2>{% endif %}
+              {% if list.title %}<h2 class="vd-heading-light h4 {% if list.hideTitle %}visually-hidden{% endif %}">{{ list.title }}</h2>{% endif %}
               <ul class="list-unstyled {% if list.style %}{{ list.style }}{% endif %}">
               {%- for item in list.items -%}
                 <li><a href="{{ url }}">{{ item.text }}</a></li>
@@ -30,7 +30,7 @@
           <div class="d-flex align-items-end flex-column h-100">
             <div class="mt-auto w-100 end">
               <a href="#" class="d-inline-block">
-                <span class="sr-only">Retour à la page d'accueil</span>
+                <span class="visually-hidden">Retour à la page d'accueil</span>
                 {% render '@logo--white' %}
               </a>
             </div>
