@@ -19,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - form-control-feedback → invalid-feedback
   - badge-pill → rounded-pill
   - data-toggle → data-bs-toggle, data-target → data-bs-target
-  
+
   Modified components:
   - badge/badge.html
   - card/card.html
