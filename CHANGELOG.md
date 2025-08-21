@@ -5,6 +5,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0] - 2025-08-21
+
 ### Changed
 
 - Replace external placeholder images with local assets
@@ -2252,7 +2254,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Headings helpers
 - Responsive typography
 
-[unreleased]: https://github.com/DSI-VD/foehn/compare/v1.9.0...HEAD
+[unreleased]: https://github.com/DSI-VD/foehn/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/DSI-VD/foehn/compare/v1.9.0...v2.0.0
 [1.9.0]: https://github.com/DSI-VD/foehn/compare/v1.8.1...v1.9.0
 [1.8.1]: https://github.com/DSI-VD/foehn/compare/v1.8.0...v1.8.1
 [1.8.0]: https://github.com/DSI-VD/foehn/compare/v1.7.0...v1.8.0
