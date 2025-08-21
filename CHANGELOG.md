@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Replace external placeholder images with local assets
 - Migrate faker to modern @faker-js/faker package
-- Update Bootstrap classes from v4 to v5:
+- Update Bootstrap from v4 to v5 and migrate all components (via foehn package v1 to v2):
   - sr-only → visually-hidden, sr-only-focusable → visually-hidden-focusable (44 files)
   - embed-responsive → ratio ratio-16x9
   - card-block → card-body
