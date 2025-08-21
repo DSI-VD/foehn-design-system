@@ -12,7 +12,7 @@
       ]
     },
     "image": {
-      "src": "/assets/img/avatar.jpg",
+      "src": "../../assets/img/avatar.jpg",
       "alt": "Alternative text",
       "styleModifier": "img-fluid"
     }

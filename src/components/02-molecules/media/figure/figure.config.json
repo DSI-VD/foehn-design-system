@@ -17,15 +17,15 @@
           "source": [
             {
               "media": "(min-width: 60em)",
-              "srset": "/assets/img/picture-1600x1067.jpg"
+              "srset": "../../assets/img/picture-1600x1067.jpg"
             },
             {
               "media": "(min-width: 40em)",
-              "srset": "/assets/img/picture-960x640.jpg"
+              "srset": "../../assets/img/picture-960x640.jpg"
             },
             {
               "media": "(min-width: 20em)",
-              "srset": "/assets/img/picture-540x360.jpg"
+              "srset": "../../assets/img/picture-540x360.jpg"
             }
           ],
           "src": "@image--fluid.src",

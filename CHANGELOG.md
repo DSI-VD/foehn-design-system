@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.1] - 2025-08-21
+
+### Fixed
+
+- Fix asset paths for GitHub Pages deployment by using Nunjucks path filter in HTML templates
+
 ## [2.0.0] - 2025-08-21
 
 ### Changed
@@ -71,9 +77,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-*Note: Versions 1.7.0 and earlier contained mixed changelog entries from both the Foehn package and this documentation project. This has been cleaned up starting from version 1.8.0 when the packages were separated.*
+_Note: Versions 1.7.0 and earlier contained mixed changelog entries from both the Foehn package and this documentation project. This has been cleaned up starting from version 1.8.0 when the packages were separated._
 
-[Unreleased]: https://github.com/DSI-VD/foehn-design-system/compare/v2.0.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn-design-system/compare/v2.0.1...HEAD
+[2.0.1]: https://github.com/DSI-VD/foehn-design-system/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/DSI-VD/foehn-design-system/compare/v1.9.0...v2.0.0
 [1.9.0]: https://github.com/DSI-VD/foehn-design-system/compare/v1.8.1...v1.9.0
 [1.8.1]: https://github.com/DSI-VD/foehn-design-system/compare/v1.8.0...v1.8.1
