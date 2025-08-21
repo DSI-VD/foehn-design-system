@@ -1,7 +1,7 @@
 
 
 <!-- Start: @input--default -->
-<div class="form-group">
+<div class="mb-3">
   <label for="testInput">Label</label>
   
   <input class="form-control"
@@ -13,7 +13,7 @@
 <!-- End: @input--default -->
 
 <!-- Start: @input--optional -->
-<div class="form-group">
+<div class="mb-3">
   <label for="testInput">Label <span aria-hidden="true">(facultatif)</span></label>
   
   <input class="form-control"
@@ -25,7 +25,7 @@
 <!-- End: @input--optional -->
 
 <!-- Start: @input--disabled -->
-<div class="form-group">
+<div class="mb-3">
   <label for="testInput">Label</label>
   
   <input class="form-control"
@@ -37,7 +37,7 @@
 <!-- End: @input--disabled -->
 
 <!-- Start: @input--help-text -->
-<div class="form-group">
+<div class="mb-3">
   <label for="testInput">Label</label>
   <small
       id="testInputHelp"
@@ -51,8 +51,8 @@
 <!-- End: @input--help-text -->
 
 <!-- Start: @input--validation-danger -->
-<div class="form-group has-danger vd-form-group-danger">
-  <label for="testInput">Courriel</label><div id="testInputErrorMessage" class="form-control-feedback text-danger"><span class="sr-only">Erreur: </span>Veuillez saisir votre courriel</div>
+<div class="mb-3 has-danger vd-form-group-danger">
+  <label for="testInput">Courriel</label><div id="testInputErrorMessage" class="invalid-feedback text-danger"><span class="visually-hidden">Erreur: </span>Veuillez saisir votre courriel</div>
   <small
       id="testInputHelp"
       class="form-text text-secondary">Votre courriel n'est pas conservé et ne sera pas communiqué à des organismes tiers.</small>
@@ -65,8 +65,8 @@
 <!-- End: @input--validation-danger -->
 
 <!-- Start: @input--validation-success -->
-<div class="form-group has-success">
-  <label for="testInput">Label</label><div id="testInputErrorMessage" class="form-control-feedback text-success">Succès</div>
+<div class="mb-3 has-success">
+  <label for="testInput">Label</label><div id="testInputErrorMessage" class="invalid-feedback text-success">Succès</div>
   
   <input class="form-control"
          type="text"
@@ -77,7 +77,7 @@
 <!-- End: @input--validation-success -->
 
 <!-- Start: @input--email -->
-<div class="form-group">
+<div class="mb-3">
   <label for="emailInput">Courriel</label>
   
   <input class="form-control"
@@ -89,7 +89,7 @@
 <!-- End: @input--email -->
 
 <!-- Start: @input--number -->
-<div class="form-group">
+<div class="mb-3">
   <label for="numberInput">Chiffre</label>
   
   <input class="form-control"
@@ -101,7 +101,7 @@
 <!-- End: @input--number -->
 
 <!-- Start: @input--password -->
-<div class="form-group">
+<div class="mb-3">
   <label for="passwordInput">Password</label>
   
   <input class="form-control"
@@ -113,7 +113,7 @@
 <!-- End: @input--password -->
 
 <!-- Start: @input--date -->
-<div class="form-group">
+<div class="mb-3">
   <label for="date">Date</label>
   
   <input class="form-control"
@@ -125,7 +125,7 @@
 <!-- End: @input--date -->
 
 <!-- Start: @input--file -->
-<div class="form-group">
+<div class="mb-3">
   <label for="fileInput">Fichier</label>
   
   <input class="form-control-file"
@@ -137,7 +137,7 @@
 <!-- End: @input--file -->
 
 <!-- Start: @input--phone -->
-<div class="form-group">
+<div class="mb-3">
   <label for="phoneInput">Numéro de téléphone</label>
   
   <input class="form-control"
@@ -149,8 +149,8 @@
 <!-- End: @input--phone -->
 
 <!-- Start: @input--phone-error -->
-<div class="form-group has-danger vd-form-group-danger">
-  <label for="phoneInput">Numéro de téléphone</label><div id="phoneInputErrorMessage" class="form-control-feedback text-danger"><span class="sr-only">Erreur: </span>Entrez un numéro de téléphone suisse</div>
+<div class="mb-3 has-danger vd-form-group-danger">
+  <label for="phoneInput">Numéro de téléphone</label><div id="phoneInputErrorMessage" class="invalid-feedback text-danger"><span class="visually-hidden">Erreur: </span>Entrez un numéro de téléphone suisse</div>
   
   <input class="form-control is-invalid"
          type="tel"
@@ -161,8 +161,8 @@
 <!-- End: @input--phone-error -->
 
 <!-- Start: @input--help-error -->
-<div class="form-group has-danger vd-form-group-danger">
-  <label for="dossier">Numéro de dossier</label><div id="dossierErrorMessage" class="form-control-feedback text-danger"><span class="sr-only">Erreur: </span>Entrez un numéro de dossier dans le format correct.</div>
+<div class="mb-3 has-danger vd-form-group-danger">
+  <label for="dossier">Numéro de dossier</label><div id="dossierErrorMessage" class="invalid-feedback text-danger"><span class="visually-hidden">Erreur: </span>Entrez un numéro de dossier dans le format correct.</div>
   <small
       id="dossierHelp"
       class="form-text text-secondary">Il se trouve sur votre convocation et les courriers reçus. Per exemple, "DT 12 53 47 F".</small>

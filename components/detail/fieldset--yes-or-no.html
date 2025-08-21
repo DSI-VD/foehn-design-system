@@ -173,7 +173,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-eda535c2a50c5699f44e7879ce1068c0-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-3&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">legend</span>&gt;</span>Avez-vous déjà un compte utilisateur ?<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check form-check-inline&quot;</span>&gt;</span>
@@ -199,7 +199,7 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-eda535c2a50c5699f44e7879ce1068c0-panel-view">
     <code class="Code Code--lang-html hljs">
         <pre>{%- if validation.class === &#x27;danger&#x27; %}<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;vd-form-group-{{ validation.class }}&quot;</span>&gt;</span>{% endif %}
-  <span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group{% if styleModifier %} {{ styleModifier }}{% endif %}&quot;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-3{% if styleModifier %} {{ styleModifier }}{% endif %}&quot;</span>
     {% <span class="hljs-attr">if</span> <span class="hljs-attr">helpText</span> <span class="hljs-attr">or</span> <span class="hljs-attr">validation.text</span> <span class="hljs-attr">-</span>%}
               <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">&quot;
                                 {%- if helpText %}{{ id }}Help{% endif %}
@@ -207,7 +207,7 @@
                                 &quot;</span>
     {%<span class="hljs-attr">-</span> <span class="hljs-attr">endif</span> <span class="hljs-attr">-</span>%}&gt;</span>
   &lt;legend{% if legendModifier %} class=&quot;{{ legendModifier }}&quot;{% endif %}&gt;{{ legend }}<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
-  {%- if validation.text %}<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;{{ id }}ErrorMessage&quot;</span><span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control-feedback text-{{ validation.class }}&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>Erreur: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>{{ validation.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>{% endif %}
+  {%- if validation.text %}<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;{{ id }}ErrorMessage&quot;</span><span class="hljs-attr">class</span>=<span class="hljs-string">&quot;invalid-feedback text-{{ validation.class }}&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;visually-hidden&quot;</span>&gt;</span>Erreur: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>{{ validation.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>{% endif %}
   {% if helpText -%}
   <span class="hljs-tag">&lt;<span class="hljs-name">small</span>
       <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;{{ id }}Help&quot;</span>
@@ -349,7 +349,7 @@
 <h1 id="how-screen-readers-read-legend">How screen readers read <code>&lt;legend&gt;</code></h1>
 <pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;form&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sorter&quot;</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;get&quot;</span>&gt;</span>
   
-  <span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-3&quot;</span>
     &gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">legend</span>&gt;</span>Sort by<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
   
@@ -10204,7 +10204,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            1.9.0
+                            2.0.0
                         
                     </dd>
                 </div>
@@ -10213,8 +10213,8 @@
                     <dt class="Tree-asideTerm">Généré le:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2023-09-14T12:05:50.775Z">
-                                14/09/2023
+                            <time datetime="2025-08-21T09:18:50.240Z">
+                                21/08/2025
                             </time>
                         
                     </dd>

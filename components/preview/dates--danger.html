@@ -29,27 +29,27 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="../../foehn/img/favicon-apple-touch-icon.png?v=1.9.0"
+      href="../../foehn/img/favicon-apple-touch-icon.png?v=2.0.0"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../../foehn/img/favicon-32x32.png?v=1.9.0"
+      href="../../foehn/img/favicon-32x32.png?v=2.0.0"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="../../foehn/img/favicon-16x16.png?v=1.9.0"
+      href="../../foehn/img/favicon-16x16.png?v=2.0.0"
     />
     <link
       rel="manifest"
-      href="../../foehn/manifest/site.webmanifest?v=1.9.0"
+      href="../../foehn/manifest/site.webmanifest?v=2.0.0"
     />
     <link
       rel="mask-icon"
-      href="../../foehn/svg/safari-pinned-tab.svg?v=1.9.0"
+      href="../../foehn/svg/safari-pinned-tab.svg?v=2.0.0"
       color="#4d8b43"
     />
     <link rel="shortcut icon" href="../../foehn/img/favicon.ico" />
@@ -60,7 +60,7 @@
     />
     <meta
       name="msapplication-config"
-      content="../../foehn/xml/browserconfig.xml?v=1.9.0"
+      content="../../foehn/xml/browserconfig.xml?v=2.0.0"
     />
     <meta name="theme-color" content="#ffffff" />
   </head>
@@ -71,11 +71,11 @@
     <legend>Quelle est la date d&#39;émission de votre passeport ?</legend>
 
     
-    <div id="passeportIssuedErrorMessage" class="form-control-feedback text-danger mb-1"><span class="sr-only">Erreur: </span>La date d&#39;émission de votre passeport doit être dans le passé</div>
+    <div id="passeportIssuedErrorMessage" class="invalid-feedback text-danger mb-1"><span class="visually-hidden">Erreur: </span>La date d&#39;émission de votre passeport doit être dans le passé</div>
     
     <small id="passeportIssuedHelpText" class="form-text text-secondary">Par exemple, 23 7 1979</small>
     <div class="vd-form-flex">
-      <div class="vd-form-flex__item vd-form-flex__item--2-char-width"><div class="form-group">
+      <div class="vd-form-flex__item vd-form-flex__item--2-char-width"><div class="mb-3">
   <label for="inputDatesDay">Jour</label>
   
   <input class="form-control is-invalid"
@@ -85,7 +85,7 @@
          value="" required aria-required="true" pattern="[0-9]*" min="1" max="31" size="2">
 </div>
 </div>
-      <div class="vd-form-flex__item vd-form-flex__item--2-char-width"><div class="form-group">
+      <div class="vd-form-flex__item vd-form-flex__item--2-char-width"><div class="mb-3">
   <label for="inputDatesMonth">Mois</label>
   
   <input class="form-control is-invalid"
@@ -95,7 +95,7 @@
          value="" required aria-required="true" pattern="[0-9]*" min="1" max="12" size="2">
 </div>
 </div>
-      <div class="vd-form-flex__item vd-form-flex__item--4-char-width"><div class="form-group">
+      <div class="vd-form-flex__item vd-form-flex__item--4-char-width"><div class="mb-3">
   <label for="inputDatesYear">Année</label>
   
   <input class="form-control is-invalid"
