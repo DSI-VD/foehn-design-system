@@ -1,1 +1,1 @@
-Make sure to follow [](http://schema.org/) structred data and [test them](https://search.google.com/structured-data/testing-tool?hl=fr).
+Make sure to follow [Schema.org](https://schema.org/) structured data and [test them](https://search.google.com/test/rich-results?hl=fr).

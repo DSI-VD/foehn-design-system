@@ -9,4 +9,4 @@ Captions and summaries provide information that can help users find, navigate, a
 
 If both caption and summary are provided for one table, the summary should not duplicate information present in the caption.
 
-[https://www.w3.org/WAI/tutorials/tables/caption-summary/]()
+[https://www.w3.org/WAI/tutorials/tables/caption-summary/](<>)

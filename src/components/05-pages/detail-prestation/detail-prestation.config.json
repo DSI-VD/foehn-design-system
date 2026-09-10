@@ -38,15 +38,15 @@
       "title": "Obtenir la prestation",
       "listLinks": [
         {
-          "item": "<span class=\"sr-only\">Obtenir la prestation </span>En ligne",
+          "item": "<span class=\"visually-hidden\">Obtenir la prestation </span>En ligne",
           "url": "#1"
         },
         {
-          "item": "<span class=\"sr-only\">Obtenir la prestation </span>Au guichet",
+          "item": "<span class=\"visually-hidden\">Obtenir la prestation </span>Au guichet",
           "url": "#2"
         },
         {
-          "item": "<span class=\"sr-only\">Obtenir la prestation </span>Par courrier",
+          "item": "<span class=\"visually-hidden\">Obtenir la prestation </span>Par courrier",
           "url": "#3"
         },
         {

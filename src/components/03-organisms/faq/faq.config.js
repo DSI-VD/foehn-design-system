@@ -1,12 +1,9 @@
 "use strict";
 
-const { faker } = require("@faker-js/faker"); // Require the faker module
+const { fakerFR: faker } = require("@faker-js/faker");
 
 const faqCount = 10; // How many faqs we should generate data for
 const faqData = [];
-
-// Sets locale to fr
-faker.locale = "fr";
 
 for (let i = 0; i < faqCount; i += 1) {
     faqData.push({
@@ -19,7 +16,7 @@ for (let i = 0; i < faqCount; i += 1) {
 module.exports = {
     status: "ready",
     context: {
-        titleModifier: "sr-only",
+        titleModifier: "visually-hidden",
         searchForm: {
             label: "Rechercher dans les questions",
             titleModifier: "mt-0",

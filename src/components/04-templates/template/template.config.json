@@ -50,7 +50,7 @@
       "context": {
         "pageTitle": {
           "text": "Homepage",
-          "styleModifier": "sr-only"
+          "styleModifier": "visually-hidden"
         }
       }
     },

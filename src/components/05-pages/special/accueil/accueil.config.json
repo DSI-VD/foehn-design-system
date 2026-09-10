@@ -3,7 +3,7 @@
   "context": {
     "pageTitle": {
       "text": "Site officiel de l'État de Vaud",
-      "styleModifier": "sr-only"
+      "styleModifier": "visually-hidden"
     },
     "navOpen": true,
     "news": {

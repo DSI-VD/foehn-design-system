@@ -21,7 +21,7 @@
     },
     "search": {
       "id": "search",
-      "label": "Rechercher<span class=\"sr-only\"> les communiqués de presse</span>",
+      "label": "Rechercher<span class=\"visually-hidden\"> les communiqués de presse</span>",
       "labelHidden": false,
       "labelStyleModifier": "h5 d-block mt-0"
     },

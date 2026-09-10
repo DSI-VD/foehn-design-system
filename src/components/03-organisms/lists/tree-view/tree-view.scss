@@ -7,10 +7,10 @@
   display: block; /* [1] */
 }
 
-.vd-tree-view__button[data-toggle="collapse"][aria-expanded="true"].is-collapsed {
+.vd-tree-view__button[data-bs-toggle="collapse"][aria-expanded="true"].is-collapsed {
   display: none; /* [2] */
 }
 
-.vd-tree-view__button[data-toggle="collapse"][aria-expanded="false"].is-not-collapsed {
+.vd-tree-view__button[data-bs-toggle="collapse"][aria-expanded="false"].is-not-collapsed {
   display: none; /* [2] */
 }

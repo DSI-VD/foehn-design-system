@@ -134,15 +134,15 @@
       "links": {
         "listLinks": [
           {
-            "item": "Direction de l'énergie &dash; <span class=\"sr-only\">Abbreviation: </span>DIREN</small>",
+            "item": "Direction de l'énergie &dash; <span class=\"visually-hidden\">Abbreviation: </span>DIREN</small>",
             "url": "#"
           },
           {
-            "item": "Direction de l'environnement industriel, urbain et rural  &dash; <span class=\"sr-only\">Abbreviation: </span>DIREV</small>",
+            "item": "Direction de l'environnement industriel, urbain et rural  &dash; <span class=\"visually-hidden\">Abbreviation: </span>DIREV</small>",
             "url": "#"
           },
           {
-            "item": "Direction des ressources et du patrimoine  &dash; <span class=\"sr-only\">Abbreviation: </span>DIRNA</small>",
+            "item": "Direction des ressources et du patrimoine  &dash; <span class=\"visually-hidden\">Abbreviation: </span>DIRNA</small>",
             "url": "#"
           },
           {

@@ -54,7 +54,7 @@
       ]
     },
     "button": {
-      "text": "Voir tout<span class='sr-only'>es les prestations</span>",
+      "text": "Voir tout<span class='visually-hidden'>es les prestations</span>",
       "href": "theme--list",
       "title": false
     }
@@ -189,7 +189,7 @@
           ]
         },
         "button": {
-          "text": "Voir moins<span class='sr-only'> de prestations</span>",
+          "text": "Voir moins<span class='visually-hidden'> de prestations</span>",
           "title": false,
           "href": "theme--default"
         }

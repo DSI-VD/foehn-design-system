@@ -1,88 +1,154 @@
 <address itemscope itemtype="http://schema.org/GovernmentOrganization">
-
-  <h2
-    {%- if titleModifier %} class="{{ titleModifier }}"{% endif %}>
-    {%- if url %}
-        <a href="{{ url }}" title="Pages du service {{ name }}" itemprop="url">
-    {%- endif %}
-    {%- if accessibleLink %}
-      <span class="visually-hidden">{{ accessibleLink }}</span>{% endif -%}
-      <span itemprop="name">{{ name }}</span>
-    {%- if url -%}
+  <div
+    class="{{ titleModifier | default('h2 mt-0') }}"
+    id="service-contact-title"
+    itemprop="name">
+    {% if url -%}
+      <a
+        href="{{ url }}"
+        title="Pages du service {{ name }}"
+        id="service-contact-reference-page-link"
+        itemprop="url">
+        {% if accessibleLink -%}
+          <span class="visually-hidden">{{ accessibleLink }}</span>
+        {%- endif %}
+        {{ name }}
       </a>
+    {%- else -%}
+      {{ name }}
     {%- endif %}
-  </h2>
+  </div>
 
   {% if division -%}
-  <h3 class="vd-heading-light h4 mt-0">{{ division }}</h3>
+    <p class="h4 mt-0 vd-heading-light-alt" id="service-contact-name">{{ division }}</p>
   {%- endif %}
 
-  {% if description %}<p>{{ description }}</p>{% endif %}
+  {% if description -%}
+    <p>{{ description }}</p>
+  {%- endif %}
+
   {% if person -%}
-  <p itemscope itemtype ="http://schema.org/Person" class="mb-0">
-    <span itemprop="name">{{ person.name }}</span> <br>
-    {% if person.jobTitle -%}
-      <span itemprop="jobTitle">{{ person.jobTitle }}</span> <br>
-    {%- endif %}
-  </p>
+    <p itemscope itemtype="http://schema.org/Person" class="mb-0">
+      <span itemprop="name">{{ person.name }}</span>
+      <br>
+      {% if person.jobTitle -%}
+        <span itemprop="jobTitle">{{ person.jobTitle }}</span>
+        <br>
+      {%- endif %}
+    </p>
   {%- endif %}
+
   {% if address -%}
-  <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-    <span itemprop="streetAddress">{{ address.streetAddress }}</span> <br>
-    {% if address.postOfficeBoxNumber -%}
-      Case postale <span itemprop="postOfficeBoxNumber">{{ address.postOfficeBoxNumber }}</span><br>
-    {%- endif %}
-    <span itemprop="postalCode">{{ address.postalCode }}</span>
-    <span itemprop="addressLocality">{{ address.addressLocality }}</span>
-    <span class="visually-hidden" itemprop="addressCountry">{{ address.addressCountry }}</span>
-  </p>
+    <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+      {% if address.streetAddress -%}
+        <span itemprop="streetAddress">{{ address.streetAddress }}</span>
+        <br>
+      {%- endif %}
+      {% if address.postOfficeBoxNumber -%}
+        Case postale <span itemprop="postOfficeBoxNumber">{{ address.postOfficeBoxNumber }}</span>
+        <br>
+      {%- endif %}
+      {% if address.postalCode -%}
+        <span itemprop="postalCode">{{ address.postalCode }}</span>&nbsp;
+      {%- endif %}
+      {% if address.addressLocality -%}
+        <span itemprop="addressLocality">{{ address.addressLocality }}</span>
+      {%- endif %}
+      {% if address.addressCountry -%}
+        <span class="visually-hidden" itemprop="addressCountry">{{ address.addressCountry }}</span>
+      {%- endif %}
+    </p>
   {%- endif %}
 
-  <p>
-    {% if telephone -%}
-      <a href="tel:{{ telephone }}"
-         content="{{ telephone }}"
-         itemprop="telephone">{{ telephone }}</a><br>
-    {%- endif %}
-    {% if email -%}
-      <a href="mailto:{{ email }}"
-        itemprop="email">{{ email }}</a><br>
-    {%- endif %}
-    {% if address %}
-      <a href="https://www.google.ch/maps/search/
-      {%- for item, value in address -%}
-        {{ value  | urlencode }}%20
-      {%- endfor -%}
-        ">Visualiser sur la carte</a><br>
-    {% endif %}
-    {% if additionalUrl %}
-      {% for item in additionalUrl %}
-        <a href="{{ item.url }}">{{ item.text }}</a>
-      {% endfor %}
-    {% endif %}
-  </p>
-
-  <p>{% render '@button--default', button, true %}</p>
-
-  <div itemscope itemtype="http://schema.org/GovernmentBuilding">
-  {% if openingHours.title %}<h3>{{ openingHours.title }}<span class="visually-hidden"> du {{ name }}</span></h3>{% endif %}
-  {% if openingHours.openingHours %}
-    {% for hour in openingHours.openingHours %}
-    <p itemprop="openingHours" content="{{ hour.microdata }}">{{ hour.text }}</p>
-    {% endfor %}
-  {% endif %}
-  {% if openingHours.info -%}
-  <p>{{ openingHours.info  }}</p>
+  {% if telephone or email or googleMapsUrl or address or additionalUrl -%}
+    <p>
+      {% if telephone -%}
+        <a
+          href="tel:{{ telephoneHref | default(telephone) }}"
+          id="service-contact-phone-link"
+          itemprop="telephone">
+          {{ telephone }}
+        </a>
+        <br>
+      {%- endif %}
+      {% if email -%}
+        <a
+          id="service-contact-email"
+          href="mailto:{{ email }}"
+          itemprop="email">
+          {{ emailLabel | default(email) }}
+        </a>
+        <br>
+      {%- endif %}
+      {% if googleMapsUrl -%}
+        <a href="{{ googleMapsUrl }}" id="google-maps-link">
+          Visualiser sur la carte Google
+        </a>
+        <br>
+      {% elif address -%}
+        <a
+          href="https://www.google.ch/maps/search/{%- for item, value in address -%}{{ value | urlencode }}%20{%- endfor -%}"
+          id="google-maps-link">
+          Visualiser sur la carte Google
+        </a>
+        <br>
+      {%- endif %}
+      {% if additionalUrl -%}
+        {% for item in additionalUrl -%}
+          <a href="{{ item.url }}">{{ item.text }}</a>
+          {% if not loop.last -%}
+            <br>
+          {%- endif %}
+        {%- endfor %}
+      {%- endif %}
+    </p>
   {%- endif %}
-  </div>
-  {% if account %}<h3>{{ account.type }}<span class="visually-hidden"> du {{ name }}</span></h3>{% endif %}
-  <p>{{ account.number }}</p>
+
+  {% if button -%}
+    <p>
+      <a
+        class="btn btn-dark"
+        id="service-contact-contact-form-link"
+        title="{{ button.text }}{% if button.title %} {{ button.title }}{% endif %}"
+        href="{{ button.href }}">
+        {{ button.text }}
+      </a>
+    </p>
+  {%- endif %}
+
+  {% if openingHours -%}
+    <div itemscope itemtype="http://schema.org/GovernmentBuilding">
+      {% if openingHours.title -%}
+        <h3>{{ openingHours.title }}<span class="visually-hidden"> du {{ name }}</span></h3>
+      {%- endif %}
+      {% if openingHours.openingHours -%}
+        {% for hour in openingHours.openingHours -%}
+          <p itemprop="openingHours" content="{{ hour.microdata }}">{{ hour.text }}</p>
+        {%- endfor %}
+      {%- endif %}
+      {% if openingHours.info -%}
+        <p>{{ openingHours.info }}</p>
+      {%- endif %}
+    </div>
+  {%- endif %}
+
+  {% if account -%}
+    <h3>{{ account.type }}<span class="visually-hidden"> du {{ name }}</span></h3>
+    <p>{{ account.number }}</p>
+  {%- endif %}
 
   {% if image -%}
-  <img class="img-fluid"
-       src="{{ '/assets/img/picture-960x640.jpg' | path }}"
-       srcset="{{ '/assets/img/picture-320x213.jpg' | path }} 320w, {{ '/assets/img/picture-540x360.jpg' | path }} 540w, {{ '/assets/img/picture-720x480.jpg' | path }} 720w, {{ '/assets/img/picture-960x640.jpg' | path }} 960w, {{ '/assets/img/picture-1140x760.jpg' | path }} 1140w"
-       alt="Alternative text"
-       itemprop="image">
+    <img
+      class="img-fluid"
+      src="{{ '/assets/img/picture-960x640.jpg' | path }}"
+      srcset="
+        {{ '/assets/img/picture-320x213.jpg' | path }} 320w,
+        {{ '/assets/img/picture-540x360.jpg' | path }} 540w,
+        {{ '/assets/img/picture-720x480.jpg' | path }} 720w,
+        {{ '/assets/img/picture-960x640.jpg' | path }} 960w,
+        {{ '/assets/img/picture-1140x760.jpg' | path }} 1140w
+      "
+      alt="Alternative text"
+      itemprop="image"/>
   {%- endif %}
 </address>

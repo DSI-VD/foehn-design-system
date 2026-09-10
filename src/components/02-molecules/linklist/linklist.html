@@ -7,7 +7,7 @@
   </ul>
   {%- if relatedLink -%}
     <div class="bottom-link text-center vd-text-md-small">
-      <a href="{{ relatedLink.url }}">{{ relatedLink.label }} <i class="fa fa-arrow-right-long"></i></a>
+      <a aria-label="{{ relatedLink.label }}" href="{{ relatedLink.url }}">{{ relatedLink.label }} <i aria-hidden="true" class="fa fa-arrow-right-long"></i></a>
     </div>
   {%- endif -%}
 </div>

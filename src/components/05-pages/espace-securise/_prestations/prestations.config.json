@@ -41,10 +41,10 @@
     },
     "search": {
       "title": "Filtrer par thème",
-      "titleModifier": "sr-only",
+      "titleModifier": "visually-hidden",
       "options": {
         "legend": "Filtrer par thème",
-        "legendModifier": "sr-only",
+        "legendModifier": "visually-hidden",
         "items": [
           {
             "label": "Agriculture",

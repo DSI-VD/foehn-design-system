@@ -12,26 +12,26 @@
       "heading": {
         "text": "Rechercher",
         "level": "h2",
-        "styleModifier": "sr-only"
+        "styleModifier": "visually-hidden"
       },
       "placeholder": false
     },
     "filters": [
       {
-        "title": "<span class=\"sr-only\">Afficher </span>Tout",
+        "title": "<span class=\"visually-hidden\">Afficher </span>Tout",
         "url": "#",
         "active": true
       },
       {
-        "title": "<span class=\"sr-only\">Afficher uniquement les </span>Actualités",
+        "title": "<span class=\"visually-hidden\">Afficher uniquement les </span>Actualités",
         "url": "#"
       },
       {
-        "title": "<span class=\"sr-only\">Afficher uniquement les </span>Prestations",
+        "title": "<span class=\"visually-hidden\">Afficher uniquement les </span>Prestations",
         "url": "#"
       },
       {
-        "title": "<span class=\"sr-only\">Afficher uniquement les résultats concernant le </span>Grand Conseil",
+        "title": "<span class=\"visually-hidden\">Afficher uniquement les résultats concernant le </span>Grand Conseil",
         "url": "#"
       }
     ],

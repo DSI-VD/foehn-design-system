@@ -41,10 +41,10 @@
     },
     "search": {
       "title": "Rechercher dans l\"historique",
-      "titleModifier": "sr-only",
+      "titleModifier": "visually-hidden",
       "options": {
         "legend": "Rechercher les",
-        "legendModifier": "sr-only",
+        "legendModifier": "visually-hidden",
         "items": [
           {
             "label": "Demandes",

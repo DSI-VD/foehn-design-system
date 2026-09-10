@@ -1,4 +1,4 @@
-{%- if validation.class === 'danger' %}<div class="vd-form-group-{{ validation.class }}">{% endif %}
+{%- if validation.class === 'danger' %}<div class="vd-mb-3-{{ validation.class }}">{% endif %}
   <fieldset class="mb-3{% if styleModifier %} {{ styleModifier }}{% endif %}"
     {% if helpText or validation.text -%}
               aria-describedby="
