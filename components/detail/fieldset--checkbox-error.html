@@ -173,7 +173,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-762ee174fd3ffdcdff7b583f673e238a-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;vd-form-group-danger&quot;</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;vd-mb-3-danger&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-3&quot;</span> <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">&quot;fieldsetHelp fieldsetErrorMessage&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">legend</span>&gt;</span>Quelle est votre nationalité ?<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;fieldsetErrorMessage&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;invalid-feedback text-danger&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;visually-hidden&quot;</span>&gt;</span>Erreur: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>Sélectionnez si vous êtes Suisse, Français ou citoyen d<span class="hljs-symbol">&amp;#39;</span>un autre pays<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -209,7 +209,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-762ee174fd3ffdcdff7b583f673e238a-panel-view">
     <code class="Code Code--lang-html hljs">
-        <pre>{%- if validation.class === &#x27;danger&#x27; %}<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;vd-form-group-{{ validation.class }}&quot;</span>&gt;</span>{% endif %}
+        <pre>{%- if validation.class === &#x27;danger&#x27; %}<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;vd-mb-3-{{ validation.class }}&quot;</span>&gt;</span>{% endif %}
   <span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-3{% if styleModifier %} {{ styleModifier }}{% endif %}&quot;</span>
     {% <span class="hljs-attr">if</span> <span class="hljs-attr">helpText</span> <span class="hljs-attr">or</span> <span class="hljs-attr">validation.text</span> <span class="hljs-attr">-</span>%}
               <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">&quot;
@@ -5099,33 +5099,19 @@
     
         
         
-            
-            
-            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-login-form">
-                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-login-form-items">
-                    Login Form
-                </button>
-                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-login-form-items">
-                
-                
-                
-                
-    
-        
-        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./login-form--default.html"
+                href="./login-form.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="login-form--default"
-                data-handle="login-form--default"
+                data-test="login-form"
+                data-handle="login-form"
             >
-                <span>Default</span>
+                <span>Login Form</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -5152,14 +5138,14 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./login-form--logged_off.html"
+                href="./logout-form.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="login-form--logged_off"
-                data-handle="login-form--logged_off"
+                data-test="logout-form"
+                data-handle="logout-form"
             >
-                <span>Logged Off</span>
+                <span>Logout Form</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -5177,12 +5163,6 @@
 
             </a>
         </li>
-        
-    
-
-                </ul>
-            </li>
-            
         
     
         
@@ -7064,6 +7044,40 @@
                 data-handle="autority-address--default"
             >
                 <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./autority-address--complete.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="autority-address--complete"
+                data-handle="autority-address--complete"
+            >
+                <span>Complete</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -10228,7 +10242,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            2.0.1
+                            2.0.2
                         
                     </dd>
                 </div>
@@ -10237,8 +10251,8 @@
                     <dt class="Tree-asideTerm">Généré le:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2025-08-21T10:38:04.527Z">
-                                21/08/2025
+                            <time datetime="2026-09-24T08:25:34.684Z">
+                                24/09/2026
                             </time>
                         
                     </dd>

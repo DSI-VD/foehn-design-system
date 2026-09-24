@@ -340,6 +340,24 @@ select,
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$link-hover-color</span>;
   }
 }
+
+<span class="hljs-selector-class">.btn-more</span> {
+  <span class="hljs-attribute">box-shadow</span>: none;
+  <span class="hljs-attribute">text-transform</span>: none;
+
+  <span class="hljs-selector-class">.link-text</span> {
+    <span class="hljs-attribute">text-decoration</span>: underline;
+  }
+
+  <span class="hljs-selector-class">.fas</span>:before {
+    display: inline-block;
+    <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease;
+  }
+
+  &amp;<span class="hljs-selector-class">.collapsed</span> <span class="hljs-selector-class">.fas</span>:before {
+    transform: rotate(-<span class="hljs-number">90deg</span>);
+  }
+}
 </pre>
                             </code>
                             
@@ -356,7 +374,7 @@ select,
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.4 KB</span>
+                    <span class="Meta-value">1.6 KB</span>
                 </li>
             </ul>
         </div>
@@ -5190,33 +5208,19 @@ select,
     
         
         
-            
-            
-            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-login-form">
-                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-login-form-items">
-                    Login Form
-                </button>
-                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-login-form-items">
-                
-                
-                
-                
-    
-        
-        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./login-form--default.html"
+                href="./login-form.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="login-form--default"
-                data-handle="login-form--default"
+                data-test="login-form"
+                data-handle="login-form"
             >
-                <span>Default</span>
+                <span>Login Form</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -5243,14 +5247,14 @@ select,
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./login-form--logged_off.html"
+                href="./logout-form.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="login-form--logged_off"
-                data-handle="login-form--logged_off"
+                data-test="logout-form"
+                data-handle="logout-form"
             >
-                <span>Logged Off</span>
+                <span>Logout Form</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -5268,12 +5272,6 @@ select,
 
             </a>
         </li>
-        
-    
-
-                </ul>
-            </li>
-            
         
     
         
@@ -7155,6 +7153,40 @@ select,
                 data-handle="autority-address--default"
             >
                 <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./autority-address--complete.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="autority-address--complete"
+                data-handle="autority-address--complete"
+            >
+                <span>Complete</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -10319,7 +10351,7 @@ select,
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            2.0.1
+                            2.0.2
                         
                     </dd>
                 </div>
@@ -10328,8 +10360,8 @@ select,
                     <dt class="Tree-asideTerm">Généré le:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2025-08-21T10:38:04.527Z">
-                                21/08/2025
+                            <time datetime="2026-09-24T08:25:34.684Z">
+                                24/09/2026
                             </time>
                         
                     </dd>

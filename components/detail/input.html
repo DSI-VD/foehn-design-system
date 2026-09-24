@@ -217,7 +217,7 @@
 </pre>
         
             <pre><span class="hljs-comment">&lt;!-- Validation Danger --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-3 has-danger vd-form-group-danger&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-3 has-danger vd-mb-3-danger&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;testInput&quot;</span>&gt;</span>Courriel<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;testInputErrorMessage&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;invalid-feedback text-danger&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;visually-hidden&quot;</span>&gt;</span>Erreur: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>Veuillez saisir votre courriel<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;testInputHelp&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-text text-secondary&quot;</span>&gt;</span>Votre courriel n&#x27;est pas conservé et ne sera pas communiqué à des organismes tiers.<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
@@ -301,7 +301,7 @@
 </pre>
         
             <pre><span class="hljs-comment">&lt;!-- Phone Error --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-3 has-danger vd-form-group-danger&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-3 has-danger vd-mb-3-danger&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;phoneInput&quot;</span>&gt;</span>Numéro de téléphone<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;phoneInputErrorMessage&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;invalid-feedback text-danger&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;visually-hidden&quot;</span>&gt;</span>Erreur: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>Entrez un numéro de téléphone suisse<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
@@ -311,7 +311,7 @@
 </pre>
         
             <pre><span class="hljs-comment">&lt;!-- Help Error --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-3 has-danger vd-form-group-danger&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-3 has-danger vd-mb-3-danger&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;dossier&quot;</span>&gt;</span>Numéro de dossier<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;dossierErrorMessage&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;invalid-feedback text-danger&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;visually-hidden&quot;</span>&gt;</span>Erreur: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>Entrez un numéro de dossier dans le format correct.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;dossierHelp&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-text text-secondary&quot;</span>&gt;</span>Il se trouve sur votre convocation et les courriers reçus. Per exemple, &quot;DT 12 53 47 F&quot;.<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
@@ -329,7 +329,7 @@
     <code class="Code Code--lang-html hljs">
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-3
      {%- if validation %} has-{{ validation.class }}
-     {%- if validation.class === &#x27;danger&#x27; %} vd-form-group-{{ validation.class }}
+     {%- if validation.class === &#x27;danger&#x27; %} vd-mb-3-{{ validation.class }}
      {%- endif -%}
      {%- endif -%}
     &quot;</span>&gt;</span>
@@ -5614,33 +5614,19 @@
     
         
         
-            
-            
-            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-login-form">
-                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-login-form-items">
-                    Login Form
-                </button>
-                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-login-form-items">
-                
-                
-                
-                
-    
-        
-        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./login-form--default.html"
+                href="./login-form.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="login-form--default"
-                data-handle="login-form--default"
+                data-test="login-form"
+                data-handle="login-form"
             >
-                <span>Default</span>
+                <span>Login Form</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -5667,14 +5653,14 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./login-form--logged_off.html"
+                href="./logout-form.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="login-form--logged_off"
-                data-handle="login-form--logged_off"
+                data-test="logout-form"
+                data-handle="logout-form"
             >
-                <span>Logged Off</span>
+                <span>Logout Form</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -5692,12 +5678,6 @@
 
             </a>
         </li>
-        
-    
-
-                </ul>
-            </li>
-            
         
     
         
@@ -7579,6 +7559,40 @@
                 data-handle="autority-address--default"
             >
                 <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./autority-address--complete.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="autority-address--complete"
+                data-handle="autority-address--complete"
+            >
+                <span>Complete</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -10743,7 +10757,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            2.0.1
+                            2.0.2
                         
                     </dd>
                 </div>
@@ -10752,8 +10766,8 @@
                     <dt class="Tree-asideTerm">Généré le:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2025-08-21T10:38:04.527Z">
-                                21/08/2025
+                            <time datetime="2026-09-24T08:25:34.684Z">
+                                24/09/2026
                             </time>
                         
                     </dd>

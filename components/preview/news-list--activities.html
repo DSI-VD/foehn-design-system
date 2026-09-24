@@ -29,27 +29,27 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="../../foehn/img/favicon-apple-touch-icon.png?v=2.0.1"
+      href="../../foehn/img/favicon-apple-touch-icon.png?v=2.0.2"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../../foehn/img/favicon-32x32.png?v=2.0.1"
+      href="../../foehn/img/favicon-32x32.png?v=2.0.2"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="../../foehn/img/favicon-16x16.png?v=2.0.1"
+      href="../../foehn/img/favicon-16x16.png?v=2.0.2"
     />
     <link
       rel="manifest"
-      href="../../foehn/manifest/site.webmanifest?v=2.0.1"
+      href="../../foehn/manifest/site.webmanifest?v=2.0.2"
     />
     <link
       rel="mask-icon"
-      href="../../foehn/svg/safari-pinned-tab.svg?v=2.0.1"
+      href="../../foehn/svg/safari-pinned-tab.svg?v=2.0.2"
       color="#4d8b43"
     />
     <link rel="shortcut icon" href="../../foehn/img/favicon.ico" />
@@ -60,7 +60,7 @@
     />
     <meta
       name="msapplication-config"
-      content="../../foehn/xml/browserconfig.xml?v=2.0.1"
+      content="../../foehn/xml/browserconfig.xml?v=2.0.2"
     />
     <meta name="theme-color" content="#ffffff" />
   </head>
@@ -69,38 +69,23 @@
   <nav class="container fixed-top access-nav d-print-none" aria-label="menu accessibilité">
   <ul class="list-unstyled mt-3">
       <li>
-        <a class="visually-hidden visually-hidden-focusable btn btn-dark pt-0" accesskey="0" href="#" title="[Alt+0] Page d'accueil du site">Accueil</a>
+        <a class="visually-hidden visually-hidden-focusable btn btn-dark pt-0" accesskey="1" href="#main" title="[Alt+1] Debut du contenu de la page">Début du contenu de la page</a>
       </li>
       <li>
-        <a class="visually-hidden visually-hidden-focusable btn btn-dark pt-0" accesskey="1" href="#nav-primary" title="[Alt+1] Menu de navigation de la page">Menu de navigation de la page</a>
+        <a class="visually-hidden visually-hidden-focusable btn btn-dark pt-0" accesskey="2" href="#search-form" title="[Alt+2] Accès au champ de recherche">Accès au champ de recherche</a>
       </li>
       <li>
-        <a class="visually-hidden visually-hidden-focusable btn btn-dark pt-0" accesskey="2" href="#main" title="[Alt+2] Debut du contenu de la page">Début du contenu de la page</a>
+        <a class="visually-hidden visually-hidden-focusable btn btn-dark pt-0" accesskey="3" href="#" title="[Alt+3] Page d'accueil du site">Accueil</a>
       </li>
       <li>
-        <a class="visually-hidden visually-hidden-focusable btn btn-dark pt-0" accesskey="3" href="#" title="[Alt+3] Page de contact">Page de contact</a>
-      </li>
-      <li>
-        <a class="visually-hidden visually-hidden-focusable btn btn-dark pt-0" accesskey="4" href="#" title="[Alt+4] Plan du site du Canton de Vaud">Plan du site</a>
-      </li>
-      <li>
-        <a class="visually-hidden visually-hidden-focusable btn btn-dark pt-0" accesskey="5" href="#search-form" title="[Alt+5] Accès au champ de recherche">Accès au champ de recherche</a>
-      </li>
-      <li>
-        <a class="visually-hidden visually-hidden-focusable btn btn-dark pt-0" accesskey="6" href="#" title="[Alt+6] Accès à l'index thématique">Thèmes</a>
-      </li>
-      <li>
-        <a class="visually-hidden visually-hidden-focusable btn btn-dark pt-0" accesskey="7" href="#" title="[Alt+7] Accès à la navigation par autorités">Autorités</a>
-      </li>
-      <li>
-        <a class="visually-hidden visually-hidden-focusable btn btn-dark pt-0" accesskey="8" href="#" title="[Alt+8] Page d'aide pour les personnes en situation de handicap">Page d'aide pour les personnes en situation de handicap</a>
+        <a class="visually-hidden visually-hidden-focusable btn btn-dark pt-0" accesskey="4" href="#" title="[Alt+4] Page de contact">Page de contact</a>
       </li>
     </ul>
 </nav>
 
   <div class="container">
     <div class="d-flex flex-wrap justify-content-between justify-content-md-end d-print-none">
-      <nav class="align-items-center d-flex d-print-none">
+      <section class="align-items-center d-flex d-print-none">
   <h2 class="visually-hidden">
     Sous-navigation
   </h2>
@@ -112,7 +97,7 @@
       <a href="#">Annuaire</a>
     </li>
   </ul>
-</nav>
+</section>
 
       <button
   id="login-button"
@@ -126,53 +111,88 @@
   Se connecter <span class="fas fa-chevron-down text-white ms-1" id="login-button-icon"></span>
 </button>
 
-<div id="login-form-collapse" class="collapse shadow border p-3">
-  <div class="d-flex flex-column mb-5">
+<div id="login-form-collapse" class="border collapse p-3 shadow">
+  <div class="d-flex flex-column mb-3">
     <div class="d-flex flex-row justify-content-between mb-2">
       <div class="p-2">
-        <span class="h4">Particuliers et professionnels</span>
-      </div>
-      <div class="p-2">
-        <a href="#">
-          <span class="fas fa-question-circle"></span>
-        </a>
+        <span class="h4">Espace sécurisé</span>
       </div>
     </div>
-    <div class="p-2 mb-3">
-      <a class="btn btn-primary text-center w-100 py-2" href="#">
+    <div class="mb-1 p-2">
+      <span>
+        Gérez facilement vos <a href="#">démarches administratives</a> en ligne pour les particuliers, entreprises, fondations et communes
+      </span>
+    </div>
+    <div class="mb-3 p-2">
+      <a class="btn btn-success mb-2 py-2 text-center w-100" href="#">
+        Se connecter
         <span class="fas fa-external-link-alt me-1 text-white"></span>
-        Portail prestations
       </a>
+      <a class="btn btn-secondary py-2 text-center w-100" href="#">
+        Créer un compte
+      </a>
+    </div>
+    <div class="mb-2 p-2">
+      <details>
+        <summary>Exemples de démarches</summary>
+        <ul>
+          <li>Remplir et déposer sa déclaration d’impôt</li>
+          <li>Consulter son dossier fiscal</li>
+          <li>Remplacer son permis de conduire (particuliers)</li>
+          <li>S’inscrire à la maturité professionnel post-CFC (étudiants)</li>
+          <li>Obtenir une première autorisation frontalière (entreprise)</li>
+          <li>Demander un soutien à un projet cultuel (associations)</li>
+          <li>Accéder au registre cantonal des personnes (communes)</li>
+        </ul>
+      </details>
     </div>
     <div class="p-2">
-      <a href="#" class="text-decoration-none">
-        Vous n'avez pas encore assez au portail ?
-      </a>
-    </div>
-    <div class="px-2">
-      <a href="#" class="btn btn-outline-primary text-center w-100 py-2">
-        Demander l'accès
+      <a href="#">
+        Aide en ligne
       </a>
     </div>
   </div>
-  <div class="px-2 mb-5">
+  <div class="mb-3 px-2">
     <hr class="opacity-25">
   </div>
   <div class="d-flex flex-column">
     <div class="d-flex flex-row justify-content-between mb-2">
       <div class="p-2">
-        <span class="h4">Collaborateurs-trices et partenaires</span>
-      </div>
-      <div class="p-2">
-        <a href="#">
-          <span class="fas fa-question-circle"></span>
-        </a>
+        <span class="h4">Portail IAM</span>
       </div>
     </div>
-    <div class="p-2">
-      <a class="btn btn-secondary text-center w-100 py-2" href="#">
+    <div class="mb-1 p-2">
+      <span>Accès aux applications pour les collaborateurs-trices de l’Etat de Vaud et les partenaires.</span>
+    </div>
+    <div class="mb-1 p-2">
+      <a class="btn btn-success py-2 text-center w-100" href="#">
+        Se connecter
         <span class="fas fa-external-link-alt me-1 text-white"></span>
-        Portail IAM
+      </a>
+    </div>
+    <div class="mb-1 p-2">
+      <details>
+        <summary>Exemples d’applications</summary>
+        <ul>
+          <li>ACTIS (Camac 2010)</li>
+          <li>Easyvista</li>
+          <li>LAGAPEO</li>
+          <li>LA PLACE</li>
+          <li>NEO</li>
+          <li>PAREO</li>
+          <li>Passerelle Employeur - Impôts à la source</li>
+          <li>RCPers - Registre Cantonal des Personnes</li>
+          <li>Réquisition - Désignation Electronique (ReqDes)</li>
+          <li>RDU</li>
+          <li>Themis</li>
+          <li>Votelec - Dépouillement</li>
+          <li>Wiki projets ACV</li>
+        </ul>
+      </details>
+    </div>
+    <div class="p-2">
+      <a href="#">
+        Aide en ligne
       </a>
     </div>
   </div>
@@ -237,7 +257,7 @@
      class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
     <span class="vd-domain-item__link vd-link-invisible h4">Culture</span>
     <span class="vd-domain-item__text">
-      <span class="visually-hidden">(Exemple de contenu: </span>Aides et subventions, passculture, Musées, Bibliothèques, Patrimoine vaudois, etc.<span class="visually-hidden">)</span>
+      <span class="visually-hidden">(</span>Aides et subventions, passculture, Musées, Bibliothèques, Patrimoine vaudois, etc.<span class="visually-hidden">)</span>
     </span>
   </a>
 </li>
@@ -248,7 +268,7 @@
      class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
     <span class="vd-domain-item__link vd-link-invisible h4">Economie</span>
     <span class="vd-domain-item__text">
-      <span class="visually-hidden">(Exemple de contenu: </span>Registre du commerce, poursuites et faillites, Entreprise, Chômage, Agriculture, développement économique, etc.<span class="visually-hidden">)</span>
+      <span class="visually-hidden">(</span>Registre du commerce, poursuites et faillites, Entreprise, Chômage, Agriculture, développement économique, etc.<span class="visually-hidden">)</span>
     </span>
   </a>
 </li>
@@ -259,7 +279,7 @@
      class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
     <span class="vd-domain-item__link vd-link-invisible h4">Environnement</span>
     <span class="vd-domain-item__text">
-      <span class="visually-hidden">(Exemple de contenu: </span>Subventions pour l’énergie, faune et nature, eaux, forêts, air, développement durable, etc.<span class="visually-hidden">)</span>
+      <span class="visually-hidden">(</span>Subventions pour l’énergie, faune et nature, eaux, forêts, air, développement durable, etc.<span class="visually-hidden">)</span>
     </span>
   </a>
 </li>
@@ -270,7 +290,7 @@
      class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
     <span class="vd-domain-item__link vd-link-invisible h4">Etat, Droit, Finance</span>
     <span class="vd-domain-item__text">
-      <span class="visually-hidden">(Exemple de contenu: </span>Justice, votations, Egalité, protection des données, Impôts, finances publiques, Etat employeur, statistiques, etc.<span class="visually-hidden">)</span>
+      <span class="visually-hidden">(</span>Justice, votations, Egalité, protection des données, Impôts, finances publiques, Etat employeur, statistiques, etc.<span class="visually-hidden">)</span>
     </span>
   </a>
 </li>
@@ -281,7 +301,7 @@
      class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
     <span class="vd-domain-item__link vd-link-invisible h4">Formation</span>
     <span class="vd-domain-item__text">
-      <span class="visually-hidden">(Exemple de contenu: </span>Vacances scolaires, scolarité obligatoire, orientation, apprentissage, gymnase, Bourses, etc.<span class="visually-hidden">)</span>
+      <span class="visually-hidden">(</span>Vacances scolaires, scolarité obligatoire, orientation, apprentissage, gymnase, Bourses, etc.<span class="visually-hidden">)</span>
     </span>
   </a>
 </li>
@@ -292,7 +312,7 @@
      class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
     <span class="vd-domain-item__link vd-link-invisible h4">Mobilité</span>
     <span class="vd-domain-item__text">
-      <span class="visually-hidden">(Exemple de contenu: </span>Automobiles, Routes, navigation, transports publics, mobilités durables, etc.<span class="visually-hidden">)</span>
+      <span class="visually-hidden">(</span>Automobiles, Routes, navigation, transports publics, mobilités durables, etc.<span class="visually-hidden">)</span>
     </span>
   </a>
 </li>
@@ -303,7 +323,7 @@
      class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
     <span class="vd-domain-item__link vd-link-invisible h4">Santé</span>
     <span class="vd-domain-item__text">
-      <span class="visually-hidden">(Exemple de contenu: </span>Prévention, système de santé, dépendances, santé en milieu scolaire, droit des patients, les professionnels de la santé, etc.<span class="visually-hidden">)</span>
+      <span class="visually-hidden">(</span>Prévention, système de santé, dépendances, santé en milieu scolaire, droit des patients, les professionnels de la santé, etc.<span class="visually-hidden">)</span>
     </span>
   </a>
 </li>
@@ -314,7 +334,7 @@
      class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
     <span class="vd-domain-item__link vd-link-invisible h4">Social</span>
     <span class="vd-domain-item__text">
-      <span class="visually-hidden">(Exemple de contenu: </span>Subside à l’assurance maladie, revenu d’insertion, violence, le RDU, les prestations familles, PC familles, Rente-pont, etc.<span class="visually-hidden">)</span>
+      <span class="visually-hidden">(</span>Subside à l’assurance maladie, revenu d’insertion, violence, le RDU, les prestations familles, PC familles, Rente-pont, etc.<span class="visually-hidden">)</span>
     </span>
   </a>
 </li>
@@ -325,7 +345,7 @@
      class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
     <span class="vd-domain-item__link vd-link-invisible h4">Vie privée</span>
     <span class="vd-domain-item__text">
-      <span class="visually-hidden">(Exemple de contenu: </span>Vacances scolaires, scolarité obligatoire, orientation, apprentissage, gymnase, Bourses, etc.<span class="visually-hidden">)</span>
+      <span class="visually-hidden">(</span>Vacances scolaires, scolarité obligatoire, orientation, apprentissage, gymnase, Bourses, etc.<span class="visually-hidden">)</span>
     </span>
   </a>
 </li>
@@ -336,7 +356,7 @@
      class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
     <span class="vd-domain-item__link vd-link-invisible h4">Sécurité</span>
     <span class="vd-domain-item__text">
-      <span class="visually-hidden">(Exemple de contenu: </span>Police, pénitentiaire, armée, catastrophe, protection de la population, etc.<span class="visually-hidden">)</span>
+      <span class="visually-hidden">(</span>Police, pénitentiaire, armée, catastrophe, protection de la population, etc.<span class="visually-hidden">)</span>
     </span>
   </a>
 </li>
@@ -347,7 +367,7 @@
      class="vd-domain-item vd-domain-item--small col-sm-6 col-lg-4 mb-2 vd-domain-item__link-container">
     <span class="vd-domain-item__link vd-link-invisible h4">Territoire</span>
     <span class="vd-domain-item__text">
-      <span class="visually-hidden">(Exemple de contenu: </span>Aménagement, permis de construire, registre foncier, communes, préfectures, dangers naturels, etc.<span class="visually-hidden">)</span>
+      <span class="visually-hidden">(</span>Aménagement, permis de construire, registre foncier, communes, préfectures, dangers naturels, etc.<span class="visually-hidden">)</span>
     </span>
   </a>
 </li>
@@ -425,9 +445,9 @@
 </div>
   <div class="row">
     
-    <article role="article" aria-label="You can&#39;t compress the bandwidth without programming the wireless SMTP circuit!" class="col-md-6">
+    <article role="article" aria-label="programming the alarm won&#39;t do anything, we need to program the cross-platform ADP firewall!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://raw-minor.biz">You can&#39;t compress the bandwidth without programming the wireless SMTP circuit!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://specialiste-rectorat.fr/">programming the alarm won&#39;t do anything, we need to program the cross-platform ADP firewall!</a></h3>
 
     <p class="small">
       <span class="visually-hidden">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -439,8 +459,8 @@
   <a href="#"><img
     class="img-fluid"
     
-    src="https://loremflickr.com/960/640?lock=3344911472083675"
-    srcset="https://picsum.photos/seed/B4WFwV7U/320/213 320w, https://picsum.photos/seed/x9fxtJB3IH/540/360 540w, https://loremflickr.com/720/480?lock=968785380321242 720w, https://loremflickr.com/960/640?lock=828422131734634 960w, https://picsum.photos/seed/wR6znVT/1140/760 1140w" alt="">
+    src="/assets/img/picture-960x640.jpg"
+    srcset="/assets/img/picture-320x213.jpg 320w, /assets/img/picture-540x360.jpg 540w, /assets/img/picture-720x480.jpg 720w, /assets/img/picture-960x640.jpg 960w, /assets/img/picture-1140x760.jpg 1140w" alt="">
 
   </a>
 </figure>
@@ -448,20 +468,20 @@
   
   
   <p>
-    Reprehenderit administratio comprehendo cavus vorax cito demitto.
+    Ab perspiciatis culpa eveniet in vero nulla tempora. Nemo facere error quia consequatur temporibus earum. Dolore provident odit ullam adipisci numquam dolorem itaque alias. Nam debitis assumenda enim assumenda qui facilis quae odio. Numquam sed accusantium dolores eaque quod fugit sed.
   </p>
   
   
   <p>
-    <a href="https://raw-minor.biz">Lire la suite<span class="visually-hidden"> de l'article You can&#39;t compress the bandwidth without programming the wireless SMTP circuit!</span></a>
+    <a href="https://specialiste-rectorat.fr/">Lire la suite<span class="visually-hidden"> de l'article programming the alarm won&#39;t do anything, we need to program the cross-platform ADP firewall!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="You can&#39;t program the application without hacking the auxiliary USB microchip!" class="col-md-6">
+    <article role="article" aria-label="We need to connect the neural RAM capacitor!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://shallow-tomography.name/">You can&#39;t program the application without hacking the auxiliary USB microchip!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://lache-touriste.org">We need to connect the neural RAM capacitor!</a></h3>
 
     <p class="small">
       <span class="visually-hidden">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -473,8 +493,8 @@
   <a href="#"><img
     class="img-fluid"
     
-    src="https://loremflickr.com/960/640?lock=6096990663841407"
-    srcset="https://picsum.photos/seed/74tMBIrxjd/320/213 320w, https://picsum.photos/seed/IiIGCl/540/360 540w, https://picsum.photos/seed/3gmze0T/720/480 720w, https://picsum.photos/seed/zPeH6/960/640 960w, https://picsum.photos/seed/t4kMPd/1140/760 1140w" alt="">
+    src="/assets/img/picture-960x640.jpg"
+    srcset="/assets/img/picture-320x213.jpg 320w, /assets/img/picture-540x360.jpg 540w, /assets/img/picture-720x480.jpg 720w, /assets/img/picture-960x640.jpg 960w, /assets/img/picture-1140x760.jpg 1140w" alt="">
 
   </a>
 </figure>
@@ -482,20 +502,20 @@
   
   
   <p>
-    Acceptus tergeo tersus ipsa deinde sono denuo aequus denuncio. Amita vis sol decor. Vulgus aer natus stipes aliqua sulum avaritia apto.
+    Ullam aut aliquam corporis mollitia maxime magnam sunt animi eius. Sed tenetur ipsum voluptatem. Suscipit esse quis magni nobis dolor praesentium nesciunt cupiditate.
   </p>
   
   
   <p>
-    <a href="https://shallow-tomography.name/">Lire la suite<span class="visually-hidden"> de l'article You can&#39;t program the application without hacking the auxiliary USB microchip!</span></a>
+    <a href="https://lache-touriste.org">Lire la suite<span class="visually-hidden"> de l'article We need to connect the neural RAM capacitor!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="I&#39;ll bypass the open-source AGP program, that should card the CLI program!" class="col-md-6">
+    <article role="article" aria-label="I&#39;ll input the virtual PNG protocol, that should driver the HTTP microchip!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://impartial-governance.name/">I&#39;ll bypass the open-source AGP program, that should card the CLI program!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://vide-main-duvre.net">I&#39;ll input the virtual PNG protocol, that should driver the HTTP microchip!</a></h3>
 
     <p class="small">
       <span class="visually-hidden">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -507,8 +527,8 @@
   <a href="#"><img
     class="img-fluid"
     
-    src="https://loremflickr.com/960/640?lock=5458274994632630"
-    srcset="https://picsum.photos/seed/NQ9nvx4/320/213 320w, https://loremflickr.com/540/360?lock=8959815538731066 540w, https://picsum.photos/seed/TSvdh/720/480 720w, https://loremflickr.com/960/640?lock=5109099345847812 960w, https://loremflickr.com/1140/760?lock=2995484498663198 1140w" alt="">
+    src="/assets/img/picture-960x640.jpg"
+    srcset="/assets/img/picture-320x213.jpg 320w, /assets/img/picture-540x360.jpg 540w, /assets/img/picture-720x480.jpg 720w, /assets/img/picture-960x640.jpg 960w, /assets/img/picture-1140x760.jpg 1140w" alt="">
 
   </a>
 </figure>
@@ -516,22 +536,20 @@
   
   
   <p>
-    Corporis autem tempus desipio. Mollitia patior fugit. Somnus adhuc cognomen adflicto agnitio clementia quasi.
-Magni valetudo verto sto. Infit vigilo ait sponte tyrannus sui. Cuppedia uredo ut adhaero careo deleniti.
-Surgo tener alo pecto aliquid recusandae magni pectus demitto capio. Desolo artificiose assentator ter. Amo torqueo capto defleo spiculum degusto.
+    Hic sequi modi consequuntur.
   </p>
   
   
   <p>
-    <a href="https://impartial-governance.name/">Lire la suite<span class="visually-hidden"> de l'article I&#39;ll bypass the open-source AGP program, that should card the CLI program!</span></a>
+    <a href="https://vide-main-duvre.net">Lire la suite<span class="visually-hidden"> de l'article I&#39;ll input the virtual PNG protocol, that should driver the HTTP microchip!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="navigating the interface won&#39;t do anything, we need to connect the solid state EXE alarm!" class="col-md-6">
+    <article role="article" aria-label="I&#39;ll program the auxiliary PCI bandwidth, that should system the SCSI matrix!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://skeletal-formation.name">navigating the interface won&#39;t do anything, we need to connect the solid state EXE alarm!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://efficace-athlete.name/">I&#39;ll program the auxiliary PCI bandwidth, that should system the SCSI matrix!</a></h3>
 
     <p class="small">
       <span class="visually-hidden">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -543,8 +561,8 @@ Surgo tener alo pecto aliquid recusandae magni pectus demitto capio. Desolo arti
   <a href="#"><img
     class="img-fluid"
     
-    src="https://loremflickr.com/960/640?lock=5606438909076863"
-    srcset="https://loremflickr.com/320/213?lock=4499686913130899 320w, https://picsum.photos/seed/UmKjk/540/360 540w, https://picsum.photos/seed/0ho6HqK/720/480 720w, https://loremflickr.com/960/640?lock=1117721076289088 960w, https://picsum.photos/seed/IiJU6STlB/1140/760 1140w" alt="">
+    src="/assets/img/picture-960x640.jpg"
+    srcset="/assets/img/picture-320x213.jpg 320w, /assets/img/picture-540x360.jpg 540w, /assets/img/picture-720x480.jpg 720w, /assets/img/picture-960x640.jpg 960w, /assets/img/picture-1140x760.jpg 1140w" alt="">
 
   </a>
 </figure>
@@ -552,22 +570,20 @@ Surgo tener alo pecto aliquid recusandae magni pectus demitto capio. Desolo arti
   
   
   <p>
-    Vilis at volo tandem spoliatio explicabo apostolus. A vox vigor incidunt teres. Textus cubitum vulgaris.
-Cura vomito coma cultellus aspicio. Vomer thalassinus tergo apparatus truculenter absque caterva sufficio comprehendo. Cruciamentum comptus amor vorago aliquid.
-Cum accommodo stultus vir sponte cernuus temptatio. Titulus tergum tabernus. Aetas validus stultus copia vivo volaticus provident.
+    Aspernatur dolorem aspernatur quos aliquid. Earum corrupti ad id similique at maxime. Voluptatibus asperiores sed in quas dolorum provident culpa rerum.
   </p>
   
   
   <p>
-    <a href="https://skeletal-formation.name">Lire la suite<span class="visually-hidden"> de l'article navigating the interface won&#39;t do anything, we need to connect the solid state EXE alarm!</span></a>
+    <a href="https://efficace-athlete.name/">Lire la suite<span class="visually-hidden"> de l'article I&#39;ll program the auxiliary PCI bandwidth, that should system the SCSI matrix!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="The SAS capacitor is down, hack the cross-platform array so we can transmit the SSD transmitter!" class="col-md-6">
+    <article role="article" aria-label="We need to transmit the 1080p JSON program!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://silver-sarong.com/">The SAS capacitor is down, hack the cross-platform array so we can transmit the SSD transmitter!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://gigantesque-partenaire.name/">We need to transmit the 1080p JSON program!</a></h3>
 
     <p class="small">
       <span class="visually-hidden">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -579,8 +595,8 @@ Cum accommodo stultus vir sponte cernuus temptatio. Titulus tergum tabernus. Aet
   <a href="#"><img
     class="img-fluid"
     
-    src="https://loremflickr.com/960/640?lock=7377239705770176"
-    srcset="https://picsum.photos/seed/x8nyMsIk/320/213 320w, https://picsum.photos/seed/RMXQm/540/360 540w, https://loremflickr.com/720/480?lock=8078543107604005 720w, https://loremflickr.com/960/640?lock=151920501839162 960w, https://picsum.photos/seed/xcId06w/1140/760 1140w" alt="">
+    src="/assets/img/picture-960x640.jpg"
+    srcset="/assets/img/picture-320x213.jpg 320w, /assets/img/picture-540x360.jpg 540w, /assets/img/picture-720x480.jpg 720w, /assets/img/picture-960x640.jpg 960w, /assets/img/picture-1140x760.jpg 1140w" alt="">
 
   </a>
 </figure>
@@ -588,20 +604,20 @@ Cum accommodo stultus vir sponte cernuus temptatio. Titulus tergum tabernus. Aet
   
   
   <p>
-    Cupiditas dens laudantium dolorum. Atrox vapulus virgo theca certe soleo statim bardus vilis. Spes benigne uterque alius nihil careo ducimus aranea harum alveus.
+    Ipsum magni eaque voluptates alias omnis. Exercitationem at pariatur quos. Optio ullam at saepe praesentium nisi quo fuga a.
   </p>
   
   
   <p>
-    <a href="https://silver-sarong.com/">Lire la suite<span class="visually-hidden"> de l'article The SAS capacitor is down, hack the cross-platform array so we can transmit the SSD transmitter!</span></a>
+    <a href="https://gigantesque-partenaire.name/">Lire la suite<span class="visually-hidden"> de l'article We need to transmit the 1080p JSON program!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="I&#39;ll back up the bluetooth JSON hard drive, that should firewall the CLI interface!" class="col-md-6">
+    <article role="article" aria-label="Use the virtual CLI circuit, then you can input the solid state bandwidth!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://suburban-sesame.biz">I&#39;ll back up the bluetooth JSON hard drive, that should firewall the CLI interface!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://ferme-athlete.name">Use the virtual CLI circuit, then you can input the solid state bandwidth!</a></h3>
 
     <p class="small">
       <span class="visually-hidden">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -613,8 +629,8 @@ Cum accommodo stultus vir sponte cernuus temptatio. Titulus tergum tabernus. Aet
   <a href="#"><img
     class="img-fluid"
     
-    src="https://picsum.photos/seed/QcZ0D/960/640"
-    srcset="https://loremflickr.com/320/213?lock=1978264689862372 320w, https://loremflickr.com/540/360?lock=2796959164517951 540w, https://loremflickr.com/720/480?lock=6549297378792679 720w, https://loremflickr.com/960/640?lock=4844100715343689 960w, https://loremflickr.com/1140/760?lock=5628723652959794 1140w" alt="">
+    src="/assets/img/picture-960x640.jpg"
+    srcset="/assets/img/picture-320x213.jpg 320w, /assets/img/picture-540x360.jpg 540w, /assets/img/picture-720x480.jpg 720w, /assets/img/picture-960x640.jpg 960w, /assets/img/picture-1140x760.jpg 1140w" alt="">
 
   </a>
 </figure>
@@ -622,20 +638,20 @@ Cum accommodo stultus vir sponte cernuus temptatio. Titulus tergum tabernus. Aet
   
   
   <p>
-    Perspiciatis clam amissio.
+    Consectetur quibusdam delectus corporis veritatis fuga.
   </p>
   
   
   <p>
-    <a href="https://suburban-sesame.biz">Lire la suite<span class="visually-hidden"> de l'article I&#39;ll back up the bluetooth JSON hard drive, that should firewall the CLI interface!</span></a>
+    <a href="https://ferme-athlete.name">Lire la suite<span class="visually-hidden"> de l'article Use the virtual CLI circuit, then you can input the solid state bandwidth!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="You can&#39;t reboot the program without connecting the multi-byte FTP pixel!" class="col-md-6">
+    <article role="article" aria-label="overriding the system won&#39;t do anything, we need to program the neural SSL system!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://glossy-substitution.com/">You can&#39;t reboot the program without connecting the multi-byte FTP pixel!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://hebdomadaire-athlete.fr">overriding the system won&#39;t do anything, we need to program the neural SSL system!</a></h3>
 
     <p class="small">
       <span class="visually-hidden">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -647,8 +663,8 @@ Cum accommodo stultus vir sponte cernuus temptatio. Titulus tergum tabernus. Aet
   <a href="#"><img
     class="img-fluid"
     
-    src="https://loremflickr.com/960/640?lock=8206237630622501"
-    srcset="https://picsum.photos/seed/t4u0N/320/213 320w, https://picsum.photos/seed/bqcb6gvPLE/540/360 540w, https://picsum.photos/seed/esIx3HTaT/720/480 720w, https://loremflickr.com/960/640?lock=3100017413279777 960w, https://loremflickr.com/1140/760?lock=7094083611642113 1140w" alt="">
+    src="/assets/img/picture-960x640.jpg"
+    srcset="/assets/img/picture-320x213.jpg 320w, /assets/img/picture-540x360.jpg 540w, /assets/img/picture-720x480.jpg 720w, /assets/img/picture-960x640.jpg 960w, /assets/img/picture-1140x760.jpg 1140w" alt="">
 
   </a>
 </figure>
@@ -656,20 +672,20 @@ Cum accommodo stultus vir sponte cernuus temptatio. Titulus tergum tabernus. Aet
   
   
   <p>
-    Thorax astrum placeat. Adstringo tabella vero sophismata arma triduana autem tactus trans cado. Clarus alter cur caput universe placeat aliquam adhaero stella comminor.
+    Modi recusandae aliquam minima similique vel fugit culpa recusandae.
   </p>
   
   
   <p>
-    <a href="https://glossy-substitution.com/">Lire la suite<span class="visually-hidden"> de l'article You can&#39;t reboot the program without connecting the multi-byte FTP pixel!</span></a>
+    <a href="https://hebdomadaire-athlete.fr">Lire la suite<span class="visually-hidden"> de l'article overriding the system won&#39;t do anything, we need to program the neural SSL system!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="We need to calculate the redundant SMS bandwidth!" class="col-md-6">
+    <article role="article" aria-label="Try to parse the TLS transmitter, maybe it will bypass the open-source bandwidth!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://filthy-intent.net/">We need to calculate the redundant SMS bandwidth!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://fidele-gestionnaire.org/">Try to parse the TLS transmitter, maybe it will bypass the open-source bandwidth!</a></h3>
 
     <p class="small">
       <span class="visually-hidden">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -681,8 +697,8 @@ Cum accommodo stultus vir sponte cernuus temptatio. Titulus tergum tabernus. Aet
   <a href="#"><img
     class="img-fluid"
     
-    src="https://loremflickr.com/960/640?lock=4782794618859664"
-    srcset="https://picsum.photos/seed/AoYN5cN/320/213 320w, https://loremflickr.com/540/360?lock=606467706448827 540w, https://picsum.photos/seed/PiINc/720/480 720w, https://loremflickr.com/960/640?lock=2843944310806892 960w, https://loremflickr.com/1140/760?lock=3210976399758479 1140w" alt="">
+    src="/assets/img/picture-960x640.jpg"
+    srcset="/assets/img/picture-320x213.jpg 320w, /assets/img/picture-540x360.jpg 540w, /assets/img/picture-720x480.jpg 720w, /assets/img/picture-960x640.jpg 960w, /assets/img/picture-1140x760.jpg 1140w" alt="">
 
   </a>
 </figure>
@@ -690,22 +706,21 @@ Cum accommodo stultus vir sponte cernuus temptatio. Titulus tergum tabernus. Aet
   
   
   <p>
-    Conturbo claro voco tamisium annus. Venustas strues aeger. Beatae sto somnus candidus.
-Suscipio conatus adnuo incidunt amicitia maxime. Vinco ter velut nisi uredo umbra pecus. Amita defluo aut synagoga cognatus.
-Blandior alienus testimonium terreo sonitus. Tamdiu eum terebro appello carus vivo vicissitudo. Causa incidunt bardus demoror confido illum aut.
+    A pariatur beatae excepturi perspiciatis neque vitae sequi.
+Magni facere doloribus iusto nihil at accusantium temporibus fugiat.
   </p>
   
   
   <p>
-    <a href="https://filthy-intent.net/">Lire la suite<span class="visually-hidden"> de l'article We need to calculate the redundant SMS bandwidth!</span></a>
+    <a href="https://fidele-gestionnaire.org/">Lire la suite<span class="visually-hidden"> de l'article Try to parse the TLS transmitter, maybe it will bypass the open-source bandwidth!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="You can&#39;t hack the system without connecting the multi-byte SMS panel!" class="col-md-6">
+    <article role="article" aria-label="We need to override the solid state SMTP protocol!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://excited-rosemary.biz/">You can&#39;t hack the system without connecting the multi-byte SMS panel!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://sympathique-gestionnaire.info">We need to override the solid state SMTP protocol!</a></h3>
 
     <p class="small">
       <span class="visually-hidden">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -717,8 +732,8 @@ Blandior alienus testimonium terreo sonitus. Tamdiu eum terebro appello carus vi
   <a href="#"><img
     class="img-fluid"
     
-    src="https://picsum.photos/seed/SPSie5R/960/640"
-    srcset="https://loremflickr.com/320/213?lock=2073513728329609 320w, https://loremflickr.com/540/360?lock=8880913045437828 540w, https://loremflickr.com/720/480?lock=4277903257436802 720w, https://loremflickr.com/960/640?lock=6122494308695297 960w, https://loremflickr.com/1140/760?lock=281937114732053 1140w" alt="">
+    src="/assets/img/picture-960x640.jpg"
+    srcset="/assets/img/picture-320x213.jpg 320w, /assets/img/picture-540x360.jpg 540w, /assets/img/picture-720x480.jpg 720w, /assets/img/picture-960x640.jpg 960w, /assets/img/picture-1140x760.jpg 1140w" alt="">
 
   </a>
 </figure>
@@ -726,22 +741,20 @@ Blandior alienus testimonium terreo sonitus. Tamdiu eum terebro appello carus vi
   
   
   <p>
-    Cultura conitor deripio vesper terra iusto. Aegre cuppedia cultellus molestiae nihil ut. Supra tum cum contigo absum tergum via crebro terreo vindico.
-Debitis vinco vos utilis explicabo similique. Terra cohors tyrannus utroque toties curso temperantia iure odio subiungo. Abundans modi curia speculum cursus.
-Thorax sunt taedium admoneo arbor statua pecus asporto. Cur vulgaris administratio crapula. Thymbra damnatio tertius conitor chirographum...
+    Dignissimos quae fugit inventore eius velit voluptatibus laudantium incidunt. Nisi dolore in dicta facilis ratione soluta fugit. Delectus inventore quis tempore culpa.
   </p>
   
   
   <p>
-    <a href="https://excited-rosemary.biz/">Lire la suite<span class="visually-hidden"> de l'article You can&#39;t hack the system without connecting the multi-byte SMS panel!</span></a>
+    <a href="https://sympathique-gestionnaire.info">Lire la suite<span class="visually-hidden"> de l'article We need to override the solid state SMTP protocol!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="We need to copy the solid state THX capacitor!" class="col-md-6">
+    <article role="article" aria-label="You can&#39;t hack the program without hacking the primary SSD system!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://quick-witted-traffic.info">We need to copy the solid state THX capacitor!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://gai-specialiste.org/">You can&#39;t hack the program without hacking the primary SSD system!</a></h3>
 
     <p class="small">
       <span class="visually-hidden">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -753,8 +766,8 @@ Thorax sunt taedium admoneo arbor statua pecus asporto. Cur vulgaris administrat
   <a href="#"><img
     class="img-fluid"
     
-    src="https://picsum.photos/seed/92iHx/960/640"
-    srcset="https://loremflickr.com/320/213?lock=220932802060867 320w, https://picsum.photos/seed/vvVuAftt/540/360 540w, https://loremflickr.com/720/480?lock=5029756539141690 720w, https://picsum.photos/seed/eJnwEBVt/960/640 960w, https://picsum.photos/seed/oeqOxWq/1140/760 1140w" alt="">
+    src="/assets/img/picture-960x640.jpg"
+    srcset="/assets/img/picture-320x213.jpg 320w, /assets/img/picture-540x360.jpg 540w, /assets/img/picture-720x480.jpg 720w, /assets/img/picture-960x640.jpg 960w, /assets/img/picture-1140x760.jpg 1140w" alt="">
 
   </a>
 </figure>
@@ -762,14 +775,12 @@ Thorax sunt taedium admoneo arbor statua pecus asporto. Cur vulgaris administrat
   
   
   <p>
-    Crur decor colligo accusantium. Quas summopere thermae ater corrupti patruus vinco. Amicitia apparatus terreo autem caveo sit astrum arbustum deludo versus.
-Animi cunabula delectus timor vigor amplitudo certe celo. Defero ultio infit tamisium sub. Villa cuius abutor quasi animus demo uxor.
-Voluptatem ademptio corrigo. Coma ancilla arbustum uterque comptus cursus. Sortitus nemo aperio subvenio demens arbor ustulo.
+    Sed excepturi enim fugiat id at. Saepe atque nisi quos illo voluptates officia porro expedita. Nam iste illo nulla fugit odit ullam ea. Eligendi saepe sed beatae iste repellendus iure quibusdam architecto id. Ipsum voluptatem vitae.
   </p>
   
   
   <p>
-    <a href="https://quick-witted-traffic.info">Lire la suite<span class="visually-hidden"> de l'article We need to copy the solid state THX capacitor!</span></a>
+    <a href="https://gai-specialiste.org/">Lire la suite<span class="visually-hidden"> de l'article You can&#39;t hack the program without hacking the primary SSD system!</span></a>
   </p>
   
 </article>
@@ -804,24 +815,48 @@ Voluptatem ademptio corrigo. Coma ancilla arbustum uterque comptus cursus. Sorti
   
   <h2 class="vd-heading-light h4 mb-3 visually-hidden">Partager la page</h2>
 <ul class="list-inline vd-social-icons mt-4 mb-3">
-  <li class="list-inline-item">
-    <a class="vd-social-icon" href="#"><span class="fas fa-envelope" aria-hidden="true"></span><span class="visually-hidden">Envoyer par courriel</span></a>
-  </li>
-  <li class="list-inline-item">
-    <a class="vd-social-icon" href="#"><span class="fab fa-twitter" aria-hidden="true"></span><span class="visually-hidden">Partager sur Twitter</span></a>
-  </li>
-  <li class="list-inline-item">
-    <a class="vd-social-icon" href="#"><span class="fab fa-facebook-f" aria-hidden="true"></span><span class="visually-hidden">Partager sur Facebook</span></a>
-  </li>
-  <li class="list-inline-item">
-    <a class="vd-social-icon" href="#"><span class="fab fa-linkedin-in" aria-hidden="true"></span><span class="visually-hidden">Partager sur Linkedin</span></a>
-  </li>
-  <li class="list-inline-item d-lg-none">
-    <a class="vd-social-icon" href="#"><span class="fab fa-whatsapp" aria-hidden="true"></span><span class="visually-hidden">Partager sur WhatsApp</span></a>
-  </li>
-  <li class="list-inline-item d-none d-lg-inline-block">
-    <a class="vd-social-icon" href="#"><span class="fas fa-print" aria-hidden="true"></span><span class="visually-hidden">Imprimer la page</span></a>
-  </li>
+    <li class="list-inline-item">
+        <a class="mastodon-link vd-social-icon" href="#" title="Lien vers le profil Mastodon">
+            <span aria-hidden="true" class="fa-brands fa-mastodon"></span>
+            <span class="visually-hidden">Lien vers le profil Mastodon</span>
+        </a>
+    </li>
+    <li class="list-inline-item">
+        <a class="bluesky-link vd-social-icon" href="#" title="Lien vers le profil Bluesky">
+            <span aria-hidden="true" class="fa-bluesky fa-brands"></span>
+            <span class="visually-hidden">Lien vers le profil Bluesky</span>
+        </a>
+    </li>
+    <li class="list-inline-item">
+        <a class="instagram-link vd-social-icon" href="#" title="Lien vers le profil Instagram">
+            <span aria-hidden="true" class="fa-brands fa-instagram"></span>
+            <span class="visually-hidden">Lien vers le profil Instagram</span>
+        </a>
+    </li>
+    <li class="list-inline-item">
+        <a class="linkedin-link vd-social-icon" href="#" title="Lien vers le profil Linkedin">
+            <span aria-hidden="true" class="fa-brands fa-linkedin"></span>
+            <span class="visually-hidden">Lien vers le profil Linkedin</span>
+        </a>
+    </li>
+    <li class="list-inline-item">
+        <a class="facebook-link vd-social-icon" href="#" title="Lien vers le profil Facebook">
+            <span aria-hidden="true" class="fa-brands fa-facebook"></span>
+            <span class="visually-hidden">Lien vers le profil Facebook</span>
+        </a>
+    </li>
+    <li class="list-inline-item">
+        <a class="twitter-link vd-social-icon" href="#" title="Lien vers le profil Twitter">
+            <span aria-hidden="true" class="fa-brands fa-x-twitter"></span>
+            <span class="visually-hidden">Lien vers le profil Twitter</span>
+        </a>
+    </li>
+    <li class="d-lg-none list-inline-item">
+        <a class="whatsapp-link vd-social-icon" href="#" title="Partager par WhatsApp">
+            <span aria-hidden="true" class="fa-brands fa-whatsapp"></span>
+            <span class="visually-hidden">Partager par WhatsApp</span>
+        </a>
+    </li>
 </ul>
 
 </div>
@@ -857,11 +892,8 @@ Voluptatem ademptio corrigo. Coma ancilla arbustum uterque comptus cursus. Sorti
         <div class="col-xs-2">
           <div class="d-flex align-items-end flex-column h-100">
             <div class="mt-auto w-100 end">
-              <a href="#" class="d-inline-block">
-                <span class="visually-hidden">Retour à la page d'accueil</span>
-                <img aria-hidden="true" class="img-fluid footer-logo" src="../../foehn/svg/logo/logo--white.svg" alt="Canton de Vaud">
+              <img aria-hidden="true" class="img-fluid footer-logo" src="../../foehn/svg/logo/logo--white.svg" alt="Canton de Vaud">
 
-              </a>
             </div>
           </div>
         </div>
@@ -874,7 +906,7 @@ Voluptatem ademptio corrigo. Coma ancilla arbustum uterque comptus cursus. Sorti
 
 
     <!-- Scripts footer -->
-    <script src="../../foehn/scripts/bootstrap.min.js"></script>
+    <script src="../../foehn/scripts/bootstrap.bundle.min.js"></script>
     <script src="../../foehn/scripts/foehn-scripts--footer.js"></script>
   </body>
 </html>
