@@ -96,6 +96,39 @@
 interactifs de votre application correspond au niveau AA des <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html">Web Content
 Accessibility Guidelines (WCAG)
 2.1</a>.</p>
+<p>Sous chaque palette, chaque nuance montre un exemple de texte blanc et de
+texte foncé, avec le ratio de contraste et le niveau WCAG atteint. Le ratio est
+le même dans les deux sens : celui du texte blanc sur une couleur vaut aussi
+pour du texte de cette couleur sur fond blanc.</p>
+<table>
+<thead>
+<tr>
+<th>Résultat</th>
+<th>Ratio minimum</th>
+<th>Usage autorisé</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AAA</td>
+<td>7:1</td>
+<td>Tout texte</td>
+</tr>
+<tr>
+<td>AA</td>
+<td>4.5:1</td>
+<td>Tout texte</td>
+</tr>
+<tr>
+<td>AA grand texte</td>
+<td>3:1</td>
+<td>Texte d’au moins 24px (ou 18.66px en gras), icônes, bordures et composants d’interface</td>
+</tr>
+<tr>
+<td>Échec</td>
+<td>moins de 3:1</td>
+<td>Décoration uniquement, jamais pour du texte ou une information</td>
+</tr>
+</tbody></table>
 <h2 id="palette">Palette</h2>
 <p><strong>Primary</strong> palette values.</p>
 <div class="palette">
@@ -119,6 +152,66 @@ Accessibility Guidelines (WCAG)
     <span>#cf9</span>
     <code>lighter</code>
   </div>
+</div>
+
+
+
+<div class="contrast-grid" role="list" aria-label="Contrastes de la palette primary">
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #1e5e02; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">7.9:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #1e5e02; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">2.53:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__meta"><code>darker</code> <code>#1e5e02</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #3a862d; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">4.53:1 <span class="contrast-level contrast-level--aa">AA</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #3a862d; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">4.41:1 <span class="contrast-level contrast-level--large">AA grand texte</span></span>
+</div>
+<div class="contrast-card__meta"><code>dark</code> <code>#3a862d</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #40d940; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">1.87:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #40d940; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">10.69:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__meta"><code>base</code> <code>#40d940</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #9f3; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">1.25:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #9f3; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">15.93:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__meta"><code>light</code> <code>#9f3</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #cf9; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">1.14:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #cf9; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">17.48:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__meta"><code>lighter</code> <code>#cf9</code></div>
+</div>
 </div>
 
 
@@ -147,6 +240,66 @@ Accessibility Guidelines (WCAG)
 </div>
 
 
+
+<div class="contrast-grid" role="list" aria-label="Contrastes de la palette secondary">
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #2a0046; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">17.69:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #2a0046; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">1.13:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__meta"><code>darker</code> <code>#2a0046</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #6200a3; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">10.25:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #6200a3; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">1.95:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__meta"><code>dark</code> <code>#6200a3</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #90f; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">5.52:1 <span class="contrast-level contrast-level--aa">AA</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #90f; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">3.62:1 <span class="contrast-level contrast-level--large">AA grand texte</span></span>
+</div>
+<div class="contrast-card__meta"><code>base</code> <code>#90f</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #be5cff; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">3.4:1 <span class="contrast-level contrast-level--large">AA grand texte</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #be5cff; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">5.87:1 <span class="contrast-level contrast-level--aa">AA</span></span>
+</div>
+<div class="contrast-card__meta"><code>light</code> <code>#be5cff</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #e3b9ff; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">1.66:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #e3b9ff; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">12.06:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__meta"><code>lighter</code> <code>#e3b9ff</code></div>
+</div>
+</div>
+
+
 <p><strong>Tertiary</strong> palette values.</p>
 <div class="palette">
 <div class="color" style="color: #065074">
@@ -169,6 +322,66 @@ Accessibility Guidelines (WCAG)
     <span>#e0f4ff</span>
     <code>lighter</code>
   </div>
+</div>
+
+
+
+<div class="contrast-grid" role="list" aria-label="Contrastes de la palette tertiary">
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #065074; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">8.72:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #065074; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">2.29:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__meta"><code>darker</code> <code>#065074</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #0f91d2; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">3.49:1 <span class="contrast-level contrast-level--large">AA grand texte</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #0f91d2; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">5.72:1 <span class="contrast-level contrast-level--aa">AA</span></span>
+</div>
+<div class="contrast-card__meta"><code>dark</code> <code>#0f91d2</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #6cf; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">1.8:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #6cf; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">11.1:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__meta"><code>base</code> <code>#6cf</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #ade4ff; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">1.37:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #ade4ff; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">14.6:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__meta"><code>light</code> <code>#ade4ff</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #e0f4ff; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">1.13:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #e0f4ff; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">17.69:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__meta"><code>lighter</code> <code>#e0f4ff</code></div>
+</div>
 </div>
 
 
@@ -197,6 +410,66 @@ Accessibility Guidelines (WCAG)
 </div>
 
 
+
+<div class="contrast-grid" role="list" aria-label="Contrastes de la palette neutral">
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #080808; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">20.02:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #080808; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">1:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__meta"><code>darker</code> <code>#080808</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #273c46; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">11.53:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #273c46; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">1.73:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__meta"><code>dark</code> <code>#273c46</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #697983; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">4.5:1 <span class="contrast-level contrast-level--aa">AA</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #697983; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">4.44:1 <span class="contrast-level contrast-level--large">AA grand texte</span></span>
+</div>
+<div class="contrast-card__meta"><code>base</code> <code>#697983</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #c3d1dc; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">1.55:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #c3d1dc; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">12.85:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__meta"><code>light</code> <code>#c3d1dc</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #dce3e8; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">1.29:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #dce3e8; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">15.44:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__meta"><code>lighter</code> <code>#dce3e8</code></div>
+</div>
+</div>
+
+
 <p><strong>Text</strong> palette values.</p>
 <div class="palette">
 <div class="color" style="color: #080808">
@@ -204,6 +477,9 @@ Accessibility Guidelines (WCAG)
     <code>body</code>
   </div>
 </div>
+
+
+
 
 
 <p><strong>States</strong> palette values.</p>
@@ -236,10 +512,82 @@ Accessibility Guidelines (WCAG)
 
 
 
+<div class="contrast-grid" role="list" aria-label="Contrastes de la palette states">
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #3c8a2e; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">4.31:1 <span class="contrast-level contrast-level--large">AA grand texte</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #3c8a2e; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">4.64:1 <span class="contrast-level contrast-level--aa">AA</span></span>
+</div>
+<div class="contrast-card__meta"><code>success</code> <code>#3c8a2e</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #ff9c00; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">2.09:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #ff9c00; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">9.54:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__meta"><code>warning</code> <code>#ff9c00</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #c3105c; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">5.91:1 <span class="contrast-level contrast-level--aa">AA</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #c3105c; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">3.38:1 <span class="contrast-level contrast-level--large">AA grand texte</span></span>
+</div>
+<div class="contrast-card__meta"><code>danger</code> <code>#c3105c</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #82afcc; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">2.34:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #82afcc; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">8.53:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__meta"><code>info</code> <code>#82afcc</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #ffbf47; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">1.64:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #ffbf47; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">12.2:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__meta"><code>focus</code> <code>#ffbf47</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #384083; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">9.42:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #384083; color: #080808">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">2.12:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__meta"><code>visited</code> <code>#384083</code></div>
+</div>
+</div>
+
+
+
 <h2 id="couleur-officielle">Couleur officielle</h2>
 <p>La couleur officielle du Canton de Vaud est <code>#3a862d</code></p>
 <h2 id="couleurs-futures">Couleurs futures</h2>
-<p>Travail en cours sur les futures couleurs de la palette.</p>
+<p>Travail en cours sur les futures couleurs de la palette. Les nuances marquées
+« Proposition » attendent la validation du BIC.</p>
 <p><strong>Primary</strong> palette values.</p>
 <div class="palette">
 <div class="color" style="color: #195347">
@@ -265,22 +613,82 @@ Accessibility Guidelines (WCAG)
 </div>
 
 
+
+<div class="contrast-grid" role="list" aria-label="Contrastes de la palette primary">
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #195347; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">8.86:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #195347; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">1.95:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__meta"><code>darker</code> <code>#195347</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #129a39; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">3.67:1 <span class="contrast-level contrast-level--large">AA grand texte</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #129a39; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">4.7:1 <span class="contrast-level contrast-level--aa">AA</span></span>
+</div>
+<div class="contrast-card__meta"><code>dark</code> <code>#129a39</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #82bf82; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">2.15:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #82bf82; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">8:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__meta"><code>base</code> <code>#82bf82</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #def4b0; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">1.18:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #def4b0; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">14.55:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__meta"><code>light</code> <code>#def4b0</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #e8e858; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">1.3:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #e8e858; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">13.27:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__meta"><code>lighter</code> <code>#e8e858</code></div>
+</div>
+</div>
+
+
 <p><strong>Secondary</strong> palette values.</p>
 <div class="palette">
-<div class="color" style="color: #f2f2f2">
-    <span>#f2f2f2</span>
+<div class="color" style="color: #382676">
+    <span>#382676</span>
     <code>darker</code>
   </div>
-<div class="color" style="color: #f2f2f2">
-    <span>#f2f2f2</span>
+<div class="color" style="color: #583faf">
+    <span>#583faf</span>
     <code>dark</code>
   </div>
-<div class="color color--base" style="color: #f2f2f2">
-    <span>#f2f2f2</span>
+<div class="color color--base" style="color: #7565d1">
+    <span>#7565d1</span>
     <code>base</code>
   </div>
-<div class="color" style="color: #f2f2f2">
-    <span>#f2f2f2</span>
+<div class="color" style="color: #a5a0ed">
+    <span>#a5a0ed</span>
     <code>light</code>
   </div>
 <div class="color" style="color: #cbcaff">
@@ -290,18 +698,78 @@ Accessibility Guidelines (WCAG)
 </div>
 
 
+
+<div class="contrast-grid" role="list" aria-label="Contrastes de la palette secondary">
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #382676; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">12.3:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #382676; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">1.4:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__meta"><code>darker</code> <code>#382676</code> <span class="contrast-card__proposal">Proposition</span></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #583faf; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">7.65:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #583faf; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">2.26:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__meta"><code>dark</code> <code>#583faf</code> <span class="contrast-card__proposal">Proposition</span></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #7565d1; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">4.62:1 <span class="contrast-level contrast-level--aa">AA</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #7565d1; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">3.73:1 <span class="contrast-level contrast-level--large">AA grand texte</span></span>
+</div>
+<div class="contrast-card__meta"><code>base</code> <code>#7565d1</code> <span class="contrast-card__proposal">Proposition</span></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #a5a0ed; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">2.37:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #a5a0ed; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">7.28:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__meta"><code>light</code> <code>#a5a0ed</code> <span class="contrast-card__proposal">Proposition</span></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #cbcaff; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">1.56:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #cbcaff; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">11.06:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__meta"><code>lighter</code> <code>#cbcaff</code></div>
+</div>
+</div>
+
+
 <p><strong>Tertiary</strong> palette values.</p>
 <div class="palette">
-<div class="color" style="color: #f2f2f2">
-    <span>#f2f2f2</span>
+<div class="color" style="color: #04424e">
+    <span>#04424e</span>
     <code>darker</code>
   </div>
-<div class="color" style="color: #f2f2f2">
-    <span>#f2f2f2</span>
+<div class="color" style="color: #076979">
+    <span>#076979</span>
     <code>dark</code>
   </div>
-<div class="color color--base" style="color: #f2f2f2">
-    <span>#f2f2f2</span>
+<div class="color color--base" style="color: #2196a7">
+    <span>#2196a7</span>
     <code>base</code>
   </div>
 <div class="color" style="color: #c0d5d9">
@@ -315,14 +783,74 @@ Accessibility Guidelines (WCAG)
 </div>
 
 
+
+<div class="contrast-grid" role="list" aria-label="Contrastes de la palette tertiary">
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #04424e; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">11.08:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #04424e; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">1.56:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__meta"><code>darker</code> <code>#04424e</code> <span class="contrast-card__proposal">Proposition</span></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #076979; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">6.35:1 <span class="contrast-level contrast-level--aa">AA</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #076979; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">2.72:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__meta"><code>dark</code> <code>#076979</code> <span class="contrast-card__proposal">Proposition</span></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #2196a7; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">3.5:1 <span class="contrast-level contrast-level--large">AA grand texte</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #2196a7; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">4.92:1 <span class="contrast-level contrast-level--aa">AA</span></span>
+</div>
+<div class="contrast-card__meta"><code>base</code> <code>#2196a7</code> <span class="contrast-card__proposal">Proposition</span></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #c0d5d9; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">1.52:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #c0d5d9; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">11.33:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__meta"><code>light</code> <code>#c0d5d9</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #e0efef; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">1.18:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #e0efef; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">14.62:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__meta"><code>lighter</code> <code>#e0efef</code></div>
+</div>
+</div>
+
+
 <p><strong>Quaternary</strong> palette values.</p>
 <div class="palette">
-<div class="color" style="color: #f2f2f2">
-    <span>#f2f2f2</span>
+<div class="color" style="color: #3c2613">
+    <span>#3c2613</span>
     <code>darker</code>
   </div>
-<div class="color" style="color: #f2f2f2">
-    <span>#f2f2f2</span>
+<div class="color" style="color: #583718">
+    <span>#583718</span>
     <code>dark</code>
   </div>
 <div class="color color--base" style="color: #774f24">
@@ -340,28 +868,148 @@ Accessibility Guidelines (WCAG)
 </div>
 
 
+
+<div class="contrast-grid" role="list" aria-label="Contrastes de la palette quaternary">
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #3c2613; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">14.2:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #3c2613; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">1.21:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__meta"><code>darker</code> <code>#3c2613</code> <span class="contrast-card__proposal">Proposition</span></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #583718; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">10.63:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #583718; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">1.62:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__meta"><code>dark</code> <code>#583718</code> <span class="contrast-card__proposal">Proposition</span></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #774f24; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">7.17:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #774f24; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">2.41:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__meta"><code>base</code> <code>#774f24</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #b29c6f; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">2.66:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #b29c6f; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">6.48:1 <span class="contrast-level contrast-level--aa">AA</span></span>
+</div>
+<div class="contrast-card__meta"><code>light</code> <code>#b29c6f</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #e9e3d4; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">1.28:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #e9e3d4; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">13.5:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__meta"><code>lighter</code> <code>#e9e3d4</code></div>
+</div>
+</div>
+
+
 <p><strong>Neutral</strong> palette values.</p>
 <div class="palette">
-<div class="color" style="color: #f2f2f2">
-    <span>#f2f2f2</span>
+<div class="color" style="color: #111c23">
+    <span>#111c23</span>
     <code>darker</code>
   </div>
 <div class="color" style="color: #2b3b45">
     <span>#2b3b45</span>
     <code>dark</code>
   </div>
-<div class="color color--base" style="color: #f2f2f2">
-    <span>#f2f2f2</span>
+<div class="color color--base" style="color: #5e6e79">
+    <span>#5e6e79</span>
     <code>base</code>
   </div>
-<div class="color" style="color: #f2f2f2">
-    <span>#f2f2f2</span>
+<div class="color" style="color: #d5dce1">
+    <span>#d5dce1</span>
     <code>light</code>
   </div>
-<div class="color" style="color: #f2f2f2">
-    <span>#f2f2f2</span>
+<div class="color" style="color: #e2e7eb">
+    <span>#e2e7eb</span>
     <code>lighter</code>
   </div>
+</div>
+
+
+
+<div class="contrast-grid" role="list" aria-label="Contrastes de la palette neutral">
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #111c23; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">17.29:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #111c23; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">1:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__meta"><code>darker</code> <code>#111c23</code> <span class="contrast-card__proposal">Proposition</span></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #2b3b45; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">11.57:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #2b3b45; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">1.49:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__meta"><code>dark</code> <code>#2b3b45</code></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #5e6e79; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">5.27:1 <span class="contrast-level contrast-level--aa">AA</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #5e6e79; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">3.27:1 <span class="contrast-level contrast-level--large">AA grand texte</span></span>
+</div>
+<div class="contrast-card__meta"><code>base</code> <code>#5e6e79</code> <span class="contrast-card__proposal">Proposition</span></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #d5dce1; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">1.38:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #d5dce1; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">12.48:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__meta"><code>light</code> <code>#d5dce1</code> <span class="contrast-card__proposal">Proposition</span></div>
+</div>
+<div class="contrast-card" role="listitem">
+<div class="contrast-card__sample" style="background-color: #e2e7eb; color: #ffffff">
+<span>Aa Texte blanc</span>
+<span class="contrast-card__result">1.24:1 <span class="contrast-level contrast-level--fail">Échec</span></span>
+</div>
+<div class="contrast-card__sample" style="background-color: #e2e7eb; color: #111c23">
+<span>Aa Texte foncé</span>
+<span class="contrast-card__result">13.88:1 <span class="contrast-level contrast-level--aaa">AAA</span></span>
+</div>
+<div class="contrast-card__meta"><code>lighter</code> <code>#e2e7eb</code> <span class="contrast-card__proposal">Proposition</span></div>
+</div>
 </div>
 
 
@@ -10206,7 +10854,7 @@ Accessibility Guidelines (WCAG)
                     <dt class="Tree-asideTerm">Généré le:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-09-25T13:36:19.643Z">
+                            <time datetime="2026-09-25T13:59:10.017Z">
                                 25/09/2026
                             </time>
                         
